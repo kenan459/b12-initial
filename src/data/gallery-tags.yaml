@@ -1,0 +1,77 @@
+- title: Featured
+  tag: featured
+  category: generic
+- title: All
+  tag: all
+  category: generic
+- title: Abstract
+  tag: abstract
+  category: style
+  description: >- 
+    <b>Abstract</b> - These websites use swirls of color and playful patterns to create vibrant designs that don't require specific photos or images.
+- title: Accountants and Tax Services
+  tag: accountants-and-tax-services
+  category: industry
+- title: Architecture and Real Estate
+  tag: architecture-and-real-estate
+  category: industry
+- title: Business Services and Consulting
+  tag: business-services-and-consulting
+  category: industry
+- title: Coaching and Personal Development
+  tag: coaching-and-personal-development
+  category: industry
+- title: Colorful
+  tag: colorful
+  category: style
+  description: >- 
+    <b>Colorful</b> - Bright, bold colors give these website designs a fun, joyful vibe.
+- title: Content
+  tag: content
+  category: style
+  description: >- 
+    <b>Content</b> - Content-rich sites use galleries to show off images or blogs to structure text and articles.
+- title: Contractors and Home Services
+  tag: contractors-and-home-services
+  category: industry
+- title: Financial Services
+  tag: financial-services
+  category: industry
+- title: Icons
+  tag: icons
+  category: style
+  description: >- 
+    <b>Icons</b> - Clear, stylish icons are a great way to break up text and make your site pop.
+- title: Illustrations
+  tag: illustrations
+  category: style
+  description: >- 
+    <b>Illustrations</b> - Illustrations are a nice alternative to photos, giving your site an artistic edge.
+- title: Insurance
+  tag: insurance
+  category: industry
+- title: IT Services
+  tag: it-services
+  category: industry
+- title: Legal Services
+  tag: legal-services
+  category: industry
+- title: Mortgage brokers
+  tag: mortgage-brokers
+  category: industry
+- title: Minimal
+  tag: minimal
+  category: style
+  description: >- 
+    <b>Minimal</b> - Simple designs with lots of blank space give off a modern, professional appearance.
+- title: Photos
+  tag: photos
+  category: style
+  description: >- 
+    <b>Photos</b> - High-quality photos help websites stand out and show, rather than tell, what you’re all about.
+- title: Single Page
+  tag: single-page
+  category: style
+- title: Videos
+  tag: videos
+  category: style

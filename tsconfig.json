@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "skipLibCheck": true,
+    "strictBindCallApply": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "typeRoots": ["./types", "**/node_modules/@types", "node_modules/@types"],
+    "paths": {
+      "@reach/router/*": ["./node_modules/@gatsbyjs/reach-router/*"],
+      "@components/*": ["./src/components/*"],
+      "@partials/*": ["./src/partials/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@styles/*": ["./src/assets/*"],
+      "@images/*": ["./src/images/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@data/*": ["./src/data/*"],
+      "@config/*": ["./src/config/*"],
+    }
+  },
+  "exclude": ["peril/*", "examples/*"]
+}

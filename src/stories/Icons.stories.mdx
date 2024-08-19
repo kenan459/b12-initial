@@ -1,0 +1,25 @@
+import { Meta, IconGallery, IconItem } from '@storybook/addon-docs/'
+
+import { icons } from './data/icons'
+
+<Meta title="Global/Iconography" />
+
+# Iconography
+
+Here is a gallery of icons used in the project. They are pure svgs.
+
+Icons are stored in `./src/images/icons` folder and use specific naming like `*.inline.svg` so that we can import them as components:
+
+```javascript
+import IconCheckmark from '../images/icons/checkmark-circle-dashed.inline.svg'
+```
+
+## Available icons
+
+<IconGallery style={{ marginTop: '30px' }}>
+  {icons.map((item) => (
+    <IconItem key={item.name} name={item.name}>
+      {item.icon}
+    </IconItem>
+  ))}
+</IconGallery>

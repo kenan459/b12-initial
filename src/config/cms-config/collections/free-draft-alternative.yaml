@@ -1,0 +1,81 @@
+name: 'free_draft_alternative' # Used in routes, e.g., /admin/collections/blog
+label: 'Free Draft New' # Used in the UI
+folder: 'src/data/free-draft' # The path to the folder where the documents are stored
+create: true # Allow users to create new documents in this collection
+slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+fields:
+  - { label: 'Title', name: 'title', widget: 'string', required: false }
+  - { label: 'Meta description', name: 'description', widget: 'string', required: false }
+  - { label: 'Permalink', name: 'permalink', widget: 'string', required: true }
+  - { label: 'Published', name: 'published', widget: 'boolean', default: true, required: false }
+  - label: Hero
+    name: hero
+    widget: object
+    required: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - { label: 'Note', name: 'note', widget: 'string', required: true, hint: 'Appears under the Hero CTA', default: 'No credit card required' }
+      - label: 'Image'
+        name: 'image'
+        widget: 'select'
+        default: 'images/free-draft-hero.png'
+        required: true
+        options:
+          - { label: 'Example site with icons', value: 'images/product-management-training.png' }
+          - { label: 'Website editor with kickoff call notes image', value: 'images/free-draft-hero.png' }
+      - { label: 'Cta text', name: 'cta_text', widget: 'string', required: false }
+      - { label: 'Cta Link', name: 'cta_url', widget: 'string', required: false }
+  - label: Features
+    name: list
+    widget: object
+    required: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: false }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - label: Features list
+        name: list_items
+        widget: list
+        fields:
+          - { label: 'Icon', name: 'icon', widget: 'string', hint: 'Paste svg icon code' }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'markdown', required: false }
+  - label: Testimonials
+    name: testimonials_slider
+    widget: object
+    required: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: false }
+      - label: Items
+        name: items
+        widget: relation
+        collection: testimonials
+        search_fields: ['company']
+        display_fields: ['company', 'customer.name']
+        value_field: '{{slug}}'
+        multiple: true
+        required: false
+  - label: FAQs
+    name: faqs
+    widget: object
+    required: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: false, default: 'FAQs' }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false }
+      - label: 'Items'
+        name: 'items'
+        widget: 'list'
+        required: false
+        fields:
+          - { label: 'Question', name: 'question', widget: 'string' }
+          - { label: 'Answer', name: 'answer', widget: 'markdown' }
+  - label: CTA Banner
+    name: cta_banner
+    widget: object
+    required: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: false }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - { label: 'Cta text', name: 'cta_text', widget: 'string', required: false }
+      - { label: 'Cta Link', name: 'cta_url', widget: 'string', required: false }

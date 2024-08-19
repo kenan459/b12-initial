@@ -1,0 +1,31 @@
+name: 'resource-center'
+label: 'Resource Center Categories'
+folder: '_resource-center'
+create: true
+slug: '{{slug}}'
+fields:
+  - { label: 'Item type', name: 'item_type', widget: 'hidden', default: 'resource-center-category' }
+  - { label: 'Tag title', name: 'title', widget: 'string', required: true }
+  - {
+      label: 'Tag',
+      name: 'tag',
+      widget: 'string',
+      hint: 'Tag names should be lowercase, hyphen-divided, and match the actual category tag.',
+      required: true,
+    }
+  - { label: 'Description', name: 'description', widget: 'string' }
+  - label: 'Tag category'
+    name: 'tag_category'
+    widget: 'select'
+    required: true
+    options:
+      - { label: 'Customer goals', value: 'customer-goal' }
+      - { label: 'Products', value: 'product' }
+      - { label: 'Industries', value: 'industry' }
+  - {
+      label: 'Permalink',
+      name: 'permalink',
+      widget: 'string',
+      hint: "Eg: '/resource-center/category-title'",
+      required: true,
+    }

@@ -1,0 +1,38 @@
+- question: How does B12’s No-code AI work?
+  answer: >-
+    <ol>
+      <li>Add a smart form with dynamic fields to your website</li>
+      <li>Choose one of our templates or create your own prompt</li>
+      <li>OpenAI’s ChatGPT generates a new AI output based on your prompt</li>
+      <li><a href="https://www.b12.io/how-we-ai/evaluation.html#limitations-of-this-evaluation" target="_blank" rel="noopener noreferrer">Edit</a> and use the output as needed to benefit your business!</li>
+    </ol>
+    <p>​​​No-code AI allows you to automate and improve your business processes — everything from to making drafting a press release to brainstorming outreach strategies — without writing a line of code or relying on help from technical experts. With it, anyone can quickly and easily leverage the power of AI and reap the benefits.</p>
+- question: How do I start using B12’s No-code AI?
+  answer: >-
+    <p>Anyone can explore the No-code AI templates above and try them for free without signing up for B12. To experience the full value of No-code AI, start customizing it to fit your business needs, and integrate it with your online presence, we recommend signing up for B12.</p>
+    <p>For existing B12 customers, log in and click “Intake forms” in your dashboard, and then click “Add form.” To better understand form fields, how to create your own prompt, setting up an OpenAI API key, and for step-by-step instructions, read more on the <a href="https://support.b12.io/en/articles/8002401-create-a-no-code-ai-form" target="_blank" rel="noopener noreferrer">B12 support center</a>.</p>
+- question: How much does No-code AI cost?
+  answer: >-
+    <p>B12 doesn’t charge a fee to use No-code AI, but OpenAI charges a fee based on your usage. OpenAI lets you start experimenting with $5 in free credits, which expire after 3 months. After using up your free credits, the amount you pay depends on how much you use your No-code AI form and how many words you exchange with the AI model each time you use it.</p>
+    <p>Overall, usage fees are relatively inexpensive. A use-case that doesn’t involve much text, like “generate 5 subject lines for an email newsletter” would cost about $0.15 to use 1,000 times. A text-heavy use-case like “rewrite a 1,000-word case study to sound more professional” would cost about $0.05 to use once.</p>
+- question: Is No-code AI secure?
+  answer: >-
+    <p>Because OpenAI can and will store your prompts for further training, you should be careful sharing sensitive information with your No-code AI form.</p>
+- question: What are the benefits of using No-code AI?
+  answer: >-
+    <p>No-code AI lets you build custom AI tools for your business in under 60 seconds without writing any code. Bringing the brains of ChatGPT to your online presence, it offers a better way to attract and serve clients, scale your business, and save time on daily tasks. </p>
+    <p>This technology’s ease of use, affordability, and accessibility without needing help from an engineer or data scientist is what makes it so exciting! Anyone can build and create. It adds efficiency, creativity, and accuracy to existing workflows, and helps you tackle new initiatives to grow your business.</p>
+- question: When should I use No-code AI?
+  answer: >-
+    <p>No-code AI (like ChatGPT) is versatile, offering many ways to boost productivity and find quick answers. Whether you're doing competitor research to develop a new pricing strategy, brainstorming new calls to action, or trying to think of new ways to attract leads, No-code AI saves you time and surfaces the information you need.</p>
+    <p>No-code AI is also great for editing and enhancing your existing work. It can help you remove filler, rewrite text, check grammar, and change or improve the writing style in seconds.</p>
+    <p>Keep in mind, you should always fact-check ChatGPT-generated outputs, and evaluate them for bias.</p>
+    <p>Learn more about the limitations of this technology in our <a href="https://www.b12.io/how-we-ai/evaluation.html#limitations-of-this-evaluation" target="_blank" rel="noopener noreferrer">AI handbook</a>.</p>
+- question: How does No-code AI integrate with my B12 website?
+  answer: >-
+    <p>With No-code AI, ChatGPT is baked into your professional online presence. You can integrate the two by adding your own OpenAI API key. Once integrated, preview your website, fill out the form, and start generating text based on your prompt and the data you submit with the form.</p>
+    <p>While No-code AI is highly efficient and helpful for internal use, you can also open it up to your website visitors, treating it as a lead magnet that instantly offers them value. Linking to your AI form URL in your website’s navigation makes it an interactive, public-facing tool.</p>
+    <p>And, when using No-code AI for internal use cases, like drafting a new contract or outreach email, you can put your outputs to use without leaving B12. Copy and paste the AI-generated email copy or subject lines into <a href="https://www.b12.io/email-marketing" target="_blank" rel="noopener noreferrer">B12’s email marketing tool</a> and send emails directly from B12.</p>
+- question: How can I responsibly use what AI creates for me?
+  answer: >-
+    <p>Since AI for generating text is a relatively new technology, you should only publish its output with editing and fact-checking, and you should understand the technology's limitations. Read <a href="https://www.b12.io/how-we-ai/evaluation.html#limitations-of-this-evaluation" target="_blank" rel="noopener noreferrer">B12’s “How we AI” guide</a> for more information about current constraints and issues.</p>

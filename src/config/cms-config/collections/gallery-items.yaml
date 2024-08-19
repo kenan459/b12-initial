@@ -1,0 +1,147 @@
+name: 'gallery_items'
+label: 'Gallery items'
+folder: '_gallery_items'
+create: true
+slug: '{{slug}}'
+preview_path: 'website-gallery/{{title}}'
+fields:
+  - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'gallery-item-view' }
+  - { label: 'Item type', name: 'item_type', widget: 'hidden', default: 'gallery-item' }
+  - {
+      label: 'Permalink',
+      name: 'permalink',
+      default: '/website-gallery/title.html',
+      required: true,
+    }
+  - { label: 'Title', name: 'title', widget: 'string' }
+  - { label: 'Description', name: 'description', widget: 'markdown', required: false }
+  - label: Categories
+    name: categories
+    widget: 'select'
+    multiple: true
+    options:
+      - { label: 'Industry', value: 'industry' }
+      - { label: 'Style', value: 'style' }
+      - { label: 'Generic', value: 'generic' }
+    hint: "You can add both 'industry' and 'style' categories by selecting both options from the dropdown."
+    required: true
+  - label: Tags list
+    name: tags
+    widget: 'select'
+    multiple: true
+    reqiured: true
+    hint: 'You can add multiple tags by selecting them from the dropdown.'
+    options:
+      - { label: 'Featured', value: 'featured' }
+      - { label: 'All', value: 'all' }
+      - { label: 'Abstract', value: 'abstract' }
+      - { label: 'Accountants and Tax Services', value: 'accountants-and-tax-services' }
+      - { label: 'Architecture and Real Estate', value: 'architecture-and-real-estate' }
+      - { label: 'Business Services and Consulting', value: 'business-services-and-consulting' }
+      - { label: 'Coaching and Personal Development', value: 'coaching-and-personal-development' }
+      - { label: 'Colorful', value: 'colorful' }
+      - { label: 'Content', value: 'content' }
+      - { label: 'Contractors and Home Services', value: 'contractors-and-home-services' }
+      - { label: 'Financial Services', value: 'financial-services' }
+      - { label: 'Icons', value: 'icons' }
+      - { label: 'Illustrations', value: 'illustrations' }
+      - { label: 'Insurance', value: 'insurance' }
+      - { label: 'IT Services', value: 'it-services' }
+      - { label: 'Legal Services', value: 'legal-services' }
+      - { label: 'Minimal', value: 'minimal' }
+      - { label: 'Photos', value: 'photos' }
+      - { label: 'Single Page', value: 'single-page' }
+      - { label: 'Videos', value: 'videos' }
+    default: 'all'
+  - label: 'Desktop screenshot'
+    name: 'screenshot'
+    media_folder: 'images'
+    widget: 'image'
+    hint: "Please make sure that images are in '.jpg' format, not wider than 1400px, and are under 4MB in size (ideally under 1MB). You can use this website to resize and change image format: https://bulkresizephotos.com/"
+    media_library:
+      config:
+        max_file_size: 4000000
+  - label: 'Mobile screenshot'
+    name: 'mobile_screenshot'
+    media_folder: 'images'
+    widget: 'image'
+    required: true
+    hint: "Please make sure that images are in '.jpg' format, not wider than 1400px, and are under 4MB in size (ideally under 1MB). You can use this website to resize and change image format: https://bulkresizephotos.com/"
+    media_library:
+      config:
+        max_file_size: 4000000
+  - { label: '# of pages', name: 'pages', widget: 'string', required: false }
+  - { label: 'Integrations', name: 'integrations', widget: 'markdown', required: false }
+  - label: 'Website package'
+    name: 'website_package'
+    widget: 'select'
+    required: false
+    options:
+      - { label: 'Single-page', value: 'Single-page' }
+      - { label: 'Multi-page', value: 'Multi-page' }
+  - { label: 'Features', name: 'features', widget: 'list', required: false }
+  - label: 'Site page 1'
+    name: 'site_page_1'
+    media_folder: 'images'
+    widget: 'image'
+    required: true
+    hint: "Please make sure that images are in '.jpg' format, not wider than 1400px, and are under 4MB in size (ideally under 1MB). You can use this website to resize and change image format: https://bulkresizephotos.com/"
+    media_library:
+      config:
+        max_file_size: 4000000
+  - label: 'Site page 1 caption'
+    name: 'site_page_1_caption'
+    widget: 'string'
+    required: false
+  - label: 'Site page 2'
+    name: 'site_page_2'
+    media_folder: 'images'
+    widget: 'image'
+    required: false
+    hint: "Please make sure that images are in '.jpg' format, not wider than 1400px, and are under 4MB in size (ideally under 1MB). You can use this website to resize and change image format: https://bulkresizephotos.com/"
+    media_library:
+      config:
+        max_file_size: 4000000
+  - label: 'Site page 2 caption'
+    name: 'site_page_2_caption'
+    widget: 'string'
+    required: false
+  - label: 'Site page 3'
+    name: 'site_page_3'
+    media_folder: 'images'
+    widget: 'image'
+    required: false
+    hint: "Please make sure that images are in '.jpg' format, not wider than 1400px, and are under 4MB in size (ideally under 1MB). You can use this website to resize and change image format: https://bulkresizephotos.com/"
+    media_library:
+      config:
+        max_file_size: 4000000
+  - label: 'Site page 3 caption'
+    name: 'site_page_3_caption'
+    widget: 'string'
+    required: false
+  - label: 'Site page 4'
+    name: 'site_page_4'
+    media_folder: 'images'
+    widget: 'image'
+    required: false
+    hint: "Please make sure that images are in '.jpg' format, not wider than 1400px, and are under 4MB in size (ideally under 1MB). You can use this website to resize and change image format: https://bulkresizephotos.com/"
+    media_library:
+      config:
+        max_file_size: 4000000
+  - label: 'Site page 4 caption'
+    name: 'site_page_4_caption'
+    widget: 'string'
+    required: false
+  - label: 'Site page 5'
+    name: 'site_page_5'
+    media_folder: 'images'
+    widget: 'image'
+    required: false
+    hint: "Please make sure that images are in '.jpg' format, not wider than 1400px, and are under 4MB in size (ideally under 1MB). You can use this website to resize and change image format: https://bulkresizephotos.com/"
+    media_library:
+      config:
+        max_file_size: 4000000
+  - label: 'Site page 5 caption'
+    name: 'site_page_5_caption'
+    widget: 'string'
+    required: false

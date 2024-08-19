@@ -1,0 +1,184 @@
+# Redirects from what the browser requests to what we serve
+/pricing-page /pricing
+/partners /
+/dashboard https://b12.io/dashboard
+/recommendations /
+/featured-customers /case-studies
+/invoicing-payments-software /payments-invoicing-software
+/resource-center/website-design/10-website-design-tips-to-boost-conversion-rates-in-2020.html /resource-center/website-design/business/10-website-design-tips-to-boost-conversion-rates-in-2020.html
+/resource-center/website-design/8-website-design-trends-you-should-try-in-2020 /resource-center/website-design/business/8-website-design-trends-you-should-try-in-2020
+/resource-center/website-design/the-ultimate-guide-to-website-maintenance-costs-in-2020 /resource-center/website-design/business/the-ultimate-guide-to-website-maintenance-costs-in-2020
+/resource-center/content-creation/16-engagement-optimizing-newsletter-ideas-for-your-customers /resource-center/content-creation/business/client-engagement-tools/email-newsletters/16-engagement-optimizing-newsletter-ideas-for-your-customers
+/resource-center/traffic-generation/20-effective-local-advertising-ideas-suited-for-small-businesses /resource-center/traffic-generation/business/20-effective-local-advertising-ideas-suited-for-small-businesses
+/resource-center/content-creation/5-types-of-website-forms-that-every-accounting-firm-needs.html /resource-center/content-creation/accounting-firm/online-forms/5-types-of-website-forms-that-every-accounting-firm-needs.html
+/resource-center/covid19-resources/building-remote-connections-with-clients-when-you-re-stuck-working-from-home.html /resource-center/covid19-resources/business/building-remote-connections-with-clients-when-you-re-stuck-working-from-home.html
+/resource-center/website-design/10-tips-for-creating-a-winning-architecture-portfolio.html /resource-center/website-design/architecture-firm/10-tips-for-creating-a-winning-architecture-portfolio.html
+/resource-center/website-design/5-tips-and-tricks-to-make-the-most-of-accounting-website-templates-and-resources.html /resource-center/website-design/accounting-firm/5-tips-and-tricks-to-make-the-most-of-accounting-website-templates-and-resources.html
+/resource-center/website-basics/how-to-buy-domain-names-for-new-consulting-businesses.html /resource-center/website-basics/it-consulting-firm/consulting-firm/management-consulting-firm/how-to-buy-domain-names-for-new-consulting-businesses.html
+/resource-center/website-design/10-secrets-and-design-choices-you-can-steal-from-the-best-mortgage-broker-websites.html /resource-center/website-design/mortgage-brokerage/10-secrets-and-design-choices-you-can-steal-from-the-best-mortgage-broker-websites.html
+/resource-center/website-design/15-best-accounting-websites-to-bookmark-today.html /resource-center/website-design/accounting-firm/tax-preparation/bookkeeping/15-best-accounting-websites-to-bookmark-today.html
+/resource-center/website-design/20-of-the-best-real-estate-websites-in-2021.html /resource-center/website-design/commercial-real-estate-firm/20-of-the-best-real-estate-websites-in-2021.html
+/resource-center/small-business-basics/case-interview-examples-that-your-consulting-firm-can-use.html /resource-center/small-business-basics/it-consulting-firm/consulting-firm/management-consulting-firm/case-interview-examples-that-your-consulting-firm-can-use.html
+/resource-center/small-business-basics/how-to-build-a-business-website.html /resource-center/small-business-basics/business/how-to-build-a-business-website.html
+/resource-center/website-design/the-10-best-architecture-website-designs-for-inspiration-in-2021.html /resource-center/website-design/architecture-firm/the-10-best-architecture-website-designs-for-inspiration-in-2021.html
+/resource-center/small-business-basics/the-10-highest-regarded-architecture-companies-in-the-world.html /resource-center/small-business-basics/architecture-firm/the-10-highest-regarded-architecture-companies-in-the-world.html
+/resource-center/website-design/the-best-architecture-websites-have-these-features-in-common.html /resource-center/website-design/architecture-firm/the-best-architecture-websites-have-these-features-in-common.html
+/resource-center/traffic-generation/20-winning-lead-generation-tactics-for-insurance-agencies.html /resource-center/traffic-generation/insurance-brokerage/20-winning-lead-generation-tactics-for-insurance-agencies.html
+/resource-center/website-design/5-secrets-behind-successful-consulting-websites-how-the-best-consulting-firms-use-their-sites.html /resource-center/website-design/it-consulting-firm/consulting-firm/management-consulting-firm/5-secrets-behind-successful-consulting-websites-how-the-best-consulting-firms-use-their-sites.html
+/resource-center/traffic-generation/50-ideas-you-haven-t-tried-for-insurance-agent-marketing.html /resource-center/traffic-generation/insurance-brokerage/50-ideas-you-haven-t-tried-for-insurance-agent-marketing.html
+/resource-center/traffic-generation/7-financial-advisor-prospecting-ideas-you-haven-t-tried-yet.html /resource-center/traffic-generation/financial-planning-firm/financial-advisor-firm/7-financial-advisor-prospecting-ideas-you-haven-t-tried-yet.html 
+/resource-center/traffic-generation/an-online-marketing-guide-for-architectural-firms.html /resource-center/traffic-generation/architecture-firm/an-online-marketing-guide-for-architectural-firms.html
+/resource-center/website-design/building-more-effective-websites-for-mortgage-loan-officers.html /resource-center/website-design/mortgage-brokerage/building-more-effective-websites-for-mortgage-loan-officers.html
+/resource-center/website-design/how-to-build-a-valuable-insurance-broker-website.html /resource-center/website-design/insurance-brokerage/how-to-build-a-valuable-insurance-broker-website.html
+/resource-center/website-conversion/how-to-create-mortgage-broker-websites-that-get-results.html /resource-center/website-conversion/mortgage-brokerage/how-to-create-mortgage-broker-websites-that-get-results.html
+/resource-center/content-creation/how-to-design-an-insurance-logo-that-impresses-clients.html /resource-center/content-creation/insurance-brokerage/how-to-design-an-insurance-logo-that-impresses-clients.html
+/resource-center/small-business-basics/how-to-profitably-sell-insurance-online-in-2021.html /resource-center/small-business-basics/insurance-brokerage/how-to-profitably-sell-insurance-online-in-2021.html
+/resource-center/small-business-basics/how-to-start-a-profitable-accounting-business-in-2021.html /resource-center/small-business-basics/accounting-firm/how-to-start-a-profitable-accounting-business-in-2021.html
+/resource-center/website-design/should-your-consulting-firm-use-a-website-template-examples-and-websites.html /resource-center/website-design/it-consulting-firm/consulting-firm/management-consulting-firm/should-your-consulting-firm-use-a-website-template-examples-and-websites.html
+/resource-center/content-creation/the-top-10-blogs-and-hedge-fund-websites-today.html /resource-center/content-creation/investing-firm/the-top-10-blogs-and-hedge-fund-websites-today.html
+/resource-center/small-business-basics/we-reviewed-5-popular-crm-platforms-for-financial-advisors.html /resource-center/small-business-basics/financial-planning-firm/financial-advisor-firm/we-reviewed-5-popular-crm-platforms-for-financial-advisors.html
+/resource-center/small-business-basics/10-step-checklist-for-writing-a-2020-real-estate-business-plan.html /resource-center/small-business-basics/commercial-real-estate-firm/10-step-checklist-for-writing-a-2020-real-estate-business-plan.html
+/resource-center/traffic-generation/20-easy-real-estate-marketing-ideas-to-grow-your-agency.html /resource-center/traffic-generation/commercial-real-estate-firm/20-easy-real-estate-marketing-ideas-to-grow-your-agency.html
+/resource-center/website-design/best-practices-for-architect-websites-in-2021.html /resource-center/website-design/architecture-firm/best-practices-for-architect-websites-in-2021.html
+/resource-center/small-business-basics/where-to-begin-a-guide-to-starting-your-own-law-firm.html /resource-center/small-business-basics/law-firm/where-to-begin-a-guide-to-starting-your-own-law-firm.html
+/resource-center/small-business-basics/how-to-create-an-invoice.html /resource-center/small-business-basics/invoicing-and-payments/how-to-create-an-invoice.html
+/resource-center/small-business-basics/what-is-an-invoice.html /resource-center/small-business-basics/invoicing-and-payments/what-is-an-invoice.html
+/resource-center/small-business-basics/what-are-the-best-online-payment-options-for-small-businesses.html /resource-center/small-business-basics/invoicing-and-payments/what-are-the-best-online-payment-options-for-small-businesses.html
+/resource-center/small-business-basics/creating-an-effective-client-intake-form-for-your-small-business.html /resource-center/small-business-basics/client-engagement-tools/client-intake/online-forms/creating-an-effective-client-intake-form-for-your-small-business.html
+/resource-center/small-business-basics/how-to-send-a-payment-reminder-email-to-your-clients.html /resource-center/small-business-basics/invoicing-and-payments/how-to-send-a-payment-reminder-email-to-your-clients.html
+/resource-center/small-business-basics/top-billing-invoice-software-in-2021.html /resource-center/small-business-basics/invoicing-and-payments/top-billing-invoice-software-in-2021.html
+/resource-center/small-business-basics/a-comprehensive-guide-to-client-management-in-2021.html /resource-center/small-business-basics/client-engagement-tools/a-comprehensive-guide-to-client-management-in-2021.html
+/resource-center/small-business-basics/best-contact-management-softwares-for-small-businesses-in-2021.html /resource-center/small-business-basics/contact-management/best-contact-management-softwares-for-small-businesses-in-2021.html
+/resource-center/small-business-basics/best-online-contract-signing-tools-for-small-businesses-in-2021.html /resource-center/small-business-basics/contracts-and-esignature/best-online-contract-signing-tools-for-small-businesses-in-2021.html
+/resource-center/small-business-basics/how-to-write-a-digital-contract-for-your-business.html /resource-center/small-business-basics/contracts-and-esignature/how-to-write-a-digital-contract-for-your-business.html
+/resource-center/traffic-generation/a-step-by-step-guide-to-making-your-website-seo-friendly.html /resource-center/traffic-generation/seo/a-step-by-step-guide-to-making-your-website-seo-friendly.html
+/resource-center/traffic-generation/real-estate-seo-guide-for-2021.html /resource-center/traffic-generation/commercial-real-estate-firm/seo/real-estate-seo-guide-for-2021.html
+/resource-center/traffic-generation/top-8-seo-tips-to-improve-your-law-firm-website.html /resource-center/traffic-generation/seo/top-8-seo-tips-to-improve-your-law-firm-website.html
+/resource-center/small-business-basics/automate-your-consulting-business-in-2021-with-these-popular-crm-software.html /resource-center/small-business-basics/it-consulting-firm/consulting-firm/management-consulting-firm/automate-your-consulting-business-in-2021-with-these-popular-crm-software.html
+/resource-center/traffic-generation/marketing-your-consulting-business-for-greater-profitability.html /resource-center/traffic-generation/it-consulting-firm/consulting-firm/management-consulting-firm/marketing-your-consulting-business-for-greater-profitability.html
+/resource-center/small-business-basics/your-guide-to-writing-an-effective-consulting-proposal.html /resource-center/small-business-basics/it-consulting-firm/consulting-firm/management-consulting-firm/your-guide-to-writing-an-effective-consulting-proposal.html
+/resource-center/traffic-generation/get-consulting-clients-fast-with-these-7-steps.html /resource-center/traffic-generation/it-consulting-firm/consulting-firm/management-consulting-firm/get-consulting-clients-fast-with-these-7-steps.html
+/resource-center/small-business-basics/7-best-legal-billing-software-to-streamline-invoicing-and-payments-processing-in-your-law-firm.html /resource-center/small-business-basics/invoicing-and-payments/law-firm/7-best-legal-billing-software-to-streamline-invoicing-and-payments-processing-in-your-law-firm.html
+/resource-center/small-business-basics/best-practices-for-successful-law-firm-management.html /resource-center/small-business-basics/law-firm/best-practices-for-successful-law-firm-management.html
+/resource-center/website-basics/how-to-accept-credit-card-payments-on-your-website.html /resource-center/website-basics/invoicing-and-payments/how-to-accept-credit-card-payments-on-your-website.html
+/resource-center/traffic-generation/how-to-advertise-your-law-firm-and-generate-more-traffic.html /resource-center/traffic-generation/law-firm/how-to-advertise-your-law-firm-and-generate-more-traffic.html
+/resource-center/traffic-generation/best-practices-for-successfully-marketing-your-financial-services-firm.html /resource-center/traffic-generation/financial-planning-firm/financial-advisor-firm/best-practices-for-successfully-marketing-your-financial-services-firm.html
+/resource-center/website-design/10-best-financial-advisor-websites-to-fuel-your-inspiration-in-2021.html /resource-center/website-design/financial-planning-firm/financial-advisor-firm/financial-services-business/10-best-financial-advisor-websites-to-fuel-your-inspiration-in-2021.html
+/resource-center/traffic-generation/top-10-proven-marketing-tips-for-financial-advisors.html /resource-center/financial-advisor-firm/marketing-ideas-for-financial-advisors
+/resource-center/small-business-basics/want-to-become-an-independent-financial-advisor-here-s-what-it-takes.html /resource-center/small-business-basics/financial-planning-firm/financial-advisor-firm/want-to-become-an-independent-financial-advisor-heres-what-it-takes
+/resource-center/traffic-generation/mortgage-broker-marketing-ideas-and-tips-to-attract-more-leads.html /resource-center/traffic-generation/mortgage-brokerage/mortgage-broker-marketing-ideas-and-tips-to-attract-more-leads.html
+/resource-center/small-business-basics/a-guide-to-starting-your-own-insurance-brokerage.html /resource-center/small-business-basics/insurance-brokerage/a-guide-to-starting-your-own-insurance-brokerage.html
+/resource-center/small-business-basics/your-handy-guide-to-starting-a-mortgage-company.html /resource-center/small-business-basics/mortgage-brokerage/your-handy-guide-to-starting-a-mortgage-company.html
+/resource-center/small-business-basics/how-to-develop-a-business-proposal-format-that-wins-clients.html /resource-center/small-business-basics/business/how-to-develop-a-business-proposal-format-that-wins-clients.html
+/resource-center/website-conversion/test.html /resource-center/website-conversion/business/test.html
+/resource-center/small-business-basics/why-every-professional-services-business-needs-online-appointment-scheduling.html /resource-center/small-business-basics/business/why-every-professional-services-business-needs-online-appointment-scheduling.html
+/resource-center/traffic-generation/11-tips-to-quickly-reach-10-000-twitter-followers.html /resource-center/social-media/how-to-quickly-reach-10000-twitter-followers-for-free.html
+/resource-center/traffic-generation/the-2020-guide-to-linkedin-advertising-costs.html /resource-center/traffic-generation/the-2021-guide-to-linkedin-advertising-costs-beginner-tips.html
+/resource-center/website-conversion/a-guide-on-how-to-sell-services-online.html /resource-center/website-conversion/how-to-sell-services-online.html
+/resource-center/website-conversion/organic-business-growth-revenue-tactics.html /resource-center/website-conversion/organic-business-growth-boost-revenue.html
+/resource-center/website-design/how-to-copy-and-customize-websites.html /resource-center/website-basics/how-to-copy-a-website-template-to-use-for-your-own-site
+/resource-center/website-design/10-website-design-tips-that-engage-visitors-and-boost-your-conversion-rate.html /resource-center/website-conversion/the-essential-guide-to-boost-your-website-s-conversion-rates.html
+/resource-center/website-basics/what-to-do-when-your-website-is-down-for-maintenance.html /resource-center/website-basics/what-to-do-when-your-website-is-under-maintenance.html 301!
+/resource-center/website-basics/what-to-do-when-your-website-is-down-for-maintenance /resource-center/website-basics/what-to-do-when-your-website-is-under-maintenance.html 301!
+/resource-center/traffic-generation/how-to-drive-free-targeted-traffic-to-your-website.html /resource-center/traffic-generation/how-to-drive-free-targeted-website-traffic 301!
+/resource-center/traffic-generation/how-to-drive-free-targeted-traffic-to-your-website /resource-center/traffic-generation/how-to-drive-free-targeted-website-traffic 301!
+/resource-center/website-conversion/15-easy-marketing-ideas-for-small-accounting-firms.html /resource-center/accounting-firm/marketing-for-accountants
+/resource-center/traffic-generation/15-easy-marketing-ideas-for-small-accounting-firms.html /resource-center/accounting-firm/marketing-for-accountants
+/resource-center/traffic-generation/accounting-firm/tax-preparation/bookkeeping/15-easy-marketing-ideas-for-small-accounting-firms /resource-center/accounting-firm/marketing-for-accountants
+/resource-center/traffic-generation/accounting-firm/tax-preparation/bookkeeping/15-easy-marketing-ideas-for-small-accounting-firms.html /resource-center/accounting-firm/marketing-for-accountants
+/resource-center/social-media/how-long-does-it-take-to-get-verified-on-instagram /resource-center/social-media/how-long-does-it-take-to-be-verified-on-instagram
+/resource-center/email-automation/steps-on-how-to-change-your-default-email-on-google-chrome /resource-center/small-business-basics/learn-how-to-change-your-default-email-on-google-chrome.html
+/resource-center/email-automation/steps-on-how-to-change-your-default-email-on-google-chrome.html /resource-center/small-business-basics/learn-how-to-change-your-default-email-on-google-chrome.html
+/resource-center/traffic-generation/financial-planning-firm/financial-advisor-firm/top-10-proven-marketing-tips-for-financial-advisors.html /resource-center/financial-advisor-firm/marketing-ideas-for-financial-advisors 301!
+/resource-center/website-design/8-website-design-trends-you-should-try-in-2020.html /resource-center/website-design/business/8-website-design-trends-you-should-try-in-2020
+/resource-center/small-business-basics/financial-planning-firm/financial-advisor-firm/want-to-become-an-independent-financial-advisor-here-s-what-it-takes.html /resource-center/small-business-basics/financial-planning-firm/financial-advisor-firm/want-to-become-an-independent-financial-advisor-heres-what-it-takes 301!
+/resource-center/traffic-generation/financial-planning-firm/financial-advisor-firm/top-10-proven-marketing-tips-for-financial-advisors /resource-center/financial-advisor-firm/marketing-ideas-for-financial-advisors 301!
+/making-it-possible-for-every-professional-services-firm-to-succeed-online-9488cab414b /blog/making-it-possible-for-every-professional-services-firm-to-succeed-online.html
+/b12-lunch-n-learn-learning-personal-style-from-few-examples-419dcfc62183 /blog/lunch-n-learn-learning-personal-style-from-few-examples.html
+/mixtape-mixed-initiative-action-plan-creation-for-teams-a2fe1c4b9fb3 /blog/mixtape-mixed-initiative-action-plan-creation-for-teams.html
+/how-to-have-a-1-1-8d52734434b9 /blog/the-number-guide-to-how-to-have-a-1-1.html
+/how-to-use-your-logo-in-your-website-design-adfda651f70f /blog/the-dos-donts-of-how-to-use-your-logo-in-your-website-design.html
+/introducing-orchestra-open-source-robotic-process-automation-4ff52b09b256 /blog/introducing-orchestra-1.0-an-open-source-system-for-robotic-process-automation.html
+/guidelines-for-giving-and-requesting-feedback-451fdfc504e8 /blog/guidelines-for-giving-and-requesting-feedback.html
+/migrating-your-default-git-branch-to-main-a0fb706e3668 /blog/migrating-your-default-git-branch-to-main.html
+/announcing-b12-bookings-scheduling-software-cbe47c0ad060 /blog/announcing-b12-bookings.html
+/introducing-b12-recommendations-personalized-updates-for-your-website-5210cbe534a6 /blog/introducing-b12-recommendations-personalized-updates-for-your-website.html
+/scaling-b12-recommendations-with-a-human-in-the-loop-recommender-system-318e75df39c5 /blog/scaling-b12-recommendations-with-a-human-in-the-loop-recommender-system.html
+/what-weve-learned-from-building-thousands-of-websites-e8f62c5de4da /blog/what-we-ve-learned-from-building-thousands-of-websites.html
+/announcing-b12-seo-af9aef454bd4 /blog/announcing-b12-seo-our-human-assisted-ai-approach-to-seo.html
+/b12-bishkek-how-we-built-a-home-in-central-asia-b482d85cf919 /blog/b12-bishkek-how-we-built-a-home-in-central-asia.html
+/5-free-integrations-you-can-add-to-your-website-in-5-minutes-9c0069e9fb8a /blog/5-free-integrations-you-can-add-to-your-website-in-5-minutes.html
+/b12-product-update-what-weve-recently-shipped-511ab9f4dbd2 /blog/b12-product-update-what-we-ve-recently-shipped.html
+/introducing-new-b12-website-editor-189989879bae /blog/introducing-the-b12-website-editor.html
+/introducing-kinase-b12s-web-content-labeling-framework-2f18b30b7bbe /blog/introducing-kinase-b12s-web-content-labeling-framework.html
+/howiwork-4f134ba90753 /blog/introducing-howiwork-by-b12.html
+/how-b12-hosts-websites-at-scale-de4cf6425c2f /blog/how-b12-hosts-websites-at-scale.html
+/introducing-orchestra-23bace45d4a7 /blog/introducing-orchestra.html
+/hello-world-115b7250ed61 /blog/hello-world.html
+/introducing-b12-49604ef5152 /blog/introducing-b12.html
+/b12-birthday-d4aa0bde600 /blog/happy-4th-birthday-b12.html
+/case_study/matten-law /case_studies/matten-law
+/case_study/atlas-law /case_studies/atlas-law
+/case_study/infocus-payroll /case_studies/infocus-payroll
+/case_study/maxwell-tillman /case_studies/maxwell-tillman
+/insurance-brokers /insurance
+/case_study/villanova-insurance-partners /case-studies 301
+/case_study/villanova-insurance-partners.html /case-studies 301
+/case_study/sabine-financial /case-studies 301
+/case_study/sabine-financial.html /case-studies 301
+/case_study/magi-group /case-studies 301
+/case_study/magi-group.html /case-studies 301
+/case_study/founder-collective /case-studies 301
+/case_study/founder-collective.html /case-studies 301
+/home /
+/firm-of-the-future /
+/reviews/a-new-view-of-food /case-studies
+/reviews/cd-roma /case-studies
+/reviews/evolv-ventures /case-studies
+/reviews/natalie-elisha-gold /case-studies
+/reviews/emerald-gardens /case-studies
+/reviews/grit-and-grace /case-studies
+/reviews/social-theory /case-studies
+/reviews/heroes-homestead /case-studies
+/reviews/crowdfluencer /case-studies
+/reviews/fitfuel /case-studies
+/reviews/dr-sheila-hughes-weight-loss-wellness /case-studies
+/consultation /free-draft-new
+/grow /free-draft-new
+/free-ai-draft /free-draft-new
+/free-ai-draft-2 /free-draft-new
+/free-draft2 /free-draft-new
+/free-draft-3 /free-draft-new
+/getstarted /signup
+/launch /
+
+/crazyegg /free-draft 301
+/elevate /free-draft 301
+/free-ai-draft-accounting /free-draft 301
+/free-ai-draft-architecture /free-draft 301
+/free-ai-draft-bookkeeping /free-draft 301
+/free-ai-draft-business /free-draft 301
+/free-ai-draft-commercial-real-estate /free-draft 301
+/free-ai-draft-consulting /free-draft 301
+/free-ai-draft-financial-advisor /free-draft 301
+/free-ai-draft-financial-planning /free-draft 301
+/free-ai-draft-financial-services /free-draft 301
+/free-ai-draft-insurance-brokerage /free-draft 301
+/free-ai-draft-investing /free-draft 301
+/free-ai-draft-it-consulting /free-draft 301
+/free-ai-draft-law /free-draft 301
+/free-ai-draft-management-consulting-firm /free-draft 301
+/free-ai-draft-mortgage-brokerage /free-draft 301
+/free-ai-draft-tax-preparation /free-draft 301
+/free-draft-everything /free-draft 301
+/free-draft-grow-your-business /free-draft 301
+/free-draft-upgrade-online-presence /free-draft 301
+/free-draft-website-30-days /free-draft 301
+/healthie /free-draft 301
+/knoji /free-draft 301
+/ozy /free-draft 301
+/thank-you /free-draft 301
+/verblio /free-draft 301
+/work-from-home /free-draft 301
+/zocdoc /free-draft 301
+/website-generator-gpt /gpts 301

@@ -1,0 +1,161 @@
+name: 'webinar_landing_pages' # Used in routes, e.g., /admin/collections/blog
+label: 'Webinar Landing Pages' # Used in the UI
+folder: '_webinar_landing_pages' # The path to the folder where the documents are stored
+create: true # Allow users to create new documents in this collection
+slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+fields:
+  - { label: 'Title', name: 'title', widget: 'string' }
+  - { label: 'Meta description', name: 'description', widget: 'string', required: false }
+  - { label: 'Published', name: 'published', widget: 'boolean', default: true, required: false }
+  - { label: 'Show navbar', name: 'show_navbar', widget: 'boolean', default: true, required: false }
+  - { label: 'Show footer', name: 'show_footer', widget: 'boolean', default: true, required: false }
+  - {
+      label: 'Show simple footer',
+      name: 'show_simple_footer',
+      widget: 'boolean',
+      default: false,
+      required: false,
+    }
+  - { label: 'Show intercom', name: 'intercom', widget: 'boolean', default: true, required: false }
+  - { label: 'Noindex', name: 'noindex', widget: 'boolean', default: true }
+  - { label: 'Permalink', name: 'permalink', widget: 'string' }
+  - label: Hero
+    name: hero
+    widget: object
+    required: false
+    fields:
+      - { label: 'Order', name: 'order', widget: 'number', required: false }
+      - {
+          label: 'Show section',
+          name: 'show_section',
+          widget: 'boolean',
+          default: true,
+          required: false,
+        }
+      - { label: 'Badge Text', name: 'badge-text', widget: 'string', required: false }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - { label: 'Image (min 1200px wide)', name: 'image', widget: 'image', required: false }
+      - { label: 'CTA text', name: 'cta-text', widget: 'string', required: false }
+      - { label: 'CTA url', name: 'cta-url', widget: 'string', required: false }
+  - label: Text Image Left
+    name: text-image-left
+    widget: object
+    required: false
+    fields:
+      - { label: 'Show section', name: 'show_section', widget: 'boolean', default: true }
+      - { label: 'Order', name: 'order', widget: 'number', required: false }
+      - {
+          label: 'Background Gradient',
+          name: 'gradient',
+          widget: 'boolean',
+          default: false,
+          required: false,
+        }
+      - {
+          label: 'Section id (section anchor link)',
+          name: 'section_id',
+          widget: 'string',
+          required: false,
+        }
+      - { label: 'Badge Text', name: 'badge-text', widget: 'string', required: false }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'string', required: false }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - { label: 'CTA text', name: 'cta-text', widget: 'string', required: false }
+      - { label: 'CTA url', name: 'cta-url', widget: 'string', required: false }
+      - { label: 'Image', name: 'img', widget: 'image' }
+      - {
+          label: 'Image Shadow',
+          name: 'img-shadow',
+          widget: 'boolean',
+          default: true,
+          required: false,
+        }
+      - { label: 'Image title', name: 'img-title', widget: 'string', required: false }
+      - { label: 'Image note', name: 'img-note', widget: 'string', required: false }
+      - { label: 'Image description', name: 'img-description', widget: 'string', required: false }
+      - { label: 'Speaker company logo', name: 'img-logo', widget: 'image', required: false }
+      - { label: 'Speaker company url', name: 'img-url', widget: 'string', required: false }
+      - {
+          label: 'Show scroll to',
+          name: 'show_scroll_to',
+          widget: 'boolean',
+          default: true,
+          required: false,
+        }
+  - label: Text Image Center
+    name: text-image-center
+    widget: object
+    required: false
+    fields:
+      - { label: 'Show section', name: 'show_section', widget: 'boolean', default: true }
+      - { label: 'Order', name: 'order', widget: 'number', required: false }
+      - { label: 'Badge Text', name: 'badge-text', widget: 'string', required: false }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'string', required: false }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - { label: 'CTA text', name: 'cta-text', widget: 'string', required: false }
+      - { label: 'CTA url', name: 'cta-url', widget: 'string', required: false }
+      - { label: 'Image', name: 'img', widget: 'image', required: false }
+      - {
+          label: 'Show scroll to',
+          name: 'show_scroll_to',
+          widget: 'boolean',
+          default: false,
+          required: false,
+        }
+  - label: Content block
+    name: content_block
+    widget: object
+    required: false
+    fields:
+      - { label: 'Show section', name: 'show_section', widget: 'boolean', default: true }
+      - { label: 'Order', name: 'order', widget: 'number', required: false }
+      - {
+          label: 'Dark background',
+          name: 'dark-bg',
+          widget: 'boolean',
+          default: true,
+          required: false,
+        }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - { label: 'Text', name: 'text', widget: 'markdown', required: false }
+      - { label: 'CTA text', name: 'cta-text', widget: 'string', required: false }
+      - { label: 'CTA url', name: 'cta-url', widget: 'string', required: false }
+  - label: Team cards
+    name: team-cards
+    widget: object
+    required: false
+    fields:
+      - { label: 'Show section', name: 'show_section', widget: 'boolean', default: true }
+      - { label: 'Order', name: 'order', widget: 'number', required: false }
+      - { label: 'Dark background', name: 'dark-bg', widget: 'boolean', default: true }
+      - {
+          label: 'Center align title',
+          name: 'center-align-title',
+          widget: 'boolean',
+          default: true,
+          required: false,
+        }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - label: Team members
+        name: team-members
+        widget: list
+        fields:
+          - { label: 'Image', name: 'img', widget: 'image', required: false }
+          - { label: 'Member industry', name: 'industry', widget: 'string', required: false }
+          - { label: 'Industry icon', name: 'icon', widget: 'image', required: false }
+          - { label: 'Member link', name: 'link', widget: 'string', required: false }
+          - { label: 'Member name', name: 'name', widget: 'markdown', required: false }
+          - { label: 'Member description', name: 'description', widget: 'string', required: false }
+          - { label: 'Member note', name: 'note', widget: 'string', required: false }
+      - {
+          label: 'Show scroll to',
+          name: 'show_scroll_to',
+          widget: 'boolean',
+          default: true,
+          required: false,
+        }

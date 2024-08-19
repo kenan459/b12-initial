@@ -1,0 +1,28 @@
+main:
+  - slug: '#intro'
+    isExternal: false
+    label: 'Intro'
+  - slug: '#examples'
+    isExternal: false
+    label: 'Examples'
+  - slug: '#concepts'
+    isExternal: false
+    label: 'Concepts'
+  - slug: '#community'
+    isExternal: false
+    label: 'Community'
+  - slug: '#motivation'
+    isExternal: false
+    label: 'Motivation'
+  - slug: 'https://orchestra.readthedocs.io/en/latest/'
+    isExternal: true
+    label: 'Docs'
+legal:
+  - slug: 'https://cdn.b12.io/client_media/dmdju/2a2cd5ca-4fd4-11e8-b1b5-0242ac110002-Privacy_Policy.pdf'
+    isExternal: true
+    label: Privacy
+    aria-label: Click to learn more about our Privacy Policy
+  - slug: '/static-assets/docs/terms-of-service-03-01-2021.pdf'
+    isExternal: true
+    label: Terms of Service
+    aria-label: Click to learn more about our Terms of Service

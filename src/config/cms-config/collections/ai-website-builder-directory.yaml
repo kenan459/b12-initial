@@ -1,0 +1,66 @@
+name: 'ai_website_builder_directory'
+label: 'AI website builder directory'
+folder: 'src/data/ai-website-builder-directory'
+create: true
+editor:
+  preview: false
+slug: '{{slug}}'
+fields:
+  - { label: 'Item type', name: 'item_type', widget: 'hidden', default: 'ai-website-builder-directory' }
+  - {
+      label: 'Permalink',
+      name: 'permalink',
+      default: '/ai-website-builder-directory/title-of-the-page',
+      required: true,
+      hint: 'Please set proper permalink (path). Format is "/ai-directory/title-of-the-page". This will be actual path to page.',
+    }
+  - { label: 'Title', name: 'title', widget: 'string', required: true }
+  - { label: 'Meta description', name: 'description', widget: 'string', required: false }
+  - {
+      label: 'External link',
+      name: 'external_link',
+      widget: 'string',
+      required: false,
+      hint: 'If you want to link to an external website from title, please add the full URL here.',
+    }
+  - label: 'Image'
+    name: 'image'
+    media_folder: 'images'
+    widget: 'image'
+    hint: "Please make sure that images are in '.jpg' or '.png' format, not wider than 1000px, and are under 4MB in size (ideally under 1MB)."
+    media_library:
+      config:
+        max_file_size: 4000000
+  - label: 'Pricing'
+    name: 'pricing'
+    widget: 'select'
+    required: true
+    options:
+      - { label: 'Free', value: 'free' }
+      - { label: 'Paid', value: 'paid' }
+      - { label: 'Freemium', value: 'freemium' }
+  - { label: 'Description', name: 'details', widget: 'markdown', required: false }
+  - label: Category
+    name: category
+    widget: list
+    required: false
+    default: 'generic'
+  - label: Tags
+    name: tags
+    widget: list
+    required: false
+  - label: FAQs
+    name: directory_faqs
+    widget: object
+    required: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: false, default: 'FAQs' }
+      - label: 'Items'
+        name: 'items'
+        widget: 'list'
+        required: false
+        fields:
+          - { label: 'Question', name: 'question', widget: 'string' }
+          - { label: 'Answer', name: 'answer', widget: 'markdown' }
+  - { label: 'Summary', name: 'summary', widget: 'markdown', required: false }
+  

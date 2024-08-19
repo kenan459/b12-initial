@@ -1,0 +1,617 @@
+- id: 267
+  name: Accountant
+
+- id: 164
+  name: Acupuncture
+
+- id: 197
+  name: Addiction Treatment Center
+
+- id: 241
+  name: Advertising Agency
+
+- id: 281
+  name: Advertising Service
+
+- id: 183
+  name: Allergist
+
+- id: 174
+  name: Allergy Doctor
+
+- id: 912
+  name: Alternative Healer
+
+- id: 190
+  name: Alternative & Holistic Health Practioner
+
+- id: 208
+  name: Ambulance Service
+
+- id: 901
+  name: Anesthesiologist
+
+- id: 1028
+  name: App Development Firm
+
+- id: 255
+  name: Appraiser
+
+- id: 232
+  name: Architect
+
+- id: 167
+  name: Audiologist
+
+- id: 126
+  name: Bankruptcy Lawyer
+
+- id: 137
+  name: Burial & Cremation Service
+
+- id: 294
+  name: Business Consultant
+
+- id: 268
+  name: Business Service
+
+- id: 278
+  name: Business Supply Service
+
+- id: 888
+  name: Cardiologist
+
+- id: 258
+  name: Cash Advance Service
+
+- id: 193
+  name: Chiropractor
+
+- id: 1006
+  name: Civil Rights Lawyer
+
+- id: 257
+  name: Collection Agency
+
+- id: 299
+  name: Commercial Real Estate
+
+- id: 1040
+  name: Commercial Real Estate Agent
+
+- id: 269
+  name: Computer Repair Service
+
+- id: 1007
+  name: Contract Lawyer
+
+- id: 295
+  name: Copy Center
+
+- id: 275
+  name: Copywriting Service
+
+- id: 119
+  name: Corporate Lawyer
+
+- id: 918
+  name: Cosmetic Surgeon
+
+- id: 169
+  name: Counseling & Mental Health Service Provider
+
+- id: 131
+  name: Criminal Lawyer
+
+- id: 171
+  name: Dentist
+
+- id: 175
+  name: Dermatologist
+
+- id: 289
+  name: Direct Mail Service
+
+- id: 1008
+  name: Disability Lawyer
+
+- id: 206
+  name: Disabled Persons Service
+
+- id: 130
+  name: Divorce & Family Lawyer
+
+- id: 172
+  name: Doctor
+
+- id: 897
+  name: Doula
+
+- id: 210
+  name: Drug & Alcohol Rehab Center
+
+- id: 1009
+  name: DUI Lawyer
+
+- id: 896
+  name: Ear Nose & Throat
+
+- id: 746
+  name: Educational Consultant
+
+- id: 270
+  name: Email Marketing Agency
+
+- id: 999
+  name: Emergency Medicine Facility
+
+- id: 276
+  name: Employment Agency
+
+- id: 123
+  name: Employment Lawyer
+
+- id: 910
+  name: Endocrinologist
+
+- id: 1044
+  name: Energy Consulting
+
+- id: 79
+  name: Engineering Consultant
+
+- id: 1010
+  name: Entertainment Lawyer
+
+- id: 288
+  name: Environmental Consultant
+
+- id: 1011
+  name: Environmental Lawyer
+
+- id: 127
+  name: Estate Lawyer
+
+- id: 262
+  name: Estate Planning Advisor
+
+- id: 140
+  name: Event Planner
+
+- id: 1045
+  name: Executive Search Firm
+
+- id: 931
+  name: Eye Doctor
+
+- id: 184
+  name: Family Doctor
+
+- id: 177
+  name: Family Medicine Practice
+
+- id: 949
+  name: Fertility Clinic
+
+- id: 1036
+  name: Financial Advisor
+
+- id: 250
+  name: Financial Counseling Service
+
+- id: 263
+  name: Financial Planning Service
+
+- id: 249
+  name: Financial Service
+
+- id: 194
+  name: First Aid Service
+
+- id: 802
+  name: Fitness Center
+
+- id: 159
+  name: Food Consultant
+
+- id: 256
+  name: Franchise Consultant
+
+- id: 887
+  name: Gastroenterologist
+
+- id: 166
+  name: Genealogist
+
+- id: 1013
+  name: General Litigation Lawyer
+
+- id: 963
+  name: Geneticist
+
+- id: 933
+  name: Gerontologist
+
+- id: 129
+  name: Governmental Lawyer
+
+- id: 245
+  name: Graphic Design Agency
+
+- id: 812
+  name: Gym
+
+- id: 946
+  name: Halotherapy
+
+- id: 209
+  name: Healthcare Administrator
+
+- id: 984
+  name: Hepatologist
+
+- id: 962
+  name: Herbal Shop
+
+- id: 919
+  name: Holistic Medicine Clinic
+
+- id: 944
+  name: Home Health Care
+
+- id: 988
+  name: Hospice
+
+- id: 947
+  name: Hypnotherapy
+
+- id: 1014
+  name: Immigration Lawyer
+
+- id: 1000
+  name: Immunodermatologist
+
+- id: 359
+  name: Interior Designer
+
+- id: 1015
+  name: International Lawyer
+
+- id: 282
+  name: Internet Service Provider
+
+- id: 254
+  name: Investment Advisor
+
+- id: 1016
+  name: IP & Internet Lawyer
+
+- id: 128
+  name: Juvenile Lawyer
+
+- id: 121
+  name: Labor & Employment Lawyer
+
+- id: 1023
+  name: Landlord Tenant Lawyer
+
+- id: 932
+  name: Laser Eye Surgeon
+
+- id: 118
+  name: Law Practice
+
+- id: 958
+  name: Life Coach
+
+- id: 260
+  name: Loans
+
+- id: 1005
+  name: Maritime Lawyer
+
+- id: 247
+  name: Marketing Consultant
+
+- id: 7
+  name: Massage Therapist
+
+- id: 926
+  name: Maternity Clinic
+
+- id: 162
+  name: Medical
+
+- id: 196
+  name: Medical Center
+
+- id: 188
+  name: Medical Clinic
+
+- id: 187
+  name: Medical Lab
+
+- id: 1017
+  name: Medical Malpractice Lawyer
+
+- id: 893
+  name: Medical Marijuana Doctor
+
+- id: 199
+  name: Medical Researcher
+
+- id: 8
+  name: Medical Spa
+
+- id: 287
+  name: Merchandising Consultant
+
+- id: 957
+  name: Midwife
+
+- id: 1018
+  name: Military Lawyer
+
+- id: 252
+  name: Mortgage Broker
+
+- id: 875
+  name: Nephrologist
+
+- id: 916
+  name: Neurologist
+
+- id: 913
+  name: Neuropathologist
+
+- id: 969
+  name: Neurotologist
+
+- id: 767
+  name: Notary Public
+
+- id: 906
+  name: Nurse Practitioner
+
+- id: 191
+  name: Nursing Home
+
+- id: 189
+  name: Nutritionist
+
+- id: 186
+  name: OBGYN
+
+- id: 899
+  name: Obstetricians & Gynecologists
+
+- id: 165
+  name: Occupational Therapist
+
+- id: 178
+  name: Oncologist
+
+- id: 179
+  name: Ophthalmologist
+
+- id: 173
+  name: Optometrist
+
+- id: 940
+  name: Orthopedist
+
+- id: 869
+  name: Osteopathic Physician
+
+- id: 181
+  name: Otolaryngologist
+
+- id: 870
+  name: Otologist
+
+- id: 956
+  name: Pain Management Center
+
+- id: 122
+  name: Patent Trademark & Copyright Lawyer
+
+- id: 996
+  name: Pathologist
+
+- id: 877
+  name: Pediatrician
+
+- id: 155
+  name: Personal Coaching
+
+- id: 1019
+  name: Personal Injury Lawyer
+
+- id: 790
+  name: Personal Trainer
+
+- id: 163
+  name: Pharmacy
+
+- id: 885
+  name: Phlebologist
+
+- id: 207
+  name: Physical Therapist
+
+- id: 214
+  name: Plastic Surgery
+
+- id: 180
+  name: Podiatrist
+
+- id: 204
+  name: Pregnancy Clinic
+
+- id: 993
+  name: Preventive Medicine Clinic
+
+- id: 285
+  name: Printing Service
+
+- id: 960
+  name: Private Equity Firm
+
+- id: 905
+  name: Proctologist
+
+- id: 1043
+  name: Professional Training
+
+- id: 1001
+  name: Prosthodontist
+
+- id: 900
+  name: Psychiatrist
+
+- id: 182
+  name: Psychologist
+
+- id: 889
+  name: Pulmonologist
+
+- id: 945
+  name: Radiologist
+
+- id: 297
+  name: Real Estate
+
+- id: 302
+  name: Real Estate Agent
+
+- id: 298
+  name: Real Estate Appraiser
+
+- id: 301
+  name: Real Estate Consultant
+
+- id: 300
+  name: Real Estate Developer
+
+- id: 303
+  name: Real Estate Investment
+
+- id: 124
+  name: Real Estate Lawyer
+
+- id: 305
+  name: Real Estate Title & Development
+
+- id: 283
+  name: Recruiter
+
+- id: 882
+  name: Reflexologist
+
+- id: 277
+  name: Refrigeration Sales & Service
+
+- id: 935
+  name: Rehabilitation Center
+
+- id: 211
+  name: Retirement & Assisted Living Facility
+
+- id: 966
+  name: Rheumatologist
+
+- id: 272
+  name: Secretarial Service
+
+- id: 890
+  name: Sleep Clinic
+
+- id: 1020
+  name: Social Security Lawyer
+
+- id: 1026
+  name: Software Consulting
+
+- id: 1029
+  name: Software Development
+
+- id: 168
+  name: Speech Pathologist
+
+- id: 1002
+  name: Speech Therapist
+
+- id: 965
+  name: Spine Surgeon
+
+- id: 1021
+  name: Sports Lawyer
+
+- id: 894
+  name: Sports Medicine
+
+- id: 1031
+  name: Stylist
+
+- id: 975
+  name: Surgeon
+
+- id: 1022
+  name: Tax Lawyer
+
+- id: 253
+  name: Tax Preparation Service
+
+- id: 280
+  name: Telemarketing Service
+
+- id: 930
+  name: Toxicologist
+
+- id: 927
+  name: Traditional Chinese Medicine
+
+- id: 1024
+  name: Traffic Tickets Lawyer
+
+- id: 273
+  name: Translator
+
+- id: 1046
+  name: UI/UX Design Agency
+
+- id: 991
+  name: Urgent Care Center
+
+- id: 929
+  name: Urologist
+
+- id: 904
+  name: Vascular Medicine
+
+- id: 922
+  name: Venture Capital Firm
+
+- id: 293
+  name: Waste Management Service
+
+- id: 233
+  name: Web Design
+
+- id: 863
+  name: Weight Loss Center
+
+- id: 1054
+  name: Wellness
+
+- id: 1025
+  name: Workers Compensation Lawyer
+
+- id: 284
+  name: Writing Service
+
+- id: 801
+  name: Yoga & Pilates Studio
+
+- id: null
+  name: Other

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2700px" height="510px" viewBox="0 0 2700 510" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Gradient</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="19.6429033%" y1="100%" x2="19.6429029%" y2="39.2156863%" id="linearGradient-1">
+            <stop stop-color="#F3F2F4" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0,0 C33.3333333,340 166.666667,510 400,510 C633.335829,510 1400.0025,373.333333 2700,100 L0,0 Z" id="Gradient" fill="url(#linearGradient-1)"></path>
+    </g>
+</svg>

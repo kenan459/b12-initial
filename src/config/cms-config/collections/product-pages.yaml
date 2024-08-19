@@ -1,0 +1,94 @@
+name: 'product_pages' # Used in routes, e.g., /admin/collections/blog
+label: 'Product Pages' # Used in the UI
+folder: 'src/data/product_pages' # The path to the folder where the documents are stored
+create: true # Allow users to create new documents in this collection
+slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+fields:
+  - { label: 'Title', name: 'title', widget: 'string' }
+  - { label: 'Meta description', name: 'description', widget: 'string', required: false }
+  - {
+      label: 'Permalink',
+      name: 'permalink',
+      widget: 'string',
+      required: true,
+      hint: 'Please set proper permalink/url for this page. Format is "/title-of-the-page".',
+    }
+  - label: Hero
+    name: hero
+    widget: object
+    required: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - { label: 'Image', name: 'img', widget: 'image', media_folder: 'images', required: true }
+      - { label: 'CTA text', name: 'cta_text', widget: 'string', required: false }
+      - { label: 'CTA url', name: 'cta_url', widget: 'string', required: false }
+      - { label: 'Cta Note', name: 'cta_note', widget: 'string', required: false }
+  - name: 'benefits'
+    label: 'Benefits'
+    widget: 'object'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - label: Items
+        name: collection_items
+        widget: list
+        required: false
+        fields:
+          - { label: 'Icon', name: 'icon', widget: 'image', required: false }
+          - { label: 'Title', name: 'title', widget: 'string', required: false }
+          - { label: 'Description', name: 'description', widget: 'string', required: false }
+  - label: Features
+    name: features_list
+    widget: list
+    required: false
+    fields:
+      - { label: 'Section id', name: 'section_id', widget: 'string', required: false }
+      - { label: 'Title', name: 'title', widget: 'string', required: false }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - {
+          label: 'Add image shadow',
+          name: 'image_shadow',
+          widget: 'boolean',
+          required: false,
+          default: false,
+          hint: 'Use with a single layer images only. Do not use together with a secondary image',
+        }
+      - { label: 'Secondary image', name: 'secondary_image', widget: 'image' }
+      - { label: 'CTA text', name: 'cta_text', widget: 'string', required: false }
+      - { label: 'CTA url', name: 'cta_url', widget: 'string', required: false }
+  - label: Cards list
+    name: cards_list
+    widget: list
+    required: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: false }
+      - { label: 'Description', name: 'description', widget: 'markdown', required: false }
+      - { label: 'Icon', name: 'icon', widget: 'image', required: false }
+      - {
+          label: 'Show product overview',
+          name: 'show_product_overview',
+          widget: 'boolean',
+          required: false,
+        }
+  - label: FAQ
+    name: faq
+    widget: object
+    required: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: false }
+      - label: QA List
+        name: qa_list
+        widget: list
+        fields:
+          - { label: 'Question', name: 'question', widget: 'string' }
+          - { label: 'Answer', name: 'answer', widget: 'markdown' }
+  - label: Contact CTA
+    name: contact_cta
+    widget: object
+    required: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: false }
+      - { label: 'Description', name: 'description', widget: 'markdown', required: false }
+      - { label: 'CTA text', name: 'cta_text', widget: 'string', required: false }
+      - { label: 'CTA url', name: 'cta_url', widget: 'string', required: false }

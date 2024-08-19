@@ -1,0 +1,671 @@
+- title: Rewrite for tone
+  categories:
+    - featured-prompts
+    - all
+  icon: pen
+  text: Rewrite text to sound more professional, enthusiastic, etc.
+  cta_text: Try it
+  cta_link: https://no-code-ai.b12sites.com/rewrite-for-tone
+- title: Summarize text
+  categories:
+    - featured-prompts
+    - all
+  icon: document
+  text: Summarize your notes and include action items
+  cta_text: Try it
+  cta_link: https://no-code-ai.b12sites.com/summarize-text
+- title: Create webinar outline
+  categories:
+    - featured-prompts
+    - all
+  icon: setup
+  text: Create a webinar outline to explain a topic to potential customers, with talking points and suggested visuals
+  cta_text: Try it
+  cta_link: https://no-code-ai.b12sites.com/create-webinar-outline
+- title: Generate content ideas
+  categories:
+    - featured-prompts
+    - all
+  icon: idea
+  text: Generate compelling content ideas to captivate and provide value to your audience
+  cta_text: Try it
+  cta_link: https://no-code-ai.b12sites.com/generate-content-ideas
+- title: Create press release
+  categories:
+    - featured-prompts
+    - all
+  icon: comment
+  text: Write a press release summarizing your news, in a way that grabs the reader’s attention and includes a call to action
+  cta_text: Try it
+  cta_link: https://no-code-ai.b12sites.com/create-press-release
+- title: Create client proposal
+  categories:
+    - featured-prompts
+    - all
+  icon: chart
+  text: Write a proposal for your client, highlighting benefits, costs, timeline, anticipated results, and other details
+  cta_text: Try it
+  cta_link: https://no-code-ai.b12sites.com/create-client-proposal
+- title: Outreach to prospects
+  categories:
+    - featured-prompts
+    - all
+  icon: people
+  text: Draft an outreach email to prospects introducing yourself, the value you offer, and a call to action
+  cta_text: Try it
+  cta_link: https://no-code-ai.b12sites.com/outreach-to-prospects
+- title: Newsletter subject lines
+  categories:
+    - featured-prompts
+    - all
+  icon: newsletter
+  text: Get eye-catching subject lines for your email newsletter
+  cta_text: Try it
+  cta_link: https://no-code-ai.b12sites.com/newsletter-subject-lines
+- title: Compare two ideas
+  categories:
+    - featured-prompts
+    - all
+  icon: feedback
+  text: Compare both options to find the right one for you
+  cta_text: Try it
+  cta_link: https://no-code-ai.b12sites.com/compare-two-ideas
+- title: Categorize expenses
+  categories:
+    - industries
+    - all
+  tag: accountant-and-tax-services
+  text: Divide your expense into various categories
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Software/tool review
+  categories:
+    - industries
+    - all
+  tag: accountant-and-tax-services
+  text: Write a detailed review of a specific software or tool
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Generate summary
+  categories:
+    - industries
+    - all
+  tag: accountant-and-tax-services
+  text: Generate a summary of a report
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Tax season email
+  categories:
+    - industries
+    - all
+  tag: accountant-and-tax-services
+  text: Write an email to clients before taxes are due, reminding them of deadlines and the documents they should provide
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: List architecture project milestones
+  categories:
+    - industries
+    - all
+  tag: architect
+  text: List milestones for your architecture project
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Architectural project description
+  categories:
+    - industries
+    - all
+  tag: architect
+  text: Write a description of a past building project
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Create Gantt chart for architecture
+  categories: 
+    - industries
+    - all
+  tag: architect
+  text: Create a Gantt chart to organize your architecture project's tasks, stages, and milestones
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: List building project FAQs
+  categories:
+    - industries
+    - all
+  tag: architect
+  text: Create FAQs a client might ask about a project
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Create customer profiles
+  categories:
+    - industries
+    - all
+  tag: business-consultant
+  text: Create customer profiles by researching and summarizing their needs, wants, and values
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Identify business mistakes
+  categories:
+    - industries
+    - all
+  tag: business-consultant
+  text: Pinpoint 5 common mistakes that businesses make, with ideas on how to reduce each one’s risk
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Develop consultant sales presentations
+  categories:
+    - industries
+    - all
+  tag: business-consultant
+  text: Develop a sales presentation highlighting benefits and value
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Write cold sales emails
+  categories:
+    - industries
+    - all
+  tag: business-consultant
+  text: Write personalized sales emails to prospects highlighting how your services solve pain points
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Create curriculum
+  categories:
+    - industries
+    - all
+  tag: education-consultant
+  text: Create a curriculum for a course
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Suggest homework ideas
+  categories:
+    - industries
+    - all
+  tag: education-consultant
+  text: Suggest creative homework ideas
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Create rubric
+  categories:
+    - industries
+    - all
+  tag: education-consultant
+  text: Generate rubrics for evaluating performance or assignments
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Curriculum knowledge gap identifier
+  categories:
+    - industries
+    - all
+  tag: education-consultant
+  text: Identify knowledge gaps in your curriculum and recommend improvements
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Speech outline
+  categories:
+    - industries
+    - all
+  tag: executive-coaching
+  text: Outline a speech for your audience on a certain topic
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Professional goals
+  categories:
+    - industries
+    - all
+  tag: executive-coaching
+  text: List 5 goals for a role
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Executive coaching plan
+  categories:
+    - industries
+    - all
+  tag: executive-coaching
+  text: Create an executive coaching plan
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Executive coaching workshop
+  categories:
+    - industries
+    - all
+  tag: executive-coaching
+  text: Outline an in-person or virtual executive coaching workshop
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Create retirement plan
+  tag: financial-planning-service
+  categories:
+    - industries
+    - all
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+  text: Create a retirement plan for a client
+- title: Generate portfolio performance report
+  tag: financial-planning-service
+  categories:
+    - industries
+    - all
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+  text: Summarize an investment portfolio
+- title: Financial concept explanation
+  tag: financial-planning-service
+  categories:
+    - industries
+    - all
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+  text: Explain concepts to a client who's unfamiliar
+- title: Generate budgeting worksheet
+  tag: financial-planning-service
+  categories:
+    - industries
+    - all
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+  text: Generate a budgeting worksheet for a client based on their earnings, debt, monthly expenses, and more
+- title: Social posts
+  categories:
+    - industries
+    - all
+  tag: insurance-broker
+  text: Generate ideas for social posts related to insurance
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Renewal notice email
+  categories:
+    - industries
+    - all
+  tag: insurance-broker
+  text: Generate a policy renewal notice email for a specific insurance policy
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Insurance policy advisor
+  categories:
+    - industries
+    - all
+  tag: insurance-broker
+  text: Get recommendations about which insurance policy to choose based on factors like policy term, premium, and coverage amount
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Explain insurance term
+  categories:
+    - industries
+    - all
+  tag: insurance-broker
+  text: Define an insurance term for a client who is new to purchasing insurance
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Writing product launch press releases
+  categories:
+    - industries
+    - all
+  tag: it-services
+  text: Draft product launch press releases
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Product summarizer
+  categories:
+    - industries
+    - all
+  tag: it-services
+  text: Summarize why someone needs a product or service
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Certification finder
+  categories:
+    - industries
+    - all
+  tag: it-services
+  text: List and compare the best virtual programs to help me learn technology / concept
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Mac / Windows instructions
+  categories:
+    - industries
+    - all
+  tag: it-services
+  text: Get instructions on how to complete tasks on both Mac and Windows
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Develop training
+  categories:
+    - industries
+    - all
+  tag: it-services
+  text: Create a training for an audience with beginner / intermediate knowledge
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Draft liability waiver
+  categories:
+    - industries
+    - all
+  tag: law-practice
+  text: Draft a liability waiver with terms/conditions
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Draft a contract
+  categories:
+    - industries
+    - all
+  tag: law-practice
+  text: Create a draft of a contract
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Review contract
+  categories:
+    - industries
+    - all
+  tag: law-practice
+  text: Review a contract to summarize its purpose, the most crucial terms, contract duration, and more
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Compare contracts
+  categories:
+    - industries
+    - all
+  tag: law-practice
+  text: Compare two contracts and highlight the key differences between them and potential legal implications of the differences
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Motivation for specific task/goal
+  categories:
+    - industries
+    - all
+  tag: life-coaching
+  text: Get motivation to achieve a specific task or life goal
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Life coaching plan
+  categories:
+    - industries
+    - all
+  tag: life-coaching
+  text: Create a life coaching plan for someone who is facing certain challenges
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Life coach newsletter ideas
+  categories:
+    - industries
+    - all
+  tag: life-coaching
+  text: Generate newsletter subject lines for a life coach
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Program development
+  categories:
+    - industries
+    - all
+  tag: management-consultant
+  text: Develop a training program to improve leadership skills
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Performance review
+  categories:
+    - industries
+    - all
+  tag: management-consultant
+  text: Write a performance review for an employee, summarizing how they can improve
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Performance rubric
+  categories:
+    - industries
+    - all
+  tag: management-consultant
+  text: Create a performance rubric for an employee
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: List competitors
+  categories:
+    - industries
+    - all
+  tag: management-consultant
+  text: List the top competitors of your company
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Write cold sales emails
+  categories:
+    - industries
+    - all
+  tag: management-consultant
+  text: Write a personalized sales email to a prospect, highlighting how your company can solve their pain points
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Formulate content plans
+  tag: marketing-consultant
+  categories:
+    - industries
+    - all
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+  text: Create a content plan that maps out blog posts’ and social media posts’ topics, ideas, and a timeline
+- title: Write product positioning statements
+  tag: marketing-consultant
+  categories:
+    - industries
+    - all
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+  text: Write a product positioning statement that describes your product’s value and how it solves customer's problems
+- title: Develop customer outreach plans
+  tag: marketing-consultant
+  categories:
+    - industries
+    - all
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+  text: Develop an outreach plan to reach your audience using specific channels and strategies
+- title: Create offers and CTAs
+  tag: marketing-consultant
+  categories:
+    - industries
+    - all
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+  text: Create 3 captivating offers and CTAs to sell to your audience
+- title: Discover keywords
+  tag: marketing-consultant
+  categories:
+    - industries
+    - all
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+  text: Generate the most commonly searched keywords around a topic, capturing different intents
+- title: Formulating content plans
+  categories:
+    - industries
+    - all
+  tag: mortgage-broker
+  text: Create a content plan for a mortgage broker that maps out blog posts and social media posts
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Pre-approval letters
+  categories:
+    - industries
+    - all
+  tag: mortgage-broker
+  text: Write a pre-approval letter to send to a client
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Loan estimate email
+  categories:
+    - industries
+    - all
+  tag: mortgage-broker
+  text: Write an email that includes the loan amount, interest rate, loan term, closing costs, and property address
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Create follow-up schedule
+  categories:
+    - industries
+    - all
+  tag: mortgage-broker
+  text: Create a follow-up schedule for a client interested in a certain mortgage type
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Real estate listing
+  categories:
+    - industries
+    - all
+  tag: real-estate
+  text: Write a residential or commercial real estate listing communicating facts about a property, its features, and benefits
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Create property-related social media posts
+  categories:
+    - industries
+    - all
+  tag: real-estate
+  text: Write a social media post promoting a property
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Keyword research
+  categories:
+    - industries
+    - all
+  tag: real-estate
+  text: Generate a list of keywords to use for a real estate property listing
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Develop messaging for product marketing campaigns
+  categories:
+    - industries
+    - all
+  tag: real-estate
+  text: Develop messaging for a property marketing campaign that speaks to the right audience and conveys a unique selling proposition
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Job post generator
+  categories:
+    - industries
+    - all
+  tag: recruiter
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+  text: Generate a job posting
+- title: Evaluate my job post
+  categories:
+    - industries
+    - all
+  tag: recruiter
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+  text: Identify improvements in your job posting
+- title: Cover letter creator
+  categories:
+    - industries
+    - all
+  tag: recruiter
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+  text: Write a cover letter for a role, highlighting your experience and achievements
+- title: Résumé review
+  categories:
+    - industries
+    - all
+  tag: recruiter
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+  text: Review your résumé and suggest any improvements or edits
+- title: LinkedIn outreach message
+  categories:
+    - industries
+    - all
+  tag: recruiter
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+  text: Write a brief LinkedIn outreach message for a role
+- title: Summarize résumé
+  categories:
+    - industries
+    - all
+  tag: recruiter
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+  text: Summarize a candidate's résumé
+- title: Post-interview thank you email
+  categories:
+    - industries
+    - all
+  tag: recruiter
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+  text: Create a thank you email template to send after the interview
+- title: Rewrite text in a new way
+  categories:
+    - all
+  tag: general
+  text: Rewrite text to adjust the tone, whether it's professional, enthusiastic, or powerful
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Check text for errors
+  categories:
+    - all
+  tag: general
+  text: "Fix spelling and grammatical errors in this text"
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Expand on text
+  categories:
+    - all
+  tag: general
+  text: Provide further elaboration on the points made in your text
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Generate a prompt
+  categories:
+    - all
+  tag: general
+  text: Generate a custom prompt, telling the form what you want it to do
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Write in my style, voice, and tone
+  categories:
+    - all
+  tag: general
+  text: Get new copy written for you in the same style, voice, and tone
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Write a business directory blurb
+  categories:
+    - all
+  tag: general
+  text: Write intriguing copy to include in your directory listing
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Brainstorm
+  categories:
+    - all
+  tag: general
+  text: Brainstorm how to offer new solutions or solve a problem
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Develop marketing strategies
+  categories:
+    - all
+  tag: general
+  text: Develop a marketing strategy to help increase important metrics
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Develop customer outreach plans
+  categories:
+    - all
+  tag: general
+  text: Develop an outreach plan to reach your audience using specific channels and strategies
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Identify customer objections
+  categories:
+    - all
+  tag: general
+  text: Identify 5 customer objections and provide a script for responding to each objection
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+- title: Develop customer success stories
+  categories:
+    - all
+  tag: general
+  text: Write an outline for an engaging customer success story
+  cta_text: Sign up to try
+  cta_link: https://b12.io/signup/
+
+

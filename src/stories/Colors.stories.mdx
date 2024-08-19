@@ -1,0 +1,52 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs'
+
+<Meta title="Global/Colors" />
+
+To use a color in your styles, first import `theme` and then use the `colors` object like this:
+
+```javascript
+const StyledDiv = styled.div`
+  background-color: ${theme.colors.brand.accentLightest};
+`
+```
+
+<ColorPalette>
+  <ColorItem
+    title="theme.colors.brand"
+    subtitle="Brand light colors"
+    colors={{
+      accentLightest: '#F6F5FE',
+      accentLightMedium: '#D5D1FC',
+      accentLight: '#695FF6',
+    }}
+  />
+  <ColorItem
+    title="theme.colors.brand"
+    subtitle="Brand default/dark colors"
+    colors={{
+      accent: '#5048C7',
+      accentDark: '#413AA1',
+      accentDarkest: '#130952',
+    }}
+  />
+  <ColorItem
+    title="theme.colors.surface"
+    subtitle="UI-related colors"
+    colors={{
+      default: '#ffffff',
+      background: '#F5F5F7',
+      border: '#D7D7DE',
+      accent: '#EEECFE',
+    }}
+  />
+  <ColorItem
+    title="theme.colors.text"
+    subtitle="Text colors"
+    colors={{
+      white: '#fff',
+      light: '#84839C',
+      regular: '#585769',
+      dark: '#110F33',
+    }}
+  />
+</ColorPalette>

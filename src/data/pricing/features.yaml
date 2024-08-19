@@ -1,0 +1,334 @@
+- title: A professional looking website that wows visitors.
+  items:
+    - slug: custom-domain
+      title: Custom domain
+      description: Get a custom domain (free for your first year!), or connect a domain you’ve already secured to your brand-new site.
+      plans:
+        starter: false
+        basic: true
+        professional: true
+        advanced: true
+    - slug: remove-b12-ads
+      title: Remove B12 ads
+      description: Remove all B12 ads on your site and provide an experience that’s fully branded.
+      plans:
+        starter: false
+        basic: true
+        professional: true
+        advanced: true
+    - slug: website-hosting
+      title: Website hosting
+      description: Hassle-free hosting of your site to the internet, register your site, and ensure it's always accessible.
+      plans:
+        starter: true
+        basic: true
+        professional: true
+        advanced: true
+    - slug: website-editor
+      title: Website editor
+      description: Easily build and update your site to reflect the most current and relevant information about your services, from any device.
+      plans:
+        starter: true
+        basic: true
+        professional: true
+        advanced: true
+    - slug: site-optimized-for-mobile
+      title: Site optimized for mobile
+      description: Regardless of device your website will load quickly and beautifully.
+      plans:
+        starter: true
+        basic: true
+        professional: true
+        advanced: true
+    - slug: free-tls-certificate
+      title: Free TLS certificate
+      description: A Transport Layer Security (TLS) certificate encrypts website traffic to keep your secrets secret. B12 sites come with this certificate, which shows your clients your site is always protected.
+      plans:
+        starter: true
+        basic: true
+        professional: true
+        advanced: true
+    - slug: unlimited-bandwidth-and-storage
+      title: Unlimited bandwidth & storage
+      description: Optimized for speed, your site will load quickly to deliver an impressive visitor and client experience.
+      plans:
+        starter: true
+        basic: true
+        professional: true
+        advanced: true
+    - slug: website-traffic-analytics
+      title: Website traffic analytics
+      description: Data and insights on website performance, traffic volumes, and conversion metrics.
+      plans:
+        starter: true
+        basic: true
+        professional: true
+        advanced: true
+    - slug: on-site-conversion-tools-i-e-banners-modals
+      title: On-site conversion tools (i.e., banners, modals)
+      description: Customizable announcement banners, pop-up forms, and exit modals all encourage visitors to stay on your site and take the next step toward becoming a client.
+      plans:
+        starter: false
+        basic: true
+        professional: true
+        advanced: true
+    - slug: third-party-integrations
+      title: Third-party integrations
+      description: Supercharge your site by integrating with a variety of third-party solutions.
+      plans:
+        starter: false
+        basic: true
+        professional: true
+        advanced: true
+    - slug: business-directory-listings
+      title: Business directory listings
+      description: Support in setting up relevant directory listings to help you get discovered, keep your business information current, and show you’re the real deal.
+      plans:
+        starter: false
+        basic: false
+        professional: false
+        advanced: true
+    - slug: monthly-creation-of-new-website-content-or-site-enhancements
+      title: Monthly creation of new website content or site enhancements
+      description: Receive one piece of new site content, like blog posts, copy, or design updates each month to help keep your site current.
+      plans:
+        starter: false
+        basic: false
+        professional: false
+        advanced: true
+    - slug: do-it-for-you-website-set-up
+      title: Do-it-for-you website setup
+      description: Includes site set up and launch by a B12 specialist based on inputs and feedback you provide. Plus, set up support for payments, email marketing, and intake forms (optional self-serve setup available).
+      plans:
+        starter: false
+        basic: false
+        professional: '<span>$1,999</span>(one-time)'
+        advanced: '<span>$1,999</span>(one-time)'
+    - slug: additional-copywriting-and-design-services
+      title: Additional copywriting and design services
+      description: Need help making changes to your site? Don’t have time to make edits yourself? Hire a B12 expert to make updates.
+      plans:
+        starter: false
+        basic: false
+        professional: '<span>$75 / hour</span>'
+        advanced: '<span>$75 / hour</span>'
+
+- title: Engage with leads and clients online with easy-to-use tools.
+  items:
+    - slug: email-forwarding
+      title: Email forwarding
+      description: Show your clients you’re the real deal by creating an email address with your custom domain that will automatically forward messages to your current inbox.
+      plans:
+        starter: false
+        basic: false
+        professional: true
+        advanced: true
+    - slug: email-marketing
+      title: Email marketing
+      description: Built-in, industry-specific email templates and delivery tools keep your current clients engaged and help you persuade prospective clients to use your services.
+      plans:
+        starter: false
+        basic: false
+        professional: true
+        advanced: true
+    - slug: contact-manager
+      title: Contact manager
+      description: Manage your contacts and keep track of their details, including messages and intake forms, to easily deliver relevant service every time.
+      plans:
+        starter: false
+        basic: false
+        professional: true
+        advanced: true
+    - slug: online-scheduling
+      title: Online scheduling
+      description: Allow clients and prospects to schedule time with you directly from your website. 
+      plans:
+        starter: true
+        basic: true
+        professional: true
+        advanced: true
+    - slug: client-intake-forms
+      title: Client intake forms
+      description: Make information collection easier with customized web forms that capture the information you need to deliver a high-quality lead or client experience.  
+      plans:
+        starter: '<span>X</span>(1 form type)'
+        basic: true
+        professional: true
+        advanced: true
+    - slug: calendar-synchronization
+      title: Calendar synchronization
+      description: Sync your Google or Outlook calendar to stay organized and keep your availability up to date.
+      plans:
+        starter: true
+        basic: true
+        professional: true
+        advanced: true
+    - slug: contracts
+      title: Contracts
+      description: Upload and send proposals, contracts, and other documents to prospects and clients for their review, without ever having to leave B12. 
+      plans:
+        starter: false
+        basic: false
+        professional: true
+        advanced: true
+    - slug: esignature
+      title: eSignature
+      description: Request and collect signatures on documents to move projects and relationships forward.
+      plans:
+        starter: false
+        basic: false
+        professional: true
+        advanced: true
+    - slug: file-uploads
+      title: File uploads
+      description: Allow your clients to submit the files you need on any of your forms so you can have the information you need all in one place.
+      plans:
+        starter: false
+        basic: false
+        professional: true
+        advanced: true
+
+- title: Get paid faster with online invoicing and payments. 
+  items:
+    - slug: invoicing
+      title: Invoicing
+      description: Look professional with customizable branded invoices that can be generated and emailed to clients, all within B12.
+      plans:
+        starter: true
+        basic: true
+        professional: true
+        advanced: true
+    - slug: automated-payment-reminders
+      title: Automated payment reminders
+      description: Stop chasing down clients. Remind them their invoice is due by email and give them easy access to their payment options.
+      plans:
+        starter: false
+        basic: false
+        professional: true
+        advanced: true
+    - slug: automated-recurring-invoicing
+      title: Automated recurring invoicing
+      description: Set it and forget it. Schedule repeat invoices to send automatically for ongoing services. 
+      plans:
+        starter: false
+        basic: false
+        professional: true
+        advanced: true
+    - slug: credit-card-processing
+      title: Credit card processing
+      description: Clients can pay their invoice online with any major credit card. 
+      plans:
+        starter: '<span>2.9% + 30¢</span>per transaction fee'
+        basic: '<span>2.9% + 30¢</span>per transaction fee'
+        professional: '<span>2.9% + 30¢</span>per transaction fee'
+        advanced: '<span>2.9% + 30¢</span>per transaction fee'
+    - slug: international-credit-card-processing
+      title: International credit card processing
+      description: Accept international cards to enable clients from anywhere to pay for your services.
+      plans:
+        starter: '<span>+1%</span>'
+        basic: '<span>+1%</span>'
+        professional: '<span>+1%</span>'
+        advanced: '<span>+1%</span>'
+    - slug: currency-conversion
+      title: Currency conversion
+      description: Do business with clients anywhere and the currency will be converted.
+      plans:
+        starter: '<span>+1%</span>'
+        basic: '<span>+1%</span>'
+        professional: '<span>+1%</span>'
+        advanced: '<span>+1%</span>'
+    - slug: speciality-credit-card-payments
+      title: Speciality credit card payments
+      description: Accept speciality credit cards like AMEX etc.
+      plans:
+        starter: '<span>+1%</span>'
+        basic: '<span>+1%</span>'
+        professional: '<span>+1%</span>'
+        advanced: '<span>+1%</span>'
+    - slug: bank-transfer-ach-payments
+      title: Bank transfer / ACH payments
+      description: Enable clients to securely pay their invoice online directly from their bank account. 
+      plans:
+        starter: '<span>1% per transaction</span>capped at $10'
+        basic: '<span>1% per transaction</span>capped at $10'
+        professional: '<span>1% per transaction</span>capped at $10'
+        advanced: '<span>1% per transaction</span>capped at $10'
+
+- title: More easily manage and coordinate with your team to deliver even better client experiences.
+  items:
+    - slug: team-members-included
+      title: Team members included
+      description: Access for staff, contractors, and collaborators so everyone can work in one place.
+      plans:
+        starter: '<span>1</span>'
+        basic: '<span>1</span>'
+        professional: '<span>1</span>'
+        advanced: '<span>5</span>'
+    - slug: per-user-permissions
+      title: Per-user permissions
+      description: Adjust access for each person so they only can see and use what’s most relevant. 
+      plans:
+        starter: false
+        basic: false
+        professional: true
+        advanced: true
+    - slug: ability-to-add-team-members
+      title: Ability to add team members
+      description: Add more users to your B12 account beyond what’s included in your package to have everyone working in the same place. 
+      plans:
+        starter: false
+        basic: false
+        professional: '<span>$39 / seat</span>'
+        advanced: '<span>$39 / seat</span>'
+    - slug: round-robin-scheduling
+      title: Round-robin scheduling
+      description: Never keep a client waiting with the ability to assign meetings to the first available qualified team member.
+      plans:
+        starter: false
+        basic: false
+        professional: true
+        advanced: true
+    - slug: multiple-user-scheduling
+      title: Multiple user scheduling
+      description: Enable your team to add their calendars and coordinate schedules so the right people are always in the right meetings. 
+      plans:
+        starter: false
+        basic: false
+        professional: true
+        advanced: true
+
+- title: Guidance and technical support from B12 experts when you need it. 
+  items:
+    - slug: unlimited-email-and-chat-support
+      title: Unlimited email and chat support
+      description: Access to our service experts via chat and email. 
+      plans:
+        starter: true
+        basic: true
+        professional: true
+        advanced: true
+    - slug: scheduled-phone-support
+      title: Scheduled phone support
+      description: Have a 1:1 meeting with an expert by scheduling a time to talk in their calendars.
+      plans:
+        starter: false
+        basic: false
+        professional: true
+        advanced: true
+    - slug: online-help-center
+      title: Online Help Center
+      description: Curated advice, how-to articles, and answers to common questions written by B12 technical experts
+      plans:
+        starter: true
+        basic: true
+        professional: true
+        advanced: true
+    - slug: priority-support
+      title: Priority Support
+      description: Requests and inquiries fast tracked to our Customer Success team and resolved as quickly as possible, so you can stay focused on your client relationships and scaling your business.
+      plans:
+        starter: false
+        basic: false
+        professional: false
+        advanced: true

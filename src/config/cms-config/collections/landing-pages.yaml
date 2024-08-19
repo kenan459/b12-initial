@@ -1,0 +1,139 @@
+name: 'landing-pages' # Used in routes, e.g., /admin/collections/blog
+label: 'Landing Pages' # Used in the UI
+folder: 'src/data/landing-pages' # The path to the folder where the documents are stored
+create: true # Allow users to create new documents in this collection
+slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+fields:
+  - { label: 'Title', name: 'title', widget: 'string' }
+  - { label: 'Meta description', name: 'description', widget: 'string', required: false }
+  - { label: 'Published', name: 'published', widget: 'boolean', default: true, required: false }
+  - { label: 'Permalink', name: 'permalink', widget: 'string' }
+  - {
+      label: 'Free resource preview image',
+      name: 'resource_preview_image',
+      widget: 'image',
+      media_folder: 'images',
+      required: false,
+    }
+  - label: Hero
+    name: hero
+    widget: object
+    required: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: false }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - { label: 'Image', name: 'img', widget: 'image', media_folder: 'images', required: false }
+      - { label: 'CTA text', name: 'cta_text', widget: 'string', required: false }
+      - { label: 'CTA url', name: 'cta_url', widget: 'string', required: false }
+  - label: Hero for free resources
+    name: hero-free-resource
+    widget: object
+    required: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: false }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - { label: 'Image', name: 'image', widget: 'image', media_folder: 'images', required: false }
+      - { label: 'CTA text', name: 'cta_text', widget: 'string', required: false }
+      - { label: 'CTA url', name: 'cta_url', widget: 'string', required: false }
+      - { label: 'Form embed code', name: 'form-embed-code', widget: 'markdown', required: false }
+  - label: About
+    name: about
+    widget: object
+    required: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: false }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false }
+      - { label: 'Description', name: 'description', widget: 'markdown', required: false }
+  - label: Process
+    name: process
+    widget: object
+    required: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: false }
+      - label: Steps
+        name: steps
+        widget: list
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'markdown', required: false }
+          - { label: 'Image', name: 'image', widget: 'image', media_folder: 'images', required: false }
+  - label: How it works
+    name: how_it_works
+    widget: object
+    required: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: false }
+      - label: How it works list
+        name: items
+        widget: list
+        fields:
+          - { label: 'Order', name: 'order', widget: 'number', required: false }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'markdown', required: false }
+  - label: Pricing cards
+    name: pricing_cards
+    widget: object
+    required: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: false }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - label: Pricing cards list
+        name: list
+        widget: list
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'markdown' }
+  - label: Benefits (Features)
+    name: benefits
+    widget: object
+    required: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: false }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - label: Features list
+        name: features
+        widget: list
+        fields:
+          - { label: 'Icon', name: 'icon', widget: 'image', media_folder: 'images', required: false }
+          - {
+              label: 'Icon size',
+              name: 'iconSize',
+              widget: 'select',
+              options: ['sm', 'md', 'lg', 'xl'],
+              default: 'medium',
+            }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'markdown', required: false }
+  - label: FAQ
+    name: faq
+    widget: object
+    required: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: false }
+      - label: QA List
+        name: items
+        widget: list
+        fields:
+          - { label: 'Question', name: 'question', widget: 'string' }
+          - { label: 'Answer', name: 'answer', widget: 'markdown' }
+  - label: Contact CTA
+    name: contact_cta
+    widget: object
+    required: false
+    fields:
+      - {
+          label: 'Show section',
+          name: 'show_section',
+          widget: 'boolean',
+          default: true,
+          required: false,
+        }
+      - { label: 'Title', name: 'title', widget: 'string', required: false }
+      - { label: 'Description', name: 'description', widget: 'markdown', required: false }
+      - {
+          label: 'CTA button text',
+          name: 'cta_text',
+          widget: 'string',
+          default: 'Try it now',
+          required: false,
+        }

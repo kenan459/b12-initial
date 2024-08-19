@@ -1,0 +1,56 @@
+name: 'popup_forms'
+label: 'Popup Forms'
+folder: 'src/data/popup-forms'
+create: true
+slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+fields:
+  - { label: 'Active', name: 'active', widget: 'boolean', required: true, default: false }
+  - label: Slug list
+    name: slug-list
+    widget: list
+    hint: 'Add page path or slug. For regular/hardcoded pages add page path, eg: "/" for homepage, "/pricing" for b12.io/pricing. For templated pages like Resource Center articles or blog posts add page slug, eg: "blog-post-title" for "/resource-center/:categories/blog-post-title.html"'
+  - { label: 'Dark theme', name: 'dark-theme', widget: 'boolean', required: false }
+  - label: 'Popup intent'
+    name: 'popup-intent'
+    widget: 'select'
+    options:
+      - { label: 'CTA type', value: 'cta-type' }
+      - { label: 'File download', value: 'file-download' }
+      - { label: 'Newsletter sign-up', value: 'newsletter-sign-up' }
+      - { label: 'B12 sign-up', value: 'sign-up-form' }
+      - { label: 'Slogan ideas sign-up', value: 'slogan-ideas-sign-up' }
+  - label: 'Popup trigger'
+    name: 'popup-trigger'
+    widget: 'select'
+    options:
+      - { label: 'Time delay', value: 'time' }
+      - { label: 'Exit-intent', value: 'exit-intent' }
+      - { label: 'Scroll position', value: 'scroll-position' }
+    hint: 'Select an event that will trigger your popup.'
+  - {
+      label: 'Delay value (in seconds)',
+      name: 'delay-value',
+      widget: 'number',
+      required: false,
+      hint: 'If the trigger event is "Time delay" make sure to add a delay time value in seconds. Eg: "20" will trigger your popup to appear 20 seconds after the page load.',
+    }
+  - {
+      label: 'Scroll depth (percentage)',
+      name: 'scroll-depth',
+      widget: 'number',
+      required: false,
+      hint: 'If the trigger event is "Scroll position" make sure to add scroll depth percentage value. Eg: "80" will trigger your popup will when visitors have scrolled down 80% of the page.',
+    }
+  - { label: 'Title', name: 'title', widget: 'string' }
+  - { label: 'Description', name: 'description', widget: 'string', required: false }
+  - { label: 'CTA text', name: 'cta-text', widget: 'string', required: false }
+  - { label: 'CTA url', name: 'cta-url', widget: 'string', required: false }
+  - { label: 'Form title', name: 'form_title', widget: 'string', required: false }
+  - { label: 'Form CTA text', name: 'form-cta-text', widget: 'string', required: false }
+  - {
+      label: 'File download form embed code',
+      name: 'form-id',
+      widget: 'string',
+      required: false,
+      hint: 'Insert a pre-generated Hubspot form ID, that allows users to access gated content through filling in the form.',
+    }

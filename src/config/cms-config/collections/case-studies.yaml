@@ -1,0 +1,168 @@
+name: 'case_studies'
+label: 'Customer Success Stories'
+folder: 'src/data/case-studies'
+create: true
+slug: '{{slug}}'
+fields:
+  - { label: 'Item type', name: 'item_type', widget: 'hidden', default: 'case-study' }
+  - {
+      label: 'Publish Date',
+      name: 'date',
+      widget: 'datetime',
+      format: 'LLL',
+      default: '',
+      date_format: 'YYYY-MM-DD',
+      time_format: 'hh:mm:ss',
+      picker_utc: false,
+    }
+  - {
+      label: 'Permalink',
+      name: 'permalink',
+      widget: 'string',
+      required: true,
+      hint: 'Please set proper permalink/url for this case study manually. Format is "/case_studies/__title__.html".',
+    }
+  - { label: 'Title', name: 'title', widget: 'string' }
+  - { label: 'Meta description', name: 'description', widget: 'string' }
+  - label: 'Industry'
+    name: 'industry'
+    widget: 'select'
+    required: false
+    options:
+      - { label: 'Accountants', value: 'accountants' }
+      - { label: 'Architects', value: 'architects' }
+      - { label: 'Coaches', value: 'coaches' }
+      - {
+          label: 'Commercial real estate',
+          value: 'commercial-real-estate',
+          name: 'commercial-real-estate',
+        }
+      - { label: 'Consultants', value: 'consultants', name: 'consultants' }
+      - { label: 'Financial advisors', value: 'financial-advisor', name: 'financial-advisor' }
+      - { label: 'Insurance brokers', value: 'insurance-broker', name: 'insurance-broker' }
+      - { label: 'Investment services', value: 'investing-services' }
+      - { label: 'Law', value: 'lawyers', name: 'lawyers' }
+      - { label: 'Mortgage brokers', value: 'mortgage-broker', name: 'mortgage-broker' }
+      - {
+          label: 'Professional services firms',
+          value: 'professional-services',
+          name: 'professional-services',
+        }
+  - { label: 'Customer name', name: 'customer_name', widget: 'string' }
+  - { label: 'Customer role', name: 'customer_role', widget: 'string' }
+  - { label: 'Featured quote', name: 'featured_quote', widget: 'string', required: false }
+  - { label: 'Featured text', name: 'featured_text', widget: 'string', required: false }
+  - { label: 'Thumbnail image', name: 'thumbnail_img', widget: 'image', media_folder: 'images' }
+  - { label: 'Preview title', name: 'preview_title', widget: 'string' }
+  - label: Hero
+    name: hero
+    widget: object
+    fields:
+      - { label: 'Label', name: 'label', widget: 'string', required: false }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'markdown' }
+      - {
+          label: 'Customer image',
+          name: 'customer-img',
+          widget: 'image',
+          media_folder: 'images',
+          required: false,
+        }
+      - { label: 'Website image', name: 'website-img', widget: 'image', media_folder: 'images' }
+      - {
+          label: 'Show industry icon on top of Hero image',
+          name: 'show_industry_icon',
+          widget: 'boolean',
+          default: true,
+          required: false,
+        }
+      - {
+          label: 'No blur for website image',
+          name: 'no_blur',
+          widget: 'boolean',
+          default: false,
+          required: false,
+        }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Author info', name: 'author_info', widget: 'string' }
+      - { label: 'Author image', name: 'author_img', widget: 'image', media_folder: 'images' }
+      - { label: 'Time to read', name: 'time-to-read', widget: 'number', required: false }
+  - label: About
+    name: about
+    widget: object
+    fields:
+      - { label: 'Customer', name: 'customer', widget: 'string' }
+      - { label: 'Customer logo', name: 'customer-logo', widget: 'image', media_folder: 'images' }
+      - { label: 'Customer website', name: 'customer-link', widget: 'string' }
+      - { label: 'Industry', name: 'industry', widget: 'string' }
+      - { label: 'Company size', name: 'company-size', widget: 'string' }
+      - { label: 'Problem description', name: 'problem', widget: 'string' }
+      - { label: 'Solution description', name: 'solution', widget: 'string' }
+      - label: Products used
+        name: products-used
+        widget: select
+        multiple: true
+        options: ['website', 'seo', 'scheduling', 'email-marketing', 'contact-manager']
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'markdown' }
+  - label: Customer representative
+    name: customer
+    widget: object
+    fields:
+      - {
+          label: 'Avatar/Photo',
+          name: 'avatar',
+          widget: 'image',
+          required: false,
+          media_folder: 'images',
+        }
+      - { label: 'Name', name: 'name', widget: 'string', required: false }
+      - { label: 'Role', name: 'role', widget: 'string', required: false }
+      - { label: 'Title', name: 'title', widget: 'string', required: false }
+      - { label: 'Quote', name: 'quote', widget: 'markdown', required: false }
+  - label: The challenge
+    name: challenge
+    widget: object
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'markdown' }
+  - label: Solution
+    name: solution
+    widget: object
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Image', name: 'img', widget: 'image', media_folder: 'images' }
+      - { label: 'Solution image alt text', name: 'solution-img-alt-text', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'markdown' }
+  - label: Results
+    name: results
+    widget: object
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Intro block', name: 'intro', widget: 'markdown' }
+      - { label: 'Body content', name: 'body', widget: 'markdown' }
+      - { label: 'Result stats title', name: 'stats-title', widget: 'string' }
+      - label: Stat items
+        name: stat-items
+        widget: list
+        fields:
+          - { label: 'Description', name: 'description', widget: 'string' }
+  - label: B12 info
+    name: b12_info
+    widget: object
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'markdown' }
+  - label: Inline CTA form
+    name: cta-inline
+    widget: object
+    fields:
+      - {
+          label: 'Show section',
+          name: 'show_section',
+          widget: 'boolean',
+          default: true,
+          required: false,
+        }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'markdown' }

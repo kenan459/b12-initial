@@ -1,0 +1,108 @@
+- title: All
+  tag: all
+- title: All-in-one
+  tag: all-in-one
+- title: Automation
+  tag: automation
+- title: Audio Generation
+  tag: audio-generation
+- title: Avatar Generation
+  tag: avatar-generation
+- title: Chatbot
+  tag: chat-bot
+- title: Code Assistant
+  tag: code-assistant
+- title: Companion
+  tag: companion
+- title: Content Creation
+  tag: content-creation
+- title: Copilot GPTs
+  tag: copilot-gpts
+- title: Copywriting
+  tag: copywriting
+- title: Customer Support
+  tag: customer-support
+- title: Data Science
+  tag: data-science
+- title: Design
+  tag: design
+- title: Education
+  tag: education
+- title: Email Assistant
+  tag: email-assistant
+- title: E-commerce
+  tag: e-commerce
+- title: Finance
+  tag: finance
+- title: Fun
+  tag: fun
+- title: Generic
+  tag: generic
+- title: Google Gems
+  tag: google-gems
+- title: Hosting
+  tag: hosting
+- title: Human Resource
+  tag: human-resource
+- title: Image Generation
+  tag: image-generation
+- title: Image Generation Model
+  tag: image-generation-model
+- title: Large Language Model
+  tag: large-language-model
+- title: Legal
+  tag: legal
+- title: LinkedIn
+  tag: linkedin
+- title: Marketing
+  tag: marketing
+- title: Meeting Assistant
+  tag: meeting-assistant
+- title: Meta AI
+  tag: meta-ai
+- title: Model Generation
+  tag: model-generation
+- title: News
+  tag: news
+- title: Noise Cancellation
+  tag: noise-cancellation
+- title: Paraphraser
+  tag: paraphraser
+- title: Presentation
+  tag: presentation
+- title: Project Management
+  tag: project-management
+- title: Photo Editing
+  tag: photo-editing
+- title: Productivity
+  tag: productivity
+- title: Post Generation
+  tag: post-generation
+- title: Research
+  tag: research
+- title: Sales
+  tag: sales
+- title: Search Engine
+  tag: search-engine
+- title: Small Business
+  tag: small-business
+- title: Social Media Assistant
+  tag: social-media-assistant
+- title: Social Media Marketing
+  tag: social-media-marketing
+- title: Summarizer
+  tag: summarizer
+- title: SQL Query
+  tag: sql-query
+- title: Text Generation
+  tag: text-generation
+- title: Video Generation
+  tag: video-generation
+- title: Video Editing
+  tag: video-editing
+- title: Web Apps
+  tag: web-apps
+- title: Writing Assistant
+  tag: writing-assistant
+- title: 4D Generation
+  tag: 4d-generation

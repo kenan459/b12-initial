@@ -1,0 +1,45 @@
+- tag: accountant-and-tax-services
+  title:  Accountant and Tax Services
+  icon: accountants
+- tag: architect
+  title: Architect
+  icon: architect
+- tag: business-consultant
+  title: Business Consultant
+  icon: people
+- tag: education-consultant
+  title: Education Consultant
+  icon: idea
+- tag: executive-coaching
+  title: Executive Coaching
+  icon: people
+- tag: financial-planning-service
+  title: Financial Planning Service
+  icon: finances
+- tag: it-services
+  title: IT Services
+  icon: it_services
+- tag: insurance-broker
+  title: Insurance Broker
+  icon: insurance
+- tag: law-practice
+  title: Law Practice
+  icon: law
+- tag: life-coaching
+  title: Life Coaching
+  icon: rocket
+- tag: management-consultant
+  title: Management Consultant
+  icon: setup
+- tag: marketing-consultant
+  title: Marketing Consultant
+  icon: chart
+- tag: mortgage-broker
+  title: Mortgage Broker
+  icon: mortgage_broker
+- tag: real-estate
+  title: Real Estate
+  icon: real_estate
+- tag: recruiter
+  title:  Recruiter
+  icon: people

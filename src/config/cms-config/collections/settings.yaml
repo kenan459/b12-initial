@@ -1,0 +1,49 @@
+name: 'settings'
+label: 'Website settings'
+files:
+  - label: 'Sitewide settings'
+    name: 'sitewide_settings'
+    file: 'src/data/settings.yml'
+    editor:
+      preview: false
+    fields:
+      - label: 'General'
+        name: 'general'
+        widget: 'object'
+        summary: 'Global sitewide settings'
+        fields:
+          - { label: 'Webinar date', name: 'webinar_date', widget: 'string', required: false }
+      - label: 'Announcement banner'
+        name: 'announcement_banner'
+        widget: 'object'
+        summary: 'Banner that appears at the top of the website'
+        fields:
+          - { label: 'Active', name: 'active', widget: 'boolean', required: true, default: false }
+          - { label: 'Text', name: 'text', widget: 'string', required: true }
+          - { label: 'CTA text', name: 'cta_text', widget: 'string', required: true }
+          - {
+              label: 'CTA url',
+              name: 'cta_url',
+              widget: 'string',
+              required: true,
+              default: 'https://b12.io/signup/',
+            }
+          - {
+              label: 'Secondary CTA text',
+              name: 'secondary_cta_text',
+              widget: 'string',
+              required: false,
+            }
+          - {
+              label: 'Secondary CTA url',
+              name: 'secondary_cta_url',
+              widget: 'string',
+              required: false,
+            }
+          - {
+              label: 'Background color',
+              name: 'background_color',
+              widget: 'string',
+              required: false,
+              default: '#D5D1FC',
+            }

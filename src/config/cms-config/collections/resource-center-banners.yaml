@@ -1,0 +1,36 @@
+name: 'resource-center-banners'
+label: 'Resource Center Banners'
+folder: '_resource_center_banners'
+create: true
+slug: '{{slug}}'
+fields:
+  - { label: 'Item type', name: 'item_type', widget: 'hidden', default: 'resource-center-banner' }
+  - { label: 'Title', name: 'title', widget: 'string', required: true }
+  - {
+      label: 'Banner id',
+      name: 'id',
+      widget: 'string',
+      required: true,
+      hint: "Ids should be lowercase titles separated by dashes and include orientation details. e.g., 'attract-win-serve-vertical' or 'attract-win-serve-horizontal'",
+    }
+  - label: 'Orientation'
+    name: 'orientation'
+    widget: 'select'
+    required: false
+    options:
+      - { label: 'Horizontal', value: 'horizontal' }
+      - { label: 'Vertical', value: 'vertical' }
+  - {
+      label: 'Banner CTA url',
+      name: 'url',
+      widget: 'string',
+      required: false,
+      hint: 'If left empty, the banner will redirect to B12 signup page by default',
+    }
+  - {
+      label: 'Banner image',
+      name: 'image',
+      media_folder: 'images',
+      widget: 'image',
+      required: false,
+    }

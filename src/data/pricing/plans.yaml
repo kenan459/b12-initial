@@ -1,0 +1,42 @@
+- slug: starter
+  title: Starter
+  description: Build a free website with appointment scheduling and the ability to accept online payments for free.
+  price:
+    monthly: free
+    yearly: free
+  users: 1 user
+
+- slug: basic
+  title: Basic
+  description: Best for businesses just starting out who want a simple website with basic tools to operational tasks like scheduling and invoicing online.
+  price:
+    monthly: $49
+    yearly: $42
+  savings: Save $84 with a 1-year subscription
+  discount: $1/mo for 3 months
+  users: 1 user
+
+- slug: professional
+  title: Professional
+  description: Best for businesses looking to build a professional website with all the features to attract, win, and serve clients online.
+  price:
+    monthly: $199
+    yearly: $169
+  savings: Save $360 with a 1-year subscription
+  users: 1 user
+  popular: true
+  dify:
+    title: Do-it-for-you set up for $1,999
+    description: Our team of design and copywriting experts works with you to build and launch your site
+
+- slug: advanced
+  title: Advanced
+  description: Best for businesses looking to scale their online presence and more easily organize and coordinate team interactions with clients.
+  price:
+    monthly: $399
+    yearly: $339
+  savings: Save $720 with a 1-year subscription
+  users: Up to 5 users
+  dify:
+    title: Do-it-for-you set up for $1,999
+    description: Our team of design and copywriting experts works with you to build and launch your site

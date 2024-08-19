@@ -1,0 +1,293 @@
+name: 'post'
+label: 'Resource center'
+folder: '_posts'
+create: true # Allow users to create new documents in this collection
+slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+fields: # The fields each document in this collection have
+  - { label: 'Item type', name: 'item_type', widget: 'hidden', default: 'resource-center-post' }
+  - {
+      label: 'Active',
+      name: 'active',
+      widget: 'boolean',
+      default: true,
+      hint: 'Generate RC page or not',
+    }
+  - label: 'Layout'
+    name: 'layout'
+    widget: 'select'
+    default: 'post'
+    options:
+      - { label: 'Post', value: 'post' }
+      - { label: 'Post legacy', value: 'post-legacy' }
+      - { label: 'Spider monkey', value: 'spider-monkey' }
+  - {
+      label: 'Permalink',
+      name: 'permalink',
+      widget: 'string',
+      required: true,
+      default: '/resource-center/',
+      hint: 'Please set proper permalink for this post manually. Format is "/resource-center/__categories__/__title__.html", eg: "/resource-center/website-traffic/my-cool-blog-post.html". You can omit ".html" if you want.',
+    }
+  - { label: 'Title tag', name: 'title_tag', widget: 'string', tagname: 'h1', required: false }
+  - { label: 'Post title', name: 'title', widget: 'string', tagname: 'h1' }
+  - {
+      label: 'Post subtitle',
+      name: 'subtitle',
+      widget: 'string',
+      tagname: 'h1',
+      required: false,
+      hint: 'Available for "Post alternative" layout only',
+    }
+  - { label: 'Meta description', name: 'description', widget: 'string', tagname: 'h1' }
+  - { label: 'Author name', name: 'author', widget: 'string', required: false }
+  - {
+      label: 'File download CTA text',
+      name: 'file_download_text',
+      widget: 'string',
+      required: false,
+    }
+  - { label: 'File download CTA url', name: 'file_download_url', widget: 'string', required: false }
+  - {
+      label: 'Author image',
+      name: 'author_img',
+      media_folder: 'images',
+      widget: 'image',
+      required: false,
+    }
+  - { label: 'Author info', name: 'author_info', widget: 'string', required: false }
+  - { label: 'Intro', name: 'intro', widget: 'string', required: false }
+  - {
+      label: 'Cta block title',
+      name: 'cta_title',
+      widget: 'string',
+      required: false,
+      hint: 'Available for Experiment RC layout only (with sidebar)',
+    }
+  - {
+      label: 'Cta block CTA text',
+      name: 'cta_label',
+      widget: 'string',
+      required: false,
+      hint: 'Available for Experiment RC layout only (with sidebar)',
+    }
+  - {
+      label: 'Cta block url',
+      name: 'cta_url',
+      widget: 'string',
+      required: false,
+      hint: 'Available for Experiment RC layout only (with sidebar)',
+    }
+  - {
+      label: 'Hero form enabled',
+      name: 'hero_form_enabled',
+      widget: 'boolean',
+      default: false,
+      hint: 'Only for "Post alternative" layout',
+    }
+  - {
+      label: 'Hero form Lead text',
+      name: 'hero_form_text',
+      widget: 'string',
+      required: false,
+      hint: 'Only for "Post alternative" layout',
+    }
+  - {
+      label: 'Time to read/watch',
+      name: 'time_to_read',
+      widget: 'number',
+      value_type: 'int',
+      required: false,
+    }
+  - label: 'Preview image'
+    name: 'preview_image'
+    media_folder: 'images'
+    widget: 'image'
+    required: false
+    hint: "Displayed on Resource Center pages and category pages. Please make sure that images are in '.jpg' format, not wider than 1200px, and are under 2MB in size. You can use this website to resize and change image format: https://bulkresizephotos.com/"
+    media_library:
+      config:
+        max_file_size: 2000000
+  - label: 'Image'
+    name: 'image'
+    media_folder: 'images'
+    widget: 'image'
+    required: true
+    hint: "Displayed on RC post hero section. Please make sure that images are in '.jpg' format, not wider than 1200px, and are under 2MB in size. You can use this website to resize and change image format: https://bulkresizephotos.com/"
+    media_library:
+      config:
+        max_file_size: 2000000
+  - label: 'Categories'
+    name: 'categories'
+    widget: 'select'
+    multiple: true
+    required: true
+    options:
+      - { label: 'Accounting firm', value: 'accounting-firm' }
+      - { label: 'AI', value: 'ai' }
+      - { label: 'AI how-to guides', value: 'ai-how-to-guides' }
+      - { label: 'AI thought leadership', value: 'ai-thought-leadership' }
+      - { label: 'Architecture firm', value: 'architecture-firm' }
+      - { label: 'Bookkeeping', value: 'bookkeeping' }
+      - { label: 'Business', value: 'business' }
+      - { label: 'Client engagement tools', value: 'client-engagement-tools' }
+      - { label: 'Client intake', value: 'client-intake' }
+      - { label: 'Commercial real estate firm', value: 'commercial-real-estate-firm' }
+      - { label: 'Consulting firm', value: 'consulting-firm' }
+      - { label: 'Contact management', value: 'contact-management' }
+      - { label: 'Content creation', value: 'content-creation' }
+      - { label: 'Contracts & eSignature', value: 'contracts-and-esignature' }
+      - { label: 'Ebooks', value: 'ebooks' }
+      - { label: 'Email automation', value: 'email-automation' }
+      - { label: 'Email newsletters', value: 'email-newsletters' }
+      - { label: 'Financial advisor firm', value: 'financial-advisor-firm' }
+      - { label: 'Financial planning firm', value: 'financial-planning-firm' }
+      - { label: 'Financial services business', value: 'financial-services-business' }
+      - { label: 'Insurance brokerage', value: 'insurance-brokerage' }
+      - { label: 'Investing firm', value: 'investing-firm' }
+      - { label: 'Invoicing & payments', value: 'invoicing-and-payments' }
+      - { label: 'IT consulting firm', value: 'it-consulting-firm' }
+      - { label: 'Law firm', value: 'law-firm' }
+      - { label: 'Management consulting firm', value: 'management-consulting-firm' }
+      - { label: 'Mortgage brokerage', value: 'mortgage-brokerage' }
+      - { label: 'Online forms', value: 'online-forms' }
+      - { label: 'Online scheduling', value: 'online-scheduling' }
+      - { label: 'SEO', value: 'seo' }
+      - { label: 'Small business basics', value: 'small-business-basics' }
+      - { label: 'Social media', value: 'social-media' }
+      - { label: 'Tax preparation', value: 'tax-preparation' }
+      - { label: 'Traffic generation', value: 'traffic-generation' }
+      - { label: 'Video articles', value: 'video-articles' }
+      - { label: 'Website basics', value: 'website-basics' }
+      - { label: 'Website conversion', value: 'website-conversion' }
+      - { label: 'Website design', value: 'website-design' }
+  - label: 'Main category (for Read next section)'
+    name: 'main_category'
+    widget: 'select'
+    required: true
+    options:
+      - { label: 'Accounting firm', value: 'accounting-firm' }
+      - { label: 'AI', value: 'ai' }
+      - { label: 'AI how-to guides', value: 'ai-how-to-guides' }
+      - { label: 'AI thought leadership', value: 'ai-thought-leadership' }
+      - { label: 'Architecture firm', value: 'architecture-firm' }
+      - { label: 'Bookkeeping', value: 'bookkeeping' }
+      - { label: 'Business', value: 'business' }
+      - { label: 'Client engagement tools', value: 'client-engagement-tools' }
+      - { label: 'Client intake', value: 'client-intake' }
+      - { label: 'Commercial real estate firm', value: 'commercial-real-estate-firm' }
+      - { label: 'Consulting firm', value: 'consulting-firm' }
+      - { label: 'Contact management', value: 'contact-management' }
+      - { label: 'Content creation', value: 'content-creation' }
+      - { label: 'Contracts & eSignature', value: 'contracts-and-esignature' }
+      - { label: 'Ebooks', value: 'ebooks' }
+      - { label: 'Email automation', value: 'email-automation' }
+      - { label: 'Email newsletters', value: 'email-newsletters' }
+      - { label: 'Financial advisor firm', value: 'financial-advisor-firm' }
+      - { label: 'Financial planning firm', value: 'financial-planning-firm' }
+      - { label: 'Financial services business', value: 'financial-services-business' }
+      - { label: 'Insurance brokerage', value: 'insurance-brokerage' }
+      - { label: 'Investing firm', value: 'investing-firm' }
+      - { label: 'Invoicing & payments', value: 'invoicing-and-payments' }
+      - { label: 'IT consulting firm', value: 'it-consulting-firm' }
+      - { label: 'Law firm', value: 'law-firm' }
+      - { label: 'Management consulting firm', value: 'management-consulting-firm' }
+      - { label: 'Mortgage brokerage', value: 'mortgage-brokerage' }
+      - { label: 'Online forms', value: 'online-forms' }
+      - { label: 'Online scheduling', value: 'online-scheduling' }
+      - { label: 'SEO', value: 'seo' }
+      - { label: 'Small business basics', value: 'small-business-basics' }
+      - { label: 'Social media', value: 'social-media' }
+      - { label: 'Tax preparation', value: 'tax-preparation' }
+      - { label: 'Traffic generation', value: 'traffic-generation' }
+      - { label: 'Video articles', value: 'video-articles' }
+      - { label: 'Website basics', value: 'website-basics' }
+      - { label: 'Website conversion', value: 'website-conversion' }
+      - { label: 'Website design', value: 'website-design' }
+  - {
+      label: 'Featured on Resource center page',
+      name: 'featured_in_category',
+      widget: 'boolean',
+      default: false,
+      required: false,
+    }
+  - { label: 'Noindex', name: 'noindex', widget: 'boolean', default: false }
+  - { label: 'External URL', name: 'external_url', widget: 'string', required: false }
+  - {
+      label: 'Publish Date',
+      name: 'date',
+      widget: 'datetime',
+      format: 'LLL',
+      default: '',
+      date_format: 'YYYY-MM-DD',
+      time_format: 'hh:mm:ss',
+      picker_utc: false,
+    }
+  - {
+      label: 'Video Article',
+      name: 'video_article',
+      widget: 'boolean',
+      required: false,
+      default: false,
+    }
+  - { label: 'Video article embed URL', name: 'video_src_link', widget: 'string', required: false }
+  - {
+      label: 'Body',
+      name: 'body',
+      widget: 'markdown',
+      required: false,
+      hint: 'You can insert __banners__ from dropdown menu of the editor',
+      editor_components: ['b12-blog-image', 'rc-content-banner', 'code-block'],
+    }
+  - label: 'Form type'
+    name: 'form_type'
+    widget: 'select'
+    options:
+      - { label: 'B12 sign-up form', value: 'b12-signup' }
+      - { label: 'Newsletter form', value: 'newsletter-form' }
+    required: false
+    hint: 'Available for new RC template only'
+  - { label: 'Form title', name: 'form_title', widget: 'string', required: false }
+  - { label: 'Form description', name: 'form_description', widget: 'string', required: false }
+  - label: 'Spider monkey'
+    name: 'spider_monkey'
+    widget: 'object'
+    summary: '{{fields.label}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: false }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - {
+          label: 'Hero image',
+          name: 'image',
+          widget: 'image',
+          media_folder: 'images',
+          required: false,
+          hint: '600x400 pixels',
+        }
+      - label: Resources
+        name: resources
+        widget: list
+        summary: '{{fields.type}}: {{fields.title}}'
+        fields:
+          - {
+              label: 'Type',
+              name: 'type',
+              widget: 'select',
+              options: ['youtube', 'blog'],
+              hint: 'Renders text differently depending on type',
+            }
+          - { label: 'Title', name: 'title', widget: 'string', required: false }
+          - {
+              label: 'Description',
+              name: 'description',
+              widget: 'string',
+              required: false,
+              hint: 'Text transforms automatically depending on the type',
+            }
+          - { label: 'Link', name: 'link', widget: 'string', required: false }
+          - {
+              label: 'Thumbnail',
+              name: 'thumbnail',
+              widget: 'string',
+              required: false,
+              hint: 'For YouTube, provide a shareable link like "https://www.youtube.com/embed/TDsQv9Tcagk"',
+            }

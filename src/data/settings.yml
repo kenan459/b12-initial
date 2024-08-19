@@ -1,0 +1,10 @@
+general:
+  webinar_date: Thursday, August 8, 2024 at 2:00 pm ET
+announcement_banner:
+  active: true
+  text: "Limited time: Try B12 $1/mo for 3 months."
+  cta_text: Sign up now
+  cta_url: https://b12.io/signup/
+  secondary_cta_text: ""
+  secondary_cta_url: ""
+  background_color: "#D5D1FC"

@@ -1,0 +1,100 @@
+platforms:
+  - title: B12
+    slug: b12
+    recommended: true
+  - title: DIY Website Builders
+    slug: diy-website-builders
+  - title: Web Design Agencies
+    slug: web-design-agencies
+
+features:
+  - title: Minimal time commitment
+    order: 1
+    platforms:
+      - slug: b12
+        text: >-
+          Expert designers and copywriters use AI-generated drafts to build a site that reflects your business identity and showcases your subject matter expertise
+        rating: 5
+      - slug: web-design-agencies
+        text: >-
+          Finding an agency takes time. Once found, this model requires continual relationship management and communication to ensure success
+        rating: 3
+      - slug: diy-website-builders
+        text: >-
+          If you have the time to focus, building your site could take as little as two weeks, but that comes at the expense of running other parts of your business
+        rating: 1
+  - title: Speed to launch
+    order: 2
+    platforms:
+      - slug: b12
+        text: >-
+          Sites with B12 are generally launched in under 30 days
+        rating: 5
+      - slug: web-design-agencies
+        text: >-
+          Generally anywhere from 5-6 months
+        rating: 3
+      - slug: diy-website-builders
+        text: >-
+          Entirely dependent on your technological savvy and bandwidth
+        rating: 1
+  - title: Professional looking
+    order: 3
+    platforms:
+      - slug: b12
+        text: >-
+          B12 website design uses modern web design concepts that meet today’s standards and will help you stand out from the competition
+        rating: 5
+      - slug: web-design-agencies
+        text: >-
+          Depends on the agency and their overall experience, but generally produces a professional website that does the job
+        rating: 4
+      - slug: diy-website-builders
+        text: >-
+          Limited customization options and cookie-cutter templates. It might look professional, but it won’t help you stand out
+        rating: 2
+  - title: Good value
+    order: 4
+    platforms:
+      - slug: b12
+        text: >-
+          While more expensive than do-it-yourself builders, B12 charges a fraction of what a design agency costs
+        rating: 5
+      - slug: web-design-agencies
+        text: >-
+          A final product can cost anywhere from $10K - $50K depending on the scope of the project, timeline, and agency overhead costs
+        rating: 1
+      - slug: diy-website-builders
+        text: >-
+          On paper,  your most inexpensive option, but this doesn’t take into account the cost of your time to build and maintain
+        rating: 3
+  - title: Available ongoing maintenance and support
+    order: 5
+    platforms:
+      - slug: b12
+        text: >-
+          A user-friendly editor, unlimited online and scheduled phone support, plus access to design and SEO copywriting experts as needed for larger updates
+        rating: 5
+      - slug: web-design-agencies
+        text: >-
+          Reliance on an agency (and incurring more billable hours) for every update and limited tech support if things go wrong
+        rating: 3
+      - slug: diy-website-builders
+        text: >-
+          You’re on your own. Any ongoing maintenance or support needs to be handled by you and your team
+        rating: 1
+  - title: Equipped with all the features you need to succeed
+    order: 6
+    platforms:
+      - slug: b12
+        text: >-
+          Each B12 website is backed by powerful features to help your small business thrive – whether that’s attracting, winning, or serving clients
+        rating: 5
+      - slug: web-design-agencies
+        text: >-
+          Can include third-party integrations (for a fee), but the primary focus is purely on delivering a website, not a fully-featured platform
+        rating: 2
+      - slug: diy-website-builders
+        text: >-
+          Integrations and additional features available, but are often limited and must be set up and learned independently
+        rating: 3

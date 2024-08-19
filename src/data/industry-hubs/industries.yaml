@@ -1,0 +1,55 @@
+- title: Accountants
+  description: Connect with clients in need of your accounting services
+  icon: accountants
+  cta_text: Learn more
+  cta_url: /accountants
+- title: Architects
+  description: Communicate with prospects who are hiring an architecture firm
+  icon: architects
+  cta_text: Learn more
+  cta_url: /architects
+- title: Coaches
+  description: Effortlessly reach prospective coaching clients online
+  icon: consultants
+  cta_text: Learn more
+  cta_url: /coaches
+- title: Commercial real estate
+  description: Engage potential buyers and sellers
+  icon: commercial-real-estate
+  cta_text: Learn more
+  cta_url: /commercial-real-estate
+- title: Consultants
+  description: Strengthen relationships with your consulting clientele
+  icon: consultants
+  cta_text: Learn more
+  cta_url: /consultants
+- title: Financial advisors
+  description: Acquire and retain clients looking for financial expertise
+  icon: financial-advisor
+  cta_text: Learn more
+  cta_url: /financial-advisors
+- title: Insurance brokers
+  description: Nurture relationships with your insurance clients
+  icon: insurance-broker
+  cta_text: Learn more
+  cta_url: /insurance
+- title: Investment services
+  description: Engage with those interested in investment advice
+  icon: investing-services
+  cta_text: Learn more
+  cta_url: /investment-services
+- title: Lawyers
+  description: Gain the ideal clients and cases for your practice
+  icon: lawyers
+  cta_text: Learn more
+  cta_url: /lawyers
+- title: Mortgage brokers
+  description: Foster relationships with prospects seeking mortgage solutions
+  icon: mortgage-broker
+  cta_text: Learn more
+  cta_url: /mortgage-brokers
+- title: Professional services firms
+  description: Build and maintain strong business relationships with your clients
+  icon: professional-services
+  cta_text: Learn more
+  cta_url: /professional-services

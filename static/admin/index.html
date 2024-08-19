@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Content Manager</title>
+
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    <!-- Include the script that builds the page and powers Netlify CMS -->
+    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <script>
+      // Custom styles for content preview
+      CMS.registerPreviewStyle('../assets/css/preview.css')
+
+      // Markdown editor custom widgets
+
+      // Product Comparison table
+      CMS.registerEditorComponent({
+        id: 'pc-table',
+        label: 'Product comparison table',
+        fields: [
+          { name: 'competitor1_title', label: 'Competitor 1 title', widget: 'string' },
+          { name: 'competitor2_title', label: 'Competitor 2 title', widget: 'string' },
+          {
+            name: 'features',
+            label: 'Features list',
+            widget: 'list',
+            summary: '{{fields.title}}',
+            fields: [
+              { name: 'title', label: 'Feature title', widget: 'string' },
+              {
+                name: 'competitor1',
+                label: 'Competitor 1',
+                widget: 'string',
+                hint: "Type 'true' or 'false' for check and cross icons or add your description",
+              },
+              {
+                name: 'competitor1note1',
+                label: 'Include asterix for competitor 1 (*)',
+                widget: 'boolean',
+              },
+              {
+                name: 'competitor1note2',
+                label: 'Include double asterix for competitor 1 (**)',
+                widget: 'boolean',
+              },
+              {
+                name: 'competitor2',
+                label: 'Competitor 2',
+                widget: 'string',
+                hint: "Type 'true' or 'false' for check and cross icons or add your description",
+              },
+              {
+                name: 'competitor2note1',
+                label: 'Include asterix for competitor 2 (*)',
+                widget: 'boolean',
+              },
+              {
+                name: 'competitor2note2',
+                label: 'Include double asterix for competitor 2 (**)',
+                widget: 'boolean',
+              },
+            ],
+          },
+          { name: 'note1', label: 'Note 1 description (*)', widget: 'string' },
+          { name: 'note2', label: 'Note 2 Description (**)', widget: 'string' },
+        ],
+        pattern: /^<pc-table data=\'(.*)\'><\/pc-table>/,
+        fromBlock: function (match) {
+          if (match) {
+            const data = JSON.parse(match[1])
+            return data
+          }
+        },
+        toBlock: function (obj) {
+          const data = JSON.stringify(obj)
+
+          if (data) {
+            return `<pc-table data='${data}'></pc-table>`
+          }
+        },
+        toPreview: function (data) {
+          return `<div style="outline: 1px solid red; padding: 10px 20px;">Comparison table</div>`
+        },
+      })
+
+      // RC content banner
+      CMS.registerEditorComponent({
+        id: 'rc-content-banner',
+        label: 'RC Content Banner',
+        fields: [
+          {
+            name: 'id',
+            label: 'Id',
+            widget: 'select',
+            options: [
+              'skip-the-diy-vertical',
+              '7-seconds-positive-impression-horizontal',
+              'attract-win-serve-vertical',
+              'does-your-site-deliver-clients-need-vertical',
+              'engage-clients-fast-vertical',
+              'free-website-preview-vertical',
+              'give-your-firm-an-edge-horizontal',
+              'make-a-great-first-impression-horizontal',
+              'open-doors-for-your-business-online-horizontal',
+              'position-your-business-for-success-horizontal',
+              'reach-and-keep-your-best-clients-horizontal',
+              'can-your-online-presence-scale-vertical',
+              'set-yourself-apart-online-horizontal',
+              'fast-track-your-firms-growth-horizontal',
+              'differentiate-your-business-online',
+              'webinar',
+              'webinar-horizontal',
+            ],
+            default: 'skip-the-diy-vertical',
+          },
+          {
+            name: 'url',
+            label: 'Custom Banner CTA url',
+            widget: 'string',
+          },
+        ],
+        pattern: /^<rc-banner id=\"(.*)\" url=\"(.*)\"><\/rc-banner>/,
+        fromBlock: function (match) {
+          if (match) {
+            return {
+              id: match[1],
+              url: match[2],
+            }
+          }
+        },
+        toBlock: function (obj) {
+          if (obj.id) {
+            return `<rc-banner id="${obj.id}" url="${obj.url}"></rc-banner>`
+          }
+        },
+        toPreview: function (data) {
+          return `<div style="outline: 1px solid red; padding: 10px 20px;">Banner: ${data.id}</div>`
+        },
+      })
+
+      // Image for B12 blog posts
+      CMS.registerEditorComponent({
+        id: 'b12-blog-image',
+        label: 'B12 blog image',
+        fields: [
+          { name: 'img', label: 'Image', widget: 'image', media_folder: 'images' },
+          { name: 'img_alt', label: 'Image ALT', widget: 'string', default: '' },
+        ],
+        pattern: /^\!\[(.*)\]\((.*)\)/,
+        fromBlock: function (match) {
+          return {
+            img: match[2],
+            img_alt: match[1],
+          }
+        },
+        toBlock: function (obj) {
+          if (obj.img) {
+            return `![${obj.img_alt}](${obj.img})`
+          }
+        },
+      })
+
+      // Image with optimization tags
+      CMS.registerEditorComponent({
+        id: 'optimized-image',
+        label: 'Optimized image for Resource center',
+        fields: [
+          { name: 'img', label: 'Image', widget: 'image' },
+          { name: 'img_alt', label: 'Image ALT', widget: 'string', default: '' },
+          { name: 'url', label: 'URL', widget: 'string', default: '', required: false },
+        ],
+        pattern: /^\{\% include image_blog_post.html src="(.*)" alt="(.*)" url="(.*)" \%\}/,
+        fromBlock: function (match) {
+          return {
+            img: match[1],
+            img_alt: match[2],
+            url: match[3],
+          }
+        },
+        toBlock: function (obj) {
+          if (obj.img) {
+            return `{% include image_blog_post.html src="${obj.img}" alt="${
+              obj.img_alt || ''
+            }" url="${obj.url || ''}" %}`
+          }
+        },
+        toPreview: function (obj) {
+          if (obj.img) {
+            const imgTag = `<img src="${obj.img}" alt="${obj.img_alt || ''}">`
+
+            return obj.url ? `<a href="${obj.url}">${imgTag}</a>` : imgTag
+          }
+        },
+      })
+
+      // CTA button
+      CMS.registerEditorComponent({
+        id: 'cta-button',
+        label: 'CTA button',
+        fields: [
+          { name: 'url', label: 'URL', widget: 'string' },
+          { name: 'text', label: 'Text', widget: 'string' },
+        ],
+        pattern:
+          /^<span class="text-cta-button"><a class="btn --primary --sm --min-width" href="(.*)" target="_blank">(.*)<\/a><\/span>/,
+        fromBlock: function (match) {
+          return {
+            url: match[1],
+            text: match[2],
+          }
+        },
+        toBlock: function (obj) {
+          return (
+            '<span class="text-cta-button"><a class="btn --primary --sm --min-width" href="' +
+            obj.url +
+            '" target="_blank">' +
+            obj.text +
+            '</a></span>'
+          )
+        },
+        toPreview: function (obj) {
+          return (
+            '<span class="text-cta-button"><a class="btn --primary --sm --min-width" href="' +
+            obj.url +
+            '" target="' +
+            obj.target +
+            '">' +
+            obj.text +
+            '</a></span>'
+          )
+        },
+      })
+
+      // Double/Split image
+      CMS.registerEditorComponent({
+        id: 'double-image',
+        label: 'Double image',
+        fields: [
+          { name: 'img1', label: 'Image 1', widget: 'image' },
+          { name: 'img1_alt', label: 'Image 1 ALT', widget: 'string' },
+          { name: 'img2', label: 'Image 2', widget: 'image' },
+          { name: 'img2_alt', label: 'Image 2 ALT', widget: 'string' },
+        ],
+        pattern:
+          /^<span class="text-double-image"><span class="text-double-image__image"><img src="(.*)" alt="(.*)"><\/span><span class="text-double-image__image"><img src="(.*)" alt="(.*)"><\/span><\/span>/,
+        fromBlock: function (match) {
+          return {
+            img1: match[1],
+            img1_alt: match[2],
+            img2: match[3],
+            img2_alt: match[4],
+          }
+        },
+        toBlock: function (obj) {
+          if (obj.img1 && obj.img2) {
+            return (
+              '<span class="text-double-image"><span class="text-double-image__image"><img src="' +
+              obj.img1 +
+              '" alt="' +
+              obj.img1_alt +
+              '"></span><span class="text-double-image__image"><img src="' +
+              obj.img2 +
+              '" alt="' +
+              obj.img2_alt +
+              '"></span></span>'
+            )
+          }
+        },
+        toPreview: function (obj) {
+          if (obj.img1 && obj.img2) {
+            return (
+              '<span class="text-double-image"><span class="text-double-image__image"><img src="' +
+              obj.img1 +
+              '" alt="' +
+              obj.img1_alt +
+              '"></span><span class="text-double-image__image"><img src="' +
+              obj.img2 +
+              '" alt="' +
+              obj.img2_alt +
+              '"></span></span>'
+            )
+          }
+        },
+      })
+
+      // Image with link
+      CMS.registerEditorComponent({
+        id: 'image-with-link',
+        label: 'Image with link',
+        fields: [
+          { name: 'url', label: 'URL', widget: 'string' },
+          { name: 'img', label: 'Image', widget: 'image' },
+          { name: 'img_alt', label: 'Image ALT', widget: 'string' },
+        ],
+        pattern:
+          /^<span class="image-with-link"><a class="image-with-link__link" href="(.*)" target="_blank"><span class="image-with-link__image"><img src="(.*)" alt="(.*)"><\/span><\/a><\/span>/,
+        fromBlock: function (match) {
+          return {
+            url: match[1],
+            img: match[2],
+            img_alt: match[3],
+          }
+        },
+        toBlock: function (obj) {
+          if (obj.img && obj.url) {
+            return (
+              '<span class="image-with-link"><a class="image-with-link__link" href="' +
+              obj.url +
+              '" target="_blank"><span class="image-with-link__image"><img src="' +
+              obj.img +
+              '" alt="' +
+              obj.img_alt +
+              '"></span></a></span>'
+            )
+          }
+        },
+        toPreview: function (obj) {
+          if (obj.img && obj.url) {
+            return (
+              '<span class="image-with-link"><a class="image-with-link__link" href="' +
+              obj.url +
+              '" target="_blank"><span class="image-with-link__image"><img src="' +
+              obj.img +
+              '" alt="' +
+              obj.img_alt +
+              '"></span></a></span>'
+            )
+          }
+        },
+      })
+    </script>
+  </body>
+</html>

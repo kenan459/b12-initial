@@ -1,0 +1,158 @@
+name: 'ai_directory'
+label: 'AI directory'
+folder: 'src/data/ai-directory'
+create: true
+editor:
+  preview: false
+slug: '{{slug}}'
+fields:
+  - { label: 'Item type', name: 'item_type', widget: 'hidden', default: 'ai-directory' }
+  - { label: 'Feature as a trending B12 AI tool', name: 'trending_b12_tool', widget: 'hidden', default: false, required: false }
+  - { label: "Order in 'Trending AI tools' section", name: 'order', widget: 'hidden', required: false }
+  - {
+      label: 'Permalink',
+      name: 'permalink',
+      default: '/ai-directory/title-of-the-page',
+      required: true,
+      hint: 'Please set proper permalink (path). Format is "/ai-directory/title-of-the-page". This will be actual path to page.',
+    }
+  - { label: 'Title', name: 'title', widget: 'string', required: true }
+  - {
+      label: 'External link',
+      name: 'external_link',
+      widget: 'string',
+      required: false,
+      hint: 'If you want to link to an external website from title, please add the full URL here.',
+    }
+  - label: 'Image'
+    name: 'image'
+    media_folder: 'images'
+    widget: 'image'
+    hint: "Please make sure that images are in '.jpg' or '.png' format, not wider than 1000px, and are under 4MB in size (ideally under 1MB)."
+    media_library:
+      config:
+        max_file_size: 4000000
+  - { label: 'Description', name: 'details', widget: 'markdown', required: false }
+  - label: 'Pricing'
+    name: 'pricing'
+    widget: 'select'
+    required: true
+    options:
+      - { label: 'Free', value: 'free' }
+      - { label: 'Paid', value: 'paid' }
+      - { label: 'Freemium', value: 'freemium' }
+  - label: Category
+    name: category
+    widget: 'select'
+    options:
+      - { label: 'All-in-One', value: 'all-in-one' }
+      - { label: 'Automation', value: 'automation' }
+      - { label: 'Audio Generation', value: 'audio-generation' }
+      - { label: 'Avatar Generation', value: 'avatar-generation' }
+      - { label: 'Chatbot', value: 'chat-bot' }
+      - { label: 'Code Assistant', value: 'code-assistant' }
+      - { label: 'Content Creation', value: 'content-creation' }
+      - { label: 'Companion', value: 'companion' }
+      - { label: 'Copilot GPTs', value: 'copilot-gpts' }
+      - { label: 'Copywriting', value: 'copywriting' }
+      - { label: 'Customer Support', value: 'customer-support' }
+      - { label: 'Design', value: 'design' }
+      - { label: 'Education', value: 'education' }
+      - { label: 'Email Assistant', value: 'email-assistant' }
+      - { label: 'E-commerce', value: 'e-commerce' }
+      - { label: 'Finance', value: 'finance' }
+      - { label: 'Fun Tools', value: 'fun-tools' }
+      - { label: 'Google Gems', value: 'google-gems' }
+      - { label: 'Hosting', value: 'hosting' }
+      - { label: 'Human Resource', value: 'human-resource' }
+      - { label: 'Image Generation', value: 'image-generation' }
+      - { label: 'Image Generation Model', value: 'image-generation-model' }
+      - { label: 'Legal', value: 'legal' }
+      - { label: 'Marketing', value: 'marketing' }
+      - { label: 'Meeting Assistant', value: 'meeting-assistant' }
+      - { label: 'Meta AI', value: 'meta-ai' }
+      - { label: 'Model Generation', value: 'model-generation' }
+      - { label: 'News', value: 'news' }
+      - { label: 'Noise Cancellation', value: 'noise-cancellation' }
+      - { label: 'Paraphraser', value: 'paraphraser' }
+      - { label: 'Photo Editing', value: 'photo-editing' }
+      - { label: 'Presentation', value: 'presentation' }
+      - { label: 'Productivity', value: 'productivity' }
+      - { label: 'Project Management', value: 'project-management' }
+      - { label: 'Research', value: 'research' }
+      - { label: 'Sales', value: 'sales' }
+      - { label: 'Search Engine', value: 'search-engine' }
+      - { label: 'Small Business', value: 'small-business' }
+      - { label: 'Social media assistant', value: 'social-media-assistant' }
+      - { label: 'SQL-query', value: 'sql-query' }
+      - { label: 'Summarizer', value: 'summarizer' }
+      - { label: 'Text Generation', value: 'text-generation' }
+      - { label: 'Video Editing', value: 'video-editing' }
+      - { label: 'Video Generation', value: 'video-generation' }
+      - { label: 'Web Apps', value: 'web-apps' }
+      - { label: 'Writing Assistant', value: 'writing-assistant' }
+      - { label: '4D Generation', value: '4-d-generation' }
+    required: true
+    default: 'generic'
+  - label: Tags
+    name: tags
+    widget: 'select'
+    multiple: true
+    required: false
+    hint: 'You can add multiple tags by selecting them from the dropdown.'
+    options:
+      - { label: 'All In One', value: 'all-in-one' }
+      - { label: 'Audio Generation', value: 'audio-generation' }
+      - { label: 'Automation', value: 'automation' }
+      - { label: 'Avatar Generation', value: 'avatar-generation' }
+      - { label: 'Chat Bot', value: 'chat-bot' }
+      - { label: 'Code Assistant', value: 'code-assistant' }
+      - { label: 'Companion', value: 'companion' }
+      - { label: 'Content Creation', value: 'content-creation' }
+      - { label: 'Copilot GPTs', value: 'copilot-gpts' }
+      - { label: 'Copywriting', value: 'copywriting' }
+      - { label: 'Customer Support', value: 'customer-support' }
+      - { label: 'Data Science', value: 'data-science' }
+      - { label: 'Design', value: 'design' }
+      - { label: 'Education', value: 'education' }
+      - { label: 'Email Assistant', value: 'email-assistant' }
+      - { label: 'E-commerce', value: 'e-commerce' }
+      - { label: 'Finance', value: 'finance' }
+      - { label: 'Fun', value: 'fun' }
+      - { label: 'Google Gems', value: 'google-gems' }
+      - { label: 'Hosting', value: 'hosting' }
+      - { label: 'Human Resource', value: 'human-resource' }
+      - { label: 'Image Generation', value: 'image-generation' }
+      - { label: 'Image Generation Model', value: 'image-generation-model' }
+      - { label: 'Large Language Model', value: 'large-language-model' }
+      - { label: 'Legal', value: 'legal' }
+      - { label: 'Marketing', value: 'marketing' }
+      - { label: 'Meeting Assistant', value: 'meeting-assistant' }
+      - { label: 'Meta AI', value: 'meta-ai' }
+      - { label: 'Model Generation', value: 'model-generation' }
+      - { label: 'News', value: 'news' }
+      - { label: 'Noise Cancellation', value: 'noise-cancellation' }
+      - { label: 'Paraphraser', value: 'paraphraser' }
+      - { label: 'Photo Editing', value: 'photo-editing' }
+      - { label: 'Presentation', value: 'presentation' }
+      - { label: 'Productivity', value: 'productivity' }
+      - { label: 'Project Management', value: 'project-management' }
+      - { label: 'Research', value: 'research' }
+      - { label: 'Sales', value: 'sales' }
+      - { label: 'Search Engine', value: 'search-engine' }
+      - { label: 'Small Business', value: 'small-business' }
+      - { label: 'Social Media Assistant', value: 'social-media-assistant' }
+      - { label: 'SQL Query', value: 'sql-query' }
+      - { label: 'Summarizer', value: 'summarizer' }
+      - { label: 'Text Generation', value: 'text-generation' }
+      - { label: 'Video Editing', value: 'video-editing' }
+      - { label: 'Video Generation', value: 'video-generation' }
+      - { label: 'Web Apps', value: 'web-apps' }
+      - { label: 'Writing Assistant', value: 'writing-assistant' }
+      - { label: '4D Generation', value: '4d-generation' }
+  - label: 'Features'
+    name: 'features'
+    widget: 'list'
+    required: false
+    summary: '{{fields.feature}}'
+    field: { label: 'Feature', name: 'feature', widget: 'string' }

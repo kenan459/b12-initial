@@ -1,0 +1,2763 @@
+# This file is generated automatically. Do not edit it directly.
+#
+# To change CMS configuration edit files in "./src/config/cms-config" folder
+# and run "yarn build-cms-config" command.
+
+backend:
+  name: git-gateway
+  branch: main
+  squash_merges: true
+local_backend: true
+publish_mode: editorial_workflow
+media_folder: assets/uploads
+collections:
+  - name: ai_directory
+    label: AI directory
+    folder: src/data/ai-directory
+    create: true
+    editor:
+      preview: false
+    slug: '{{slug}}'
+    fields:
+      - label: Item type
+        name: item_type
+        widget: hidden
+        default: ai-directory
+      - label: Feature as a trending B12 AI tool
+        name: trending_b12_tool
+        widget: hidden
+        default: false
+        required: false
+      - label: Order in 'Trending AI tools' section
+        name: order
+        widget: hidden
+        required: false
+      - label: Permalink
+        name: permalink
+        default: /ai-directory/title-of-the-page
+        required: true
+        hint: >-
+          Please set proper permalink (path). Format is
+          "/ai-directory/title-of-the-page". This will be actual path to page.
+      - label: Title
+        name: title
+        widget: string
+        required: true
+      - label: External link
+        name: external_link
+        widget: string
+        required: false
+        hint: >-
+          If you want to link to an external website from title, please add the
+          full URL here.
+      - label: Image
+        name: image
+        media_folder: images
+        widget: image
+        hint: >-
+          Please make sure that images are in '.jpg' or '.png' format, not wider
+          than 1000px, and are under 4MB in size (ideally under 1MB).
+        media_library:
+          config:
+            max_file_size: 4000000
+      - label: Description
+        name: details
+        widget: markdown
+        required: false
+      - label: Pricing
+        name: pricing
+        widget: select
+        required: true
+        options:
+          - label: Free
+            value: free
+          - label: Paid
+            value: paid
+          - label: Freemium
+            value: freemium
+      - label: Category
+        name: category
+        widget: select
+        options:
+          - label: All-in-One
+            value: all-in-one
+          - label: Automation
+            value: automation
+          - label: Audio Generation
+            value: audio-generation
+          - label: Avatar Generation
+            value: avatar-generation
+          - label: Chatbot
+            value: chat-bot
+          - label: Code Assistant
+            value: code-assistant
+          - label: Content Creation
+            value: content-creation
+          - label: Companion
+            value: companion
+          - label: Copilot GPTs
+            value: copilot-gpts
+          - label: Copywriting
+            value: copywriting
+          - label: Customer Support
+            value: customer-support
+          - label: Design
+            value: design
+          - label: Education
+            value: education
+          - label: Email Assistant
+            value: email-assistant
+          - label: E-commerce
+            value: e-commerce
+          - label: Finance
+            value: finance
+          - label: Fun Tools
+            value: fun-tools
+          - label: Google Gems
+            value: google-gems
+          - label: Hosting
+            value: hosting
+          - label: Human Resource
+            value: human-resource
+          - label: Image Generation
+            value: image-generation
+          - label: Image Generation Model
+            value: image-generation-model
+          - label: Legal
+            value: legal
+          - label: Marketing
+            value: marketing
+          - label: Meeting Assistant
+            value: meeting-assistant
+          - label: Meta AI
+            value: meta-ai
+          - label: Model Generation
+            value: model-generation
+          - label: News
+            value: news
+          - label: Noise Cancellation
+            value: noise-cancellation
+          - label: Paraphraser
+            value: paraphraser
+          - label: Photo Editing
+            value: photo-editing
+          - label: Presentation
+            value: presentation
+          - label: Productivity
+            value: productivity
+          - label: Project Management
+            value: project-management
+          - label: Research
+            value: research
+          - label: Sales
+            value: sales
+          - label: Search Engine
+            value: search-engine
+          - label: Small Business
+            value: small-business
+          - label: Social media assistant
+            value: social-media-assistant
+          - label: SQL-query
+            value: sql-query
+          - label: Summarizer
+            value: summarizer
+          - label: Text Generation
+            value: text-generation
+          - label: Video Editing
+            value: video-editing
+          - label: Video Generation
+            value: video-generation
+          - label: Web Apps
+            value: web-apps
+          - label: Writing Assistant
+            value: writing-assistant
+          - label: 4D Generation
+            value: 4-d-generation
+        required: true
+        default: generic
+      - label: Tags
+        name: tags
+        widget: select
+        multiple: true
+        required: false
+        hint: You can add multiple tags by selecting them from the dropdown.
+        options:
+          - label: All In One
+            value: all-in-one
+          - label: Audio Generation
+            value: audio-generation
+          - label: Automation
+            value: automation
+          - label: Avatar Generation
+            value: avatar-generation
+          - label: Chat Bot
+            value: chat-bot
+          - label: Code Assistant
+            value: code-assistant
+          - label: Companion
+            value: companion
+          - label: Content Creation
+            value: content-creation
+          - label: Copilot GPTs
+            value: copilot-gpts
+          - label: Copywriting
+            value: copywriting
+          - label: Customer Support
+            value: customer-support
+          - label: Data Science
+            value: data-science
+          - label: Design
+            value: design
+          - label: Education
+            value: education
+          - label: Email Assistant
+            value: email-assistant
+          - label: E-commerce
+            value: e-commerce
+          - label: Finance
+            value: finance
+          - label: Fun
+            value: fun
+          - label: Google Gems
+            value: google-gems
+          - label: Hosting
+            value: hosting
+          - label: Human Resource
+            value: human-resource
+          - label: Image Generation
+            value: image-generation
+          - label: Image Generation Model
+            value: image-generation-model
+          - label: Large Language Model
+            value: large-language-model
+          - label: Legal
+            value: legal
+          - label: Marketing
+            value: marketing
+          - label: Meeting Assistant
+            value: meeting-assistant
+          - label: Meta AI
+            value: meta-ai
+          - label: Model Generation
+            value: model-generation
+          - label: News
+            value: news
+          - label: Noise Cancellation
+            value: noise-cancellation
+          - label: Paraphraser
+            value: paraphraser
+          - label: Photo Editing
+            value: photo-editing
+          - label: Presentation
+            value: presentation
+          - label: Productivity
+            value: productivity
+          - label: Project Management
+            value: project-management
+          - label: Research
+            value: research
+          - label: Sales
+            value: sales
+          - label: Search Engine
+            value: search-engine
+          - label: Small Business
+            value: small-business
+          - label: Social Media Assistant
+            value: social-media-assistant
+          - label: SQL Query
+            value: sql-query
+          - label: Summarizer
+            value: summarizer
+          - label: Text Generation
+            value: text-generation
+          - label: Video Editing
+            value: video-editing
+          - label: Video Generation
+            value: video-generation
+          - label: Web Apps
+            value: web-apps
+          - label: Writing Assistant
+            value: writing-assistant
+          - label: 4D Generation
+            value: 4d-generation
+      - label: Features
+        name: features
+        widget: list
+        required: false
+        summary: '{{fields.feature}}'
+        field:
+          label: Feature
+          name: feature
+          widget: string
+  - name: ai_website_builder_directory
+    label: AI website builder directory
+    folder: src/data/ai-website-builder-directory
+    create: true
+    editor:
+      preview: false
+    slug: '{{slug}}'
+    fields:
+      - label: Item type
+        name: item_type
+        widget: hidden
+        default: ai-website-builder-directory
+      - label: Permalink
+        name: permalink
+        default: /ai-website-builder-directory/title-of-the-page
+        required: true
+        hint: >-
+          Please set proper permalink (path). Format is
+          "/ai-directory/title-of-the-page". This will be actual path to page.
+      - label: Title
+        name: title
+        widget: string
+        required: true
+      - label: Meta description
+        name: description
+        widget: string
+        required: false
+      - label: External link
+        name: external_link
+        widget: string
+        required: false
+        hint: >-
+          If you want to link to an external website from title, please add the
+          full URL here.
+      - label: Image
+        name: image
+        media_folder: images
+        widget: image
+        hint: >-
+          Please make sure that images are in '.jpg' or '.png' format, not wider
+          than 1000px, and are under 4MB in size (ideally under 1MB).
+        media_library:
+          config:
+            max_file_size: 4000000
+      - label: Pricing
+        name: pricing
+        widget: select
+        required: true
+        options:
+          - label: Free
+            value: free
+          - label: Paid
+            value: paid
+          - label: Freemium
+            value: freemium
+      - label: Description
+        name: details
+        widget: markdown
+        required: false
+      - label: Category
+        name: category
+        widget: list
+        required: false
+        default: generic
+      - label: Tags
+        name: tags
+        widget: list
+        required: false
+      - label: FAQs
+        name: directory_faqs
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+            default: FAQs
+          - label: Items
+            name: items
+            widget: list
+            required: false
+            fields:
+              - label: Question
+                name: question
+                widget: string
+              - label: Answer
+                name: answer
+                widget: markdown
+      - label: Summary
+        name: summary
+        widget: markdown
+        required: false
+  - name: blog
+    label: B12 Blog
+    folder: _b12_blog
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - label: Item type
+        name: item_type
+        widget: hidden
+        default: blog-post
+      - label: Permalink
+        name: permalink
+        widget: string
+        required: true
+        default: ''
+        hint: >-
+          Please set proper permalink (path) for this post. Format is
+          "/blog/post-title". This will be actual path to page.
+      - label: Post title
+        name: title
+        widget: string
+        tagname: h1
+      - label: Meta description
+        name: description
+        widget: string
+      - label: Intro
+        name: intro
+        widget: string
+        required: false
+      - label: Time to read
+        name: time_to_read
+        widget: number
+        value_type: int
+        required: false
+      - label: Preview image (min 1200px wide)
+        name: preview_image
+        media_folder: images
+        widget: image
+        required: true
+      - label: Image
+        name: image
+        widget: image
+        media_folder: images
+        required: false
+      - label: Image ALT
+        name: image_alt
+        widget: string
+        required: false
+      - label: Featured
+        name: featured
+        widget: boolean
+        default: false
+      - label: Publish Date
+        name: date
+        widget: datetime
+        format: LLL
+        default: ''
+        date_format: YYYY-MM-DD
+        time_format: 'hh:mm:ss'
+        picker_utc: false
+      - label: Body
+        name: body
+        widget: markdown
+        editor_components:
+          - b12-blog-image
+          - code-block
+        required: false
+  - name: case_studies
+    label: Customer Success Stories
+    folder: src/data/case-studies
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - label: Item type
+        name: item_type
+        widget: hidden
+        default: case-study
+      - label: Publish Date
+        name: date
+        widget: datetime
+        format: LLL
+        default: ''
+        date_format: YYYY-MM-DD
+        time_format: 'hh:mm:ss'
+        picker_utc: false
+      - label: Permalink
+        name: permalink
+        widget: string
+        required: true
+        hint: >-
+          Please set proper permalink/url for this case study manually. Format
+          is "/case_studies/__title__.html".
+      - label: Title
+        name: title
+        widget: string
+      - label: Meta description
+        name: description
+        widget: string
+      - label: Industry
+        name: industry
+        widget: select
+        required: false
+        options:
+          - label: Accountants
+            value: accountants
+          - label: Architects
+            value: architects
+          - label: Coaches
+            value: coaches
+          - label: Commercial real estate
+            value: commercial-real-estate
+            name: commercial-real-estate
+          - label: Consultants
+            value: consultants
+            name: consultants
+          - label: Financial advisors
+            value: financial-advisor
+            name: financial-advisor
+          - label: Insurance brokers
+            value: insurance-broker
+            name: insurance-broker
+          - label: Investment services
+            value: investing-services
+          - label: Law
+            value: lawyers
+            name: lawyers
+          - label: Mortgage brokers
+            value: mortgage-broker
+            name: mortgage-broker
+          - label: Professional services firms
+            value: professional-services
+            name: professional-services
+      - label: Customer name
+        name: customer_name
+        widget: string
+      - label: Customer role
+        name: customer_role
+        widget: string
+      - label: Featured quote
+        name: featured_quote
+        widget: string
+        required: false
+      - label: Featured text
+        name: featured_text
+        widget: string
+        required: false
+      - label: Thumbnail image
+        name: thumbnail_img
+        widget: image
+        media_folder: images
+      - label: Preview title
+        name: preview_title
+        widget: string
+      - label: Hero
+        name: hero
+        widget: object
+        fields:
+          - label: Label
+            name: label
+            widget: string
+            required: false
+          - label: Title
+            name: title
+            widget: string
+          - label: Description
+            name: description
+            widget: markdown
+          - label: Customer image
+            name: customer-img
+            widget: image
+            media_folder: images
+            required: false
+          - label: Website image
+            name: website-img
+            widget: image
+            media_folder: images
+          - label: Show industry icon on top of Hero image
+            name: show_industry_icon
+            widget: boolean
+            default: true
+            required: false
+          - label: No blur for website image
+            name: no_blur
+            widget: boolean
+            default: false
+            required: false
+          - label: Author
+            name: author
+            widget: string
+          - label: Author info
+            name: author_info
+            widget: string
+          - label: Author image
+            name: author_img
+            widget: image
+            media_folder: images
+          - label: Time to read
+            name: time-to-read
+            widget: number
+            required: false
+      - label: About
+        name: about
+        widget: object
+        fields:
+          - label: Customer
+            name: customer
+            widget: string
+          - label: Customer logo
+            name: customer-logo
+            widget: image
+            media_folder: images
+          - label: Customer website
+            name: customer-link
+            widget: string
+          - label: Industry
+            name: industry
+            widget: string
+          - label: Company size
+            name: company-size
+            widget: string
+          - label: Problem description
+            name: problem
+            widget: string
+          - label: Solution description
+            name: solution
+            widget: string
+          - label: Products used
+            name: products-used
+            widget: select
+            multiple: true
+            options:
+              - website
+              - seo
+              - scheduling
+              - email-marketing
+              - contact-manager
+          - label: Title
+            name: title
+            widget: string
+          - label: Description
+            name: description
+            widget: markdown
+      - label: Customer representative
+        name: customer
+        widget: object
+        fields:
+          - label: Avatar/Photo
+            name: avatar
+            widget: image
+            required: false
+            media_folder: images
+          - label: Name
+            name: name
+            widget: string
+            required: false
+          - label: Role
+            name: role
+            widget: string
+            required: false
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Quote
+            name: quote
+            widget: markdown
+            required: false
+      - label: The challenge
+        name: challenge
+        widget: object
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Description
+            name: description
+            widget: markdown
+      - label: Solution
+        name: solution
+        widget: object
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Image
+            name: img
+            widget: image
+            media_folder: images
+          - label: Solution image alt text
+            name: solution-img-alt-text
+            widget: string
+          - label: Description
+            name: description
+            widget: markdown
+      - label: Results
+        name: results
+        widget: object
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Intro block
+            name: intro
+            widget: markdown
+          - label: Body content
+            name: body
+            widget: markdown
+          - label: Result stats title
+            name: stats-title
+            widget: string
+          - label: Stat items
+            name: stat-items
+            widget: list
+            fields:
+              - label: Description
+                name: description
+                widget: string
+      - label: B12 info
+        name: b12_info
+        widget: object
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Description
+            name: description
+            widget: markdown
+      - label: Inline CTA form
+        name: cta-inline
+        widget: object
+        fields:
+          - label: Show section
+            name: show_section
+            widget: boolean
+            default: true
+            required: false
+          - label: Title
+            name: title
+            widget: string
+          - label: Description
+            name: description
+            widget: markdown
+  - name: free_draft_alternative
+    label: Free Draft New
+    folder: src/data/free-draft
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - label: Title
+        name: title
+        widget: string
+        required: false
+      - label: Meta description
+        name: description
+        widget: string
+        required: false
+      - label: Permalink
+        name: permalink
+        widget: string
+        required: true
+      - label: Published
+        name: published
+        widget: boolean
+        default: true
+        required: false
+      - label: Hero
+        name: hero
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: true
+          - label: Subtitle
+            name: subtitle
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: Note
+            name: note
+            widget: string
+            required: true
+            hint: Appears under the Hero CTA
+            default: No credit card required
+          - label: Image
+            name: image
+            widget: select
+            default: images/free-draft-hero.png
+            required: true
+            options:
+              - label: Example site with icons
+                value: images/product-management-training.png
+              - label: Website editor with kickoff call notes image
+                value: images/free-draft-hero.png
+          - label: Cta text
+            name: cta_text
+            widget: string
+            required: false
+          - label: Cta Link
+            name: cta_url
+            widget: string
+            required: false
+      - label: Features
+        name: list
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: Features list
+            name: list_items
+            widget: list
+            fields:
+              - label: Icon
+                name: icon
+                widget: string
+                hint: Paste svg icon code
+              - label: Title
+                name: title
+                widget: string
+              - label: Description
+                name: description
+                widget: markdown
+                required: false
+      - label: Testimonials
+        name: testimonials_slider
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Items
+            name: items
+            widget: relation
+            collection: testimonials
+            search_fields:
+              - company
+            display_fields:
+              - company
+              - customer.name
+            value_field: '{{slug}}'
+            multiple: true
+            required: false
+      - label: FAQs
+        name: faqs
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+            default: FAQs
+          - label: Subtitle
+            name: subtitle
+            widget: string
+            required: false
+          - label: Items
+            name: items
+            widget: list
+            required: false
+            fields:
+              - label: Question
+                name: question
+                widget: string
+              - label: Answer
+                name: answer
+                widget: markdown
+      - label: CTA Banner
+        name: cta_banner
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: Cta text
+            name: cta_text
+            widget: string
+            required: false
+          - label: Cta Link
+            name: cta_url
+            widget: string
+            required: false
+  - name: free_draft
+    label: Free Draft Outdated
+    folder: _free_draft
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - label: Title
+        name: title
+        widget: string
+        required: false
+      - label: Meta description
+        name: description
+        widget: string
+        required: false
+      - label: Permalink
+        name: permalink
+        widget: string
+        required: false
+      - label: Favicon
+        name: favicon
+        widget: image
+        required: false
+      - label: Noindex
+        name: noindex
+        widget: boolean
+        default: true
+      - label: Show intercom
+        name: intercom
+        widget: boolean
+        default: false
+        required: false
+      - label: Hero
+        name: hero
+        widget: object
+        required: false
+        fields:
+          - label: Logo
+            name: logo
+            widget: image
+            media_folder: images
+            required: false
+          - label: Logo Alt Text
+            name: logo_alt_text
+            widget: string
+            required: false
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Subtitle
+            name: subtitle
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: Cta
+            name: cta
+            widget: string
+            required: false
+          - label: Cta Link
+            name: cta_link
+            widget: string
+            required: false
+      - label: Hero With Hubspot Form
+        name: hero_with_hubspot_form
+        widget: object
+        required: false
+        fields:
+          - label: Logo
+            name: logo
+            widget: image
+            media_folder: images
+            required: false
+          - label: Logo Alt Text
+            name: logo_alt_text
+            widget: string
+            required: false
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Subtitle
+            name: subtitle
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: Cta
+            name: cta
+            widget: string
+            required: false
+      - label: How It Works
+        name: how_it_works
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Subtitle
+            name: subtitle
+            widget: string
+            required: false
+          - label: How It Works List
+            name: how_it_works_list
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+                required: false
+              - label: Description
+                name: description
+                widget: markdown
+                required: false
+              - label: Note
+                name: note
+                widget: string
+                required: false
+      - label: Contact CTA
+        name: contact_cta
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: markdown
+            required: false
+          - label: Cta
+            name: cta
+            widget: string
+            required: false
+          - label: Cta Link
+            name: cta_url
+            widget: string
+            required: false
+  - name: gallery_items
+    label: Gallery items
+    folder: _gallery_items
+    create: true
+    slug: '{{slug}}'
+    preview_path: 'website-gallery/{{title}}'
+    fields:
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: gallery-item-view
+      - label: Item type
+        name: item_type
+        widget: hidden
+        default: gallery-item
+      - label: Permalink
+        name: permalink
+        default: /website-gallery/title.html
+        required: true
+      - label: Title
+        name: title
+        widget: string
+      - label: Description
+        name: description
+        widget: markdown
+        required: false
+      - label: Categories
+        name: categories
+        widget: select
+        multiple: true
+        options:
+          - label: Industry
+            value: industry
+          - label: Style
+            value: style
+          - label: Generic
+            value: generic
+        hint: >-
+          You can add both 'industry' and 'style' categories by selecting both
+          options from the dropdown.
+        required: true
+      - label: Tags list
+        name: tags
+        widget: select
+        multiple: true
+        reqiured: true
+        hint: You can add multiple tags by selecting them from the dropdown.
+        options:
+          - label: Featured
+            value: featured
+          - label: All
+            value: all
+          - label: Abstract
+            value: abstract
+          - label: Accountants and Tax Services
+            value: accountants-and-tax-services
+          - label: Architecture and Real Estate
+            value: architecture-and-real-estate
+          - label: Business Services and Consulting
+            value: business-services-and-consulting
+          - label: Coaching and Personal Development
+            value: coaching-and-personal-development
+          - label: Colorful
+            value: colorful
+          - label: Content
+            value: content
+          - label: Contractors and Home Services
+            value: contractors-and-home-services
+          - label: Financial Services
+            value: financial-services
+          - label: Icons
+            value: icons
+          - label: Illustrations
+            value: illustrations
+          - label: Insurance
+            value: insurance
+          - label: IT Services
+            value: it-services
+          - label: Legal Services
+            value: legal-services
+          - label: Minimal
+            value: minimal
+          - label: Photos
+            value: photos
+          - label: Single Page
+            value: single-page
+          - label: Videos
+            value: videos
+        default: all
+      - label: Desktop screenshot
+        name: screenshot
+        media_folder: images
+        widget: image
+        hint: >-
+          Please make sure that images are in '.jpg' format, not wider than
+          1400px, and are under 4MB in size (ideally under 1MB). You can use
+          this website to resize and change image format:
+          https://bulkresizephotos.com/
+        media_library:
+          config:
+            max_file_size: 4000000
+      - label: Mobile screenshot
+        name: mobile_screenshot
+        media_folder: images
+        widget: image
+        required: true
+        hint: >-
+          Please make sure that images are in '.jpg' format, not wider than
+          1400px, and are under 4MB in size (ideally under 1MB). You can use
+          this website to resize and change image format:
+          https://bulkresizephotos.com/
+        media_library:
+          config:
+            max_file_size: 4000000
+      - label: '# of pages'
+        name: pages
+        widget: string
+        required: false
+      - label: Integrations
+        name: integrations
+        widget: markdown
+        required: false
+      - label: Website package
+        name: website_package
+        widget: select
+        required: false
+        options:
+          - label: Single-page
+            value: Single-page
+          - label: Multi-page
+            value: Multi-page
+      - label: Features
+        name: features
+        widget: list
+        required: false
+      - label: Site page 1
+        name: site_page_1
+        media_folder: images
+        widget: image
+        required: true
+        hint: >-
+          Please make sure that images are in '.jpg' format, not wider than
+          1400px, and are under 4MB in size (ideally under 1MB). You can use
+          this website to resize and change image format:
+          https://bulkresizephotos.com/
+        media_library:
+          config:
+            max_file_size: 4000000
+      - label: Site page 1 caption
+        name: site_page_1_caption
+        widget: string
+        required: false
+      - label: Site page 2
+        name: site_page_2
+        media_folder: images
+        widget: image
+        required: false
+        hint: >-
+          Please make sure that images are in '.jpg' format, not wider than
+          1400px, and are under 4MB in size (ideally under 1MB). You can use
+          this website to resize and change image format:
+          https://bulkresizephotos.com/
+        media_library:
+          config:
+            max_file_size: 4000000
+      - label: Site page 2 caption
+        name: site_page_2_caption
+        widget: string
+        required: false
+      - label: Site page 3
+        name: site_page_3
+        media_folder: images
+        widget: image
+        required: false
+        hint: >-
+          Please make sure that images are in '.jpg' format, not wider than
+          1400px, and are under 4MB in size (ideally under 1MB). You can use
+          this website to resize and change image format:
+          https://bulkresizephotos.com/
+        media_library:
+          config:
+            max_file_size: 4000000
+      - label: Site page 3 caption
+        name: site_page_3_caption
+        widget: string
+        required: false
+      - label: Site page 4
+        name: site_page_4
+        media_folder: images
+        widget: image
+        required: false
+        hint: >-
+          Please make sure that images are in '.jpg' format, not wider than
+          1400px, and are under 4MB in size (ideally under 1MB). You can use
+          this website to resize and change image format:
+          https://bulkresizephotos.com/
+        media_library:
+          config:
+            max_file_size: 4000000
+      - label: Site page 4 caption
+        name: site_page_4_caption
+        widget: string
+        required: false
+      - label: Site page 5
+        name: site_page_5
+        media_folder: images
+        widget: image
+        required: false
+        hint: >-
+          Please make sure that images are in '.jpg' format, not wider than
+          1400px, and are under 4MB in size (ideally under 1MB). You can use
+          this website to resize and change image format:
+          https://bulkresizephotos.com/
+        media_library:
+          config:
+            max_file_size: 4000000
+      - label: Site page 5 caption
+        name: site_page_5_caption
+        widget: string
+        required: false
+  - name: landing-pages
+    label: Landing Pages
+    folder: src/data/landing-pages
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Meta description
+        name: description
+        widget: string
+        required: false
+      - label: Published
+        name: published
+        widget: boolean
+        default: true
+        required: false
+      - label: Permalink
+        name: permalink
+        widget: string
+      - label: Free resource preview image
+        name: resource_preview_image
+        widget: image
+        media_folder: images
+        required: false
+      - label: Hero
+        name: hero
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: Image
+            name: img
+            widget: image
+            media_folder: images
+            required: false
+          - label: CTA text
+            name: cta_text
+            widget: string
+            required: false
+          - label: CTA url
+            name: cta_url
+            widget: string
+            required: false
+      - label: Hero for free resources
+        name: hero-free-resource
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: Image
+            name: image
+            widget: image
+            media_folder: images
+            required: false
+          - label: CTA text
+            name: cta_text
+            widget: string
+            required: false
+          - label: CTA url
+            name: cta_url
+            widget: string
+            required: false
+          - label: Form embed code
+            name: form-embed-code
+            widget: markdown
+            required: false
+      - label: About
+        name: about
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Subtitle
+            name: subtitle
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: markdown
+            required: false
+      - label: Process
+        name: process
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Steps
+            name: steps
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Description
+                name: description
+                widget: markdown
+                required: false
+              - label: Image
+                name: image
+                widget: image
+                media_folder: images
+                required: false
+      - label: How it works
+        name: how_it_works
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: How it works list
+            name: items
+            widget: list
+            fields:
+              - label: Order
+                name: order
+                widget: number
+                required: false
+              - label: Title
+                name: title
+                widget: string
+              - label: Description
+                name: description
+                widget: markdown
+                required: false
+      - label: Pricing cards
+        name: pricing_cards
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: Pricing cards list
+            name: list
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Description
+                name: description
+                widget: markdown
+      - label: Benefits (Features)
+        name: benefits
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: Features list
+            name: features
+            widget: list
+            fields:
+              - label: Icon
+                name: icon
+                widget: image
+                media_folder: images
+                required: false
+              - label: Icon size
+                name: iconSize
+                widget: select
+                options:
+                  - sm
+                  - md
+                  - lg
+                  - xl
+                default: medium
+              - label: Title
+                name: title
+                widget: string
+              - label: Description
+                name: description
+                widget: markdown
+                required: false
+      - label: FAQ
+        name: faq
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: QA List
+            name: items
+            widget: list
+            fields:
+              - label: Question
+                name: question
+                widget: string
+              - label: Answer
+                name: answer
+                widget: markdown
+      - label: Contact CTA
+        name: contact_cta
+        widget: object
+        required: false
+        fields:
+          - label: Show section
+            name: show_section
+            widget: boolean
+            default: true
+            required: false
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: markdown
+            required: false
+          - label: CTA button text
+            name: cta_text
+            widget: string
+            default: Try it now
+            required: false
+  - name: platform_comparison
+    label: Platform comparison
+    folder: src/data/platform-comparisons
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - label: Item type
+        name: item_type
+        widget: hidden
+        default: platform-comparison
+      - label: Permalink
+        name: permalink
+        widget: string
+        required: true
+        default: ''
+        hint: >-
+          Please set proper permalink (path) for this page. Format is
+          "/platform-comparison/title-of-the-page". This will be actual path to
+          page.
+      - label: Publish Date
+        name: date
+        widget: datetime
+        format: LLL
+        default: ''
+        date_format: YYYY-MM-DD
+        time_format: 'hh:mm:ss'
+        picker_utc: false
+      - label: Meta title
+        name: title
+        widget: string
+        tagname: h1
+      - label: Meta description
+        name: description
+        widget: string
+      - label: Hero
+        name: hero
+        widget: object
+        required: true
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            tagname: h1
+            required: true
+          - label: Description
+            name: description
+            widget: markdown
+            required: true
+          - label: Image
+            name: img
+            widget: image
+            media_folder: images
+            required: true
+          - label: CTA text
+            name: cta_text
+            widget: string
+            default: Get started with B12 for free
+            required: true
+          - label: CTA url
+            name: cta_url
+            widget: string
+            default: 'https://b12.io/signup'
+            required: true
+      - label: Content blocks
+        name: content
+        widget: list
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: true
+          - label: Title type
+            name: title_type
+            widget: select
+            options:
+              - h2
+              - h3
+            default: h2
+            required: true
+          - label: Description
+            name: description
+            widget: markdown
+            required: true
+            hint: You can insert tables from dropdown menu of the editor
+            editor_components:
+              - pc-table
+      - label: Cta Section
+        name: cta
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: true
+          - label: Text
+            name: text
+            widget: markdown
+            required: true
+  - name: popup_forms
+    label: Popup Forms
+    folder: src/data/popup-forms
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - label: Active
+        name: active
+        widget: boolean
+        required: true
+        default: false
+      - label: Slug list
+        name: slug-list
+        widget: list
+        hint: >-
+          Add page path or slug. For regular/hardcoded pages add page path, eg:
+          "/" for homepage, "/pricing" for b12.io/pricing. For templated pages
+          like Resource Center articles or blog posts add page slug, eg:
+          "blog-post-title" for
+          "/resource-center/:categories/blog-post-title.html"
+      - label: Dark theme
+        name: dark-theme
+        widget: boolean
+        required: false
+      - label: Popup intent
+        name: popup-intent
+        widget: select
+        options:
+          - label: CTA type
+            value: cta-type
+          - label: File download
+            value: file-download
+          - label: Newsletter sign-up
+            value: newsletter-sign-up
+          - label: B12 sign-up
+            value: sign-up-form
+          - label: Slogan ideas sign-up
+            value: slogan-ideas-sign-up
+      - label: Popup trigger
+        name: popup-trigger
+        widget: select
+        options:
+          - label: Time delay
+            value: time
+          - label: Exit-intent
+            value: exit-intent
+          - label: Scroll position
+            value: scroll-position
+        hint: Select an event that will trigger your popup.
+      - label: Delay value (in seconds)
+        name: delay-value
+        widget: number
+        required: false
+        hint: >-
+          If the trigger event is "Time delay" make sure to add a delay time
+          value in seconds. Eg: "20" will trigger your popup to appear 20
+          seconds after the page load.
+      - label: Scroll depth (percentage)
+        name: scroll-depth
+        widget: number
+        required: false
+        hint: >-
+          If the trigger event is "Scroll position" make sure to add scroll
+          depth percentage value. Eg: "80" will trigger your popup will when
+          visitors have scrolled down 80% of the page.
+      - label: Title
+        name: title
+        widget: string
+      - label: Description
+        name: description
+        widget: string
+        required: false
+      - label: CTA text
+        name: cta-text
+        widget: string
+        required: false
+      - label: CTA url
+        name: cta-url
+        widget: string
+        required: false
+      - label: Form title
+        name: form_title
+        widget: string
+        required: false
+      - label: Form CTA text
+        name: form-cta-text
+        widget: string
+        required: false
+      - label: File download form embed code
+        name: form-id
+        widget: string
+        required: false
+        hint: >-
+          Insert a pre-generated Hubspot form ID, that allows users to access
+          gated content through filling in the form.
+  - name: post
+    label: Resource center
+    folder: _posts
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - label: Item type
+        name: item_type
+        widget: hidden
+        default: resource-center-post
+      - label: Active
+        name: active
+        widget: boolean
+        default: true
+        hint: Generate RC page or not
+      - label: Layout
+        name: layout
+        widget: select
+        default: post
+        options:
+          - label: Post
+            value: post
+          - label: Post legacy
+            value: post-legacy
+          - label: Spider monkey
+            value: spider-monkey
+      - label: Permalink
+        name: permalink
+        widget: string
+        required: true
+        default: /resource-center/
+        hint: >-
+          Please set proper permalink for this post manually. Format is
+          "/resource-center/__categories__/__title__.html", eg:
+          "/resource-center/website-traffic/my-cool-blog-post.html". You can
+          omit ".html" if you want.
+      - label: Title tag
+        name: title_tag
+        widget: string
+        tagname: h1
+        required: false
+      - label: Post title
+        name: title
+        widget: string
+        tagname: h1
+      - label: Post subtitle
+        name: subtitle
+        widget: string
+        tagname: h1
+        required: false
+        hint: Available for "Post alternative" layout only
+      - label: Meta description
+        name: description
+        widget: string
+        tagname: h1
+      - label: Author name
+        name: author
+        widget: string
+        required: false
+      - label: File download CTA text
+        name: file_download_text
+        widget: string
+        required: false
+      - label: File download CTA url
+        name: file_download_url
+        widget: string
+        required: false
+      - label: Author image
+        name: author_img
+        media_folder: images
+        widget: image
+        required: false
+      - label: Author info
+        name: author_info
+        widget: string
+        required: false
+      - label: Intro
+        name: intro
+        widget: string
+        required: false
+      - label: Cta block title
+        name: cta_title
+        widget: string
+        required: false
+        hint: Available for Experiment RC layout only (with sidebar)
+      - label: Cta block CTA text
+        name: cta_label
+        widget: string
+        required: false
+        hint: Available for Experiment RC layout only (with sidebar)
+      - label: Cta block url
+        name: cta_url
+        widget: string
+        required: false
+        hint: Available for Experiment RC layout only (with sidebar)
+      - label: Hero form enabled
+        name: hero_form_enabled
+        widget: boolean
+        default: false
+        hint: Only for "Post alternative" layout
+      - label: Hero form Lead text
+        name: hero_form_text
+        widget: string
+        required: false
+        hint: Only for "Post alternative" layout
+      - label: Time to read/watch
+        name: time_to_read
+        widget: number
+        value_type: int
+        required: false
+      - label: Preview image
+        name: preview_image
+        media_folder: images
+        widget: image
+        required: false
+        hint: >-
+          Displayed on Resource Center pages and category pages. Please make
+          sure that images are in '.jpg' format, not wider than 1200px, and are
+          under 2MB in size. You can use this website to resize and change image
+          format: https://bulkresizephotos.com/
+        media_library:
+          config:
+            max_file_size: 2000000
+      - label: Image
+        name: image
+        media_folder: images
+        widget: image
+        required: true
+        hint: >-
+          Displayed on RC post hero section. Please make sure that images are in
+          '.jpg' format, not wider than 1200px, and are under 2MB in size. You
+          can use this website to resize and change image format:
+          https://bulkresizephotos.com/
+        media_library:
+          config:
+            max_file_size: 2000000
+      - label: Categories
+        name: categories
+        widget: select
+        multiple: true
+        required: true
+        options:
+          - label: Accounting firm
+            value: accounting-firm
+          - label: AI
+            value: ai
+          - label: AI how-to guides
+            value: ai-how-to-guides
+          - label: AI thought leadership
+            value: ai-thought-leadership
+          - label: Architecture firm
+            value: architecture-firm
+          - label: Bookkeeping
+            value: bookkeeping
+          - label: Business
+            value: business
+          - label: Client engagement tools
+            value: client-engagement-tools
+          - label: Client intake
+            value: client-intake
+          - label: Commercial real estate firm
+            value: commercial-real-estate-firm
+          - label: Consulting firm
+            value: consulting-firm
+          - label: Contact management
+            value: contact-management
+          - label: Content creation
+            value: content-creation
+          - label: Contracts & eSignature
+            value: contracts-and-esignature
+          - label: Ebooks
+            value: ebooks
+          - label: Email automation
+            value: email-automation
+          - label: Email newsletters
+            value: email-newsletters
+          - label: Financial advisor firm
+            value: financial-advisor-firm
+          - label: Financial planning firm
+            value: financial-planning-firm
+          - label: Financial services business
+            value: financial-services-business
+          - label: Insurance brokerage
+            value: insurance-brokerage
+          - label: Investing firm
+            value: investing-firm
+          - label: Invoicing & payments
+            value: invoicing-and-payments
+          - label: IT consulting firm
+            value: it-consulting-firm
+          - label: Law firm
+            value: law-firm
+          - label: Management consulting firm
+            value: management-consulting-firm
+          - label: Mortgage brokerage
+            value: mortgage-brokerage
+          - label: Online forms
+            value: online-forms
+          - label: Online scheduling
+            value: online-scheduling
+          - label: SEO
+            value: seo
+          - label: Small business basics
+            value: small-business-basics
+          - label: Social media
+            value: social-media
+          - label: Tax preparation
+            value: tax-preparation
+          - label: Traffic generation
+            value: traffic-generation
+          - label: Video articles
+            value: video-articles
+          - label: Website basics
+            value: website-basics
+          - label: Website conversion
+            value: website-conversion
+          - label: Website design
+            value: website-design
+      - label: Main category (for Read next section)
+        name: main_category
+        widget: select
+        required: true
+        options:
+          - label: Accounting firm
+            value: accounting-firm
+          - label: AI
+            value: ai
+          - label: AI how-to guides
+            value: ai-how-to-guides
+          - label: AI thought leadership
+            value: ai-thought-leadership
+          - label: Architecture firm
+            value: architecture-firm
+          - label: Bookkeeping
+            value: bookkeeping
+          - label: Business
+            value: business
+          - label: Client engagement tools
+            value: client-engagement-tools
+          - label: Client intake
+            value: client-intake
+          - label: Commercial real estate firm
+            value: commercial-real-estate-firm
+          - label: Consulting firm
+            value: consulting-firm
+          - label: Contact management
+            value: contact-management
+          - label: Content creation
+            value: content-creation
+          - label: Contracts & eSignature
+            value: contracts-and-esignature
+          - label: Ebooks
+            value: ebooks
+          - label: Email automation
+            value: email-automation
+          - label: Email newsletters
+            value: email-newsletters
+          - label: Financial advisor firm
+            value: financial-advisor-firm
+          - label: Financial planning firm
+            value: financial-planning-firm
+          - label: Financial services business
+            value: financial-services-business
+          - label: Insurance brokerage
+            value: insurance-brokerage
+          - label: Investing firm
+            value: investing-firm
+          - label: Invoicing & payments
+            value: invoicing-and-payments
+          - label: IT consulting firm
+            value: it-consulting-firm
+          - label: Law firm
+            value: law-firm
+          - label: Management consulting firm
+            value: management-consulting-firm
+          - label: Mortgage brokerage
+            value: mortgage-brokerage
+          - label: Online forms
+            value: online-forms
+          - label: Online scheduling
+            value: online-scheduling
+          - label: SEO
+            value: seo
+          - label: Small business basics
+            value: small-business-basics
+          - label: Social media
+            value: social-media
+          - label: Tax preparation
+            value: tax-preparation
+          - label: Traffic generation
+            value: traffic-generation
+          - label: Video articles
+            value: video-articles
+          - label: Website basics
+            value: website-basics
+          - label: Website conversion
+            value: website-conversion
+          - label: Website design
+            value: website-design
+      - label: Featured on Resource center page
+        name: featured_in_category
+        widget: boolean
+        default: false
+        required: false
+      - label: Noindex
+        name: noindex
+        widget: boolean
+        default: false
+      - label: External URL
+        name: external_url
+        widget: string
+        required: false
+      - label: Publish Date
+        name: date
+        widget: datetime
+        format: LLL
+        default: ''
+        date_format: YYYY-MM-DD
+        time_format: 'hh:mm:ss'
+        picker_utc: false
+      - label: Video Article
+        name: video_article
+        widget: boolean
+        required: false
+        default: false
+      - label: Video article embed URL
+        name: video_src_link
+        widget: string
+        required: false
+      - label: Body
+        name: body
+        widget: markdown
+        required: false
+        hint: You can insert __banners__ from dropdown menu of the editor
+        editor_components:
+          - b12-blog-image
+          - rc-content-banner
+          - code-block
+      - label: Form type
+        name: form_type
+        widget: select
+        options:
+          - label: B12 sign-up form
+            value: b12-signup
+          - label: Newsletter form
+            value: newsletter-form
+        required: false
+        hint: Available for new RC template only
+      - label: Form title
+        name: form_title
+        widget: string
+        required: false
+      - label: Form description
+        name: form_description
+        widget: string
+        required: false
+      - label: Spider monkey
+        name: spider_monkey
+        widget: object
+        summary: '{{fields.label}}'
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: Hero image
+            name: image
+            widget: image
+            media_folder: images
+            required: false
+            hint: 600x400 pixels
+          - label: Resources
+            name: resources
+            widget: list
+            summary: '{{fields.type}}: {{fields.title}}'
+            fields:
+              - label: Type
+                name: type
+                widget: select
+                options:
+                  - youtube
+                  - blog
+                hint: Renders text differently depending on type
+              - label: Title
+                name: title
+                widget: string
+                required: false
+              - label: Description
+                name: description
+                widget: string
+                required: false
+                hint: Text transforms automatically depending on the type
+              - label: Link
+                name: link
+                widget: string
+                required: false
+              - label: Thumbnail
+                name: thumbnail
+                widget: string
+                required: false
+                hint: >-
+                  For YouTube, provide a shareable link like
+                  "https://www.youtube.com/embed/TDsQv9Tcagk"
+  - name: product_pages
+    label: Product Pages
+    folder: src/data/product_pages
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Meta description
+        name: description
+        widget: string
+        required: false
+      - label: Permalink
+        name: permalink
+        widget: string
+        required: true
+        hint: >-
+          Please set proper permalink/url for this page. Format is
+          "/title-of-the-page".
+      - label: Hero
+        name: hero
+        widget: object
+        required: true
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: true
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: Image
+            name: img
+            widget: image
+            media_folder: images
+            required: true
+          - label: CTA text
+            name: cta_text
+            widget: string
+            required: false
+          - label: CTA url
+            name: cta_url
+            widget: string
+            required: false
+          - label: Cta Note
+            name: cta_note
+            widget: string
+            required: false
+      - name: benefits
+        label: Benefits
+        widget: object
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Items
+            name: collection_items
+            widget: list
+            required: false
+            fields:
+              - label: Icon
+                name: icon
+                widget: image
+                required: false
+              - label: Title
+                name: title
+                widget: string
+                required: false
+              - label: Description
+                name: description
+                widget: string
+                required: false
+      - label: Features
+        name: features_list
+        widget: list
+        required: false
+        fields:
+          - label: Section id
+            name: section_id
+            widget: string
+            required: false
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: Image
+            name: image
+            widget: image
+          - label: Add image shadow
+            name: image_shadow
+            widget: boolean
+            required: false
+            default: false
+            hint: >-
+              Use with a single layer images only. Do not use together with a
+              secondary image
+          - label: Secondary image
+            name: secondary_image
+            widget: image
+          - label: CTA text
+            name: cta_text
+            widget: string
+            required: false
+          - label: CTA url
+            name: cta_url
+            widget: string
+            required: false
+      - label: Cards list
+        name: cards_list
+        widget: list
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: markdown
+            required: false
+          - label: Icon
+            name: icon
+            widget: image
+            required: false
+          - label: Show product overview
+            name: show_product_overview
+            widget: boolean
+            required: false
+      - label: FAQ
+        name: faq
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: QA List
+            name: qa_list
+            widget: list
+            fields:
+              - label: Question
+                name: question
+                widget: string
+              - label: Answer
+                name: answer
+                widget: markdown
+      - label: Contact CTA
+        name: contact_cta
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: markdown
+            required: false
+          - label: CTA text
+            name: cta_text
+            widget: string
+            required: false
+          - label: CTA url
+            name: cta_url
+            widget: string
+            required: false
+  - name: resource-center-banners
+    label: Resource Center Banners
+    folder: _resource_center_banners
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - label: Item type
+        name: item_type
+        widget: hidden
+        default: resource-center-banner
+      - label: Title
+        name: title
+        widget: string
+        required: true
+      - label: Banner id
+        name: id
+        widget: string
+        required: true
+        hint: >-
+          Ids should be lowercase titles separated by dashes and include
+          orientation details. e.g., 'attract-win-serve-vertical' or
+          'attract-win-serve-horizontal'
+      - label: Orientation
+        name: orientation
+        widget: select
+        required: false
+        options:
+          - label: Horizontal
+            value: horizontal
+          - label: Vertical
+            value: vertical
+      - label: Banner CTA url
+        name: url
+        widget: string
+        required: false
+        hint: 'If left empty, the banner will redirect to B12 signup page by default'
+      - label: Banner image
+        name: image
+        media_folder: images
+        widget: image
+        required: false
+  - name: resource-center
+    label: Resource Center Categories
+    folder: _resource-center
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - label: Item type
+        name: item_type
+        widget: hidden
+        default: resource-center-category
+      - label: Tag title
+        name: title
+        widget: string
+        required: true
+      - label: Tag
+        name: tag
+        widget: string
+        hint: >-
+          Tag names should be lowercase, hyphen-divided, and match the actual
+          category tag.
+        required: true
+      - label: Description
+        name: description
+        widget: string
+      - label: Tag category
+        name: tag_category
+        widget: select
+        required: true
+        options:
+          - label: Customer goals
+            value: customer-goal
+          - label: Products
+            value: product
+          - label: Industries
+            value: industry
+      - label: Permalink
+        name: permalink
+        widget: string
+        hint: 'Eg: ''/resource-center/category-title'''
+        required: true
+  - name: settings
+    label: Website settings
+    files:
+      - label: Sitewide settings
+        name: sitewide_settings
+        file: src/data/settings.yml
+        editor:
+          preview: false
+        fields:
+          - label: General
+            name: general
+            widget: object
+            summary: Global sitewide settings
+            fields:
+              - label: Webinar date
+                name: webinar_date
+                widget: string
+                required: false
+          - label: Announcement banner
+            name: announcement_banner
+            widget: object
+            summary: Banner that appears at the top of the website
+            fields:
+              - label: Active
+                name: active
+                widget: boolean
+                required: true
+                default: false
+              - label: Text
+                name: text
+                widget: string
+                required: true
+              - label: CTA text
+                name: cta_text
+                widget: string
+                required: true
+              - label: CTA url
+                name: cta_url
+                widget: string
+                required: true
+                default: 'https://b12.io/signup/'
+              - label: Secondary CTA text
+                name: secondary_cta_text
+                widget: string
+                required: false
+              - label: Secondary CTA url
+                name: secondary_cta_url
+                widget: string
+                required: false
+              - label: Background color
+                name: background_color
+                widget: string
+                required: false
+                default: '#D5D1FC'
+  - name: testimonials
+    label: Testimonials
+    folder: src/data/testimonials
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - label: Active
+        name: active
+        widget: boolean
+        required: true
+      - label: Company name
+        name: company
+        widget: string
+      - label: Customer
+        name: customer
+        widget: object
+        fields:
+          - label: Name
+            name: name
+            widget: string
+          - label: Position
+            name: position
+            widget: string
+            required: false
+          - label: Avatar
+            name: avatar
+            widget: image
+            required: false
+      - label: Quote
+        name: quote
+        widget: string
+      - label: Alternative quote
+        name: ai_quote
+        widget: string
+        required: false
+      - label: Image
+        name: image
+        widget: image
+        required: false
+      - label: Link
+        name: link
+        widget: string
+        required: false
+  - name: webinar_landing_pages
+    label: Webinar Landing Pages
+    folder: _webinar_landing_pages
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Meta description
+        name: description
+        widget: string
+        required: false
+      - label: Published
+        name: published
+        widget: boolean
+        default: true
+        required: false
+      - label: Show navbar
+        name: show_navbar
+        widget: boolean
+        default: true
+        required: false
+      - label: Show footer
+        name: show_footer
+        widget: boolean
+        default: true
+        required: false
+      - label: Show simple footer
+        name: show_simple_footer
+        widget: boolean
+        default: false
+        required: false
+      - label: Show intercom
+        name: intercom
+        widget: boolean
+        default: true
+        required: false
+      - label: Noindex
+        name: noindex
+        widget: boolean
+        default: true
+      - label: Permalink
+        name: permalink
+        widget: string
+      - label: Hero
+        name: hero
+        widget: object
+        required: false
+        fields:
+          - label: Order
+            name: order
+            widget: number
+            required: false
+          - label: Show section
+            name: show_section
+            widget: boolean
+            default: true
+            required: false
+          - label: Badge Text
+            name: badge-text
+            widget: string
+            required: false
+          - label: Title
+            name: title
+            widget: string
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: Image (min 1200px wide)
+            name: image
+            widget: image
+            required: false
+          - label: CTA text
+            name: cta-text
+            widget: string
+            required: false
+          - label: CTA url
+            name: cta-url
+            widget: string
+            required: false
+      - label: Text Image Left
+        name: text-image-left
+        widget: object
+        required: false
+        fields:
+          - label: Show section
+            name: show_section
+            widget: boolean
+            default: true
+          - label: Order
+            name: order
+            widget: number
+            required: false
+          - label: Background Gradient
+            name: gradient
+            widget: boolean
+            default: false
+            required: false
+          - label: Section id (section anchor link)
+            name: section_id
+            widget: string
+            required: false
+          - label: Badge Text
+            name: badge-text
+            widget: string
+            required: false
+          - label: Title
+            name: title
+            widget: string
+          - label: Date
+            name: date
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: CTA text
+            name: cta-text
+            widget: string
+            required: false
+          - label: CTA url
+            name: cta-url
+            widget: string
+            required: false
+          - label: Image
+            name: img
+            widget: image
+          - label: Image Shadow
+            name: img-shadow
+            widget: boolean
+            default: true
+            required: false
+          - label: Image title
+            name: img-title
+            widget: string
+            required: false
+          - label: Image note
+            name: img-note
+            widget: string
+            required: false
+          - label: Image description
+            name: img-description
+            widget: string
+            required: false
+          - label: Speaker company logo
+            name: img-logo
+            widget: image
+            required: false
+          - label: Speaker company url
+            name: img-url
+            widget: string
+            required: false
+          - label: Show scroll to
+            name: show_scroll_to
+            widget: boolean
+            default: true
+            required: false
+      - label: Text Image Center
+        name: text-image-center
+        widget: object
+        required: false
+        fields:
+          - label: Show section
+            name: show_section
+            widget: boolean
+            default: true
+          - label: Order
+            name: order
+            widget: number
+            required: false
+          - label: Badge Text
+            name: badge-text
+            widget: string
+            required: false
+          - label: Title
+            name: title
+            widget: string
+          - label: Date
+            name: date
+            widget: string
+            required: false
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: CTA text
+            name: cta-text
+            widget: string
+            required: false
+          - label: CTA url
+            name: cta-url
+            widget: string
+            required: false
+          - label: Image
+            name: img
+            widget: image
+            required: false
+          - label: Show scroll to
+            name: show_scroll_to
+            widget: boolean
+            default: false
+            required: false
+      - label: Content block
+        name: content_block
+        widget: object
+        required: false
+        fields:
+          - label: Show section
+            name: show_section
+            widget: boolean
+            default: true
+          - label: Order
+            name: order
+            widget: number
+            required: false
+          - label: Dark background
+            name: dark-bg
+            widget: boolean
+            default: true
+            required: false
+          - label: Title
+            name: title
+            widget: string
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: Text
+            name: text
+            widget: markdown
+            required: false
+          - label: CTA text
+            name: cta-text
+            widget: string
+            required: false
+          - label: CTA url
+            name: cta-url
+            widget: string
+            required: false
+      - label: Team cards
+        name: team-cards
+        widget: object
+        required: false
+        fields:
+          - label: Show section
+            name: show_section
+            widget: boolean
+            default: true
+          - label: Order
+            name: order
+            widget: number
+            required: false
+          - label: Dark background
+            name: dark-bg
+            widget: boolean
+            default: true
+          - label: Center align title
+            name: center-align-title
+            widget: boolean
+            default: true
+            required: false
+          - label: Title
+            name: title
+            widget: string
+          - label: Description
+            name: description
+            widget: string
+            required: false
+          - label: Team members
+            name: team-members
+            widget: list
+            fields:
+              - label: Image
+                name: img
+                widget: image
+                required: false
+              - label: Member industry
+                name: industry
+                widget: string
+                required: false
+              - label: Industry icon
+                name: icon
+                widget: image
+                required: false
+              - label: Member link
+                name: link
+                widget: string
+                required: false
+              - label: Member name
+                name: name
+                widget: markdown
+                required: false
+              - label: Member description
+                name: description
+                widget: string
+                required: false
+              - label: Member note
+                name: note
+                widget: string
+                required: false
+          - label: Show scroll to
+            name: show_scroll_to
+            widget: boolean
+            default: true
+            required: false

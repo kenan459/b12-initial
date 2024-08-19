@@ -1,0 +1,52 @@
+name: 'blog'
+label: 'B12 Blog'
+folder: '_b12_blog'
+create: true
+slug: '{{slug}}'
+fields:
+  - { label: 'Item type', name: 'item_type', widget: 'hidden', default: 'blog-post' }
+  - {
+      label: 'Permalink',
+      name: 'permalink',
+      widget: 'string',
+      required: true,
+      default: '',
+      hint: 'Please set proper permalink (path) for this post. Format is "/blog/post-title". This will be actual path to page.',
+    }
+  - { label: 'Post title', name: 'title', widget: 'string', tagname: 'h1' }
+  - { label: 'Meta description', name: 'description', widget: 'string' }
+  - { label: 'Intro', name: 'intro', widget: 'string', required: false }
+  - {
+      label: 'Time to read',
+      name: 'time_to_read',
+      widget: 'number',
+      value_type: 'int',
+      required: false,
+    }
+  - {
+      label: 'Preview image (min 1200px wide)',
+      name: 'preview_image',
+      media_folder: 'images',
+      widget: 'image',
+      required: true,
+    }
+  - { label: 'Image', name: 'image', widget: 'image', media_folder: 'images', required: false }
+  - { label: 'Image ALT', name: 'image_alt', widget: 'string', required: false }
+  - { label: 'Featured', name: 'featured', widget: 'boolean', default: false }
+  - {
+      label: 'Publish Date',
+      name: 'date',
+      widget: 'datetime',
+      format: 'LLL',
+      default: '',
+      date_format: 'YYYY-MM-DD',
+      time_format: 'hh:mm:ss',
+      picker_utc: false,
+    }
+  - {
+      label: 'Body',
+      name: 'body',
+      widget: 'markdown',
+      editor_components: ['b12-blog-image', 'code-block'],
+      required: false,
+    }

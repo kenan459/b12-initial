@@ -1,0 +1,78 @@
+name: 'platform_comparison'
+label: 'Platform comparison'
+folder: 'src/data/platform-comparisons'
+create: true
+slug: '{{slug}}'
+fields:
+  - { label: 'Item type', name: 'item_type', widget: 'hidden', default: 'platform-comparison' }
+  - {
+      label: 'Permalink',
+      name: 'permalink',
+      widget: 'string',
+      required: true,
+      default: '',
+      hint: 'Please set proper permalink (path) for this page. Format is "/platform-comparison/title-of-the-page". This will be actual path to page.',
+    }
+  - {
+      label: 'Publish Date',
+      name: 'date',
+      widget: 'datetime',
+      format: 'LLL',
+      default: '',
+      date_format: 'YYYY-MM-DD',
+      time_format: 'hh:mm:ss',
+      picker_utc: false,
+    }
+  - { label: 'Meta title', name: 'title', widget: 'string', tagname: 'h1' }
+  - { label: 'Meta description', name: 'description', widget: 'string' }
+  - label: Hero
+    name: hero
+    widget: object
+    required: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1', required: true }
+      - { label: 'Description', name: 'description', widget: 'markdown', required: true }
+      - { label: 'Image', name: 'img', widget: 'image', media_folder: 'images', required: true }
+      - {
+          label: 'CTA text',
+          name: 'cta_text',
+          widget: 'string',
+          default: 'Get started with B12 for free',
+          required: true,
+        }
+      - {
+          label: 'CTA url',
+          name: 'cta_url',
+          widget: 'string',
+          default: 'https://b12.io/signup',
+          required: true,
+        }
+  - label: Content blocks
+    name: content
+    widget: list
+    required: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - {
+          label: 'Title type',
+          name: 'title_type',
+          widget: 'select',
+          options: ['h2', 'h3'],
+          default: 'h2',
+          required: true,
+        }
+      - {
+          label: 'Description',
+          name: 'description',
+          widget: 'markdown',
+          required: true,
+          hint: 'You can insert tables from dropdown menu of the editor',
+          editor_components: ['pc-table'],
+        }
+  - label: Cta Section
+    name: cta
+    widget: object
+    required: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Text', name: 'text', widget: 'markdown', required: true }
