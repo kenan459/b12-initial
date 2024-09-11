@@ -10,21 +10,21 @@ import IconSecure from '@images/icons/secure.inline.svg'
 export const engageItems = [
   {
     icon: <IconAi />,
-    title: 'Generate a website instantly',
+    title: 'Attract',
     subtitle:
-      'AI sets up your entire website in seconds, complete with text, images, and client-facing tools.',
+      'Wow potential clients with your professional presence.',
   },
   {
     icon: <IconSimple />,
-    title: 'Bring your ideas to life',
+    title: 'Win',
     subtitle:
-      'Have AI generate drafts of new website content, blog posts, and email campaigns in seconds.',
+      'Streamline how you secure business.',
   },
   {
     icon: <IconPeople />,
-    title: 'Work with experts',
+    title: 'Serve',
     subtitle:
-      'Customize your online presence with the user-friendly B12 Editor or get help from our experts.',
+      'Deliver an awesome client experience with every interaction.',
   },
 ]
 

@@ -113,11 +113,11 @@ const MarqueeWrapper = styled.div`
 
 const FeaturedInLogos = () => (
   <Images>
-    <FastCompany />
-    <OReilly />
     <TechCrunch />
-    <VentureBeat />
+    <FastCompany />
     <WallStreetJournal />
+    <VentureBeat />
+    <OReilly />
   </Images>
 )
 
@@ -125,16 +125,16 @@ const FeaturedInLogosMarquee = () => {
   return (
     <MarqueeWrapper>
       <AnimatedImages variants={logoAnimationVarians} animate="animate">
+        <TechCrunch />
         <FastCompany />
+        <WallStreetJournal />
+        <VentureBeat />
         <OReilly />
         <TechCrunch />
         <VentureBeat />
         <WallStreetJournal />
         <FastCompany />
         <OReilly />
-        <TechCrunch />
-        <VentureBeat />
-        <WallStreetJournal />
       </AnimatedImages>
     </MarqueeWrapper>
   )

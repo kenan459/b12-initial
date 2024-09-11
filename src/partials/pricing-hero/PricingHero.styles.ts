@@ -13,10 +13,10 @@ export const Wrapper = styled.section`
   position: relative;
   overflow: hidden;
   background: ${theme.colors.brand.accentLightest};
-  padding: 56px 0 0; // based on design. shit.
+  padding: 56px 0px 70px 0px; // based on design. shit.
 
   ${mq['md']} {
-    padding: 72px 0 0; // based on design. shit.
+    padding: 72px 0 70px 0; // based on design. shit.
   }
 `
 

@@ -42,7 +42,7 @@ const PricingHero = () => {
           <PricingCards />
 
           {/* Has to be inside Wrapper because of the shadows on pricing cards */}
-          <ButtonWrapper>
+          {/* <ButtonWrapper>
             <StyledButton
               aria-pressed={featuresVisible}
               size="xsmall"
@@ -52,7 +52,7 @@ const PricingHero = () => {
               to="#toggle-features"
               onClick={(e) => toggleFeatures(e)}
             />
-          </ButtonWrapper>
+          </ButtonWrapper> */}
         </Container>
 
         <StyledVectorOutline />
@@ -61,7 +61,7 @@ const PricingHero = () => {
 
       {featuresVisible && <PricingFeatures />}
 
-      <PricingCardStarter />
+      {/* <PricingCardStarter /> */}
     </>
   )
 }
