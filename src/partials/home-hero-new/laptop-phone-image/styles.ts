@@ -9,20 +9,26 @@ export const Wrapper = styled.div`
   padding-bottom: 40px;
 
   .hero-image-desktop {
-    display: none;
+    display: none !important;
   }
 
   ${mq['sm']} {
-    .hero-image-mobile {
-      display: none;
+    .hero-image-desktop {
+      display: none !important;
     }
 
-    .hero-image-desktop {
-      display: block;
-    }
   }
 
   ${mq['md']} {
+    .hero-image-mobile {
+      display: none !important;
+      opacity: 50%;
+    }
+
+    .hero-image-desktop {
+      display: block !important;
+    }
+
     width: 80%;
     margin: 0px auto;
     padding-bottom: 0;
@@ -42,9 +48,11 @@ export const ImageLaptopWrapper = styled(motion.div)`
 export const ImagePhoneWrapper = styled(motion.div)`
   position: absolute;
   bottom: 0;
-  right: -15%;
   width: 43%;
+  left: 15%;
   text-align: center;
+
+
 
   ${mq['md']} {
     width: 50%;
